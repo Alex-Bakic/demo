@@ -1,0 +1,116 @@
+@import "../bulma/sass/utilities/initial-variables"
+
+// insert variables here
+$button-hover: #ff9f95
+$circle-logo-backround: #f5f4f8
+$circle-logo-border: $green
+$dark-gray: #98BAC8
+$dark-red: #c4000f
+$dark-salmon: #bf5d52
+$disabled-gray: #e8e8e8
+$green: #80b5bc
+$green-tint: #dae8eb
+$green-tint-end: #b7dbdf
+$grey-blue: #97bac9
+$grey-darker: #434E55
+$grey: #dedede
+$greyish: #adadad
+$hero-grey: #f5f8fa
+$hover-red: #ffb1a8
+$light-blue-grey: #c4d4dd
+$light-blue: #d4f4f2
+$light-gray: #e6edf2
+$light-orange: #ffae71
+$light-peach: #f9e3d4
+$light-red: #ffdedb
+$lighter-gray: #e5e8ea
+$lighter-red2: #feecea
+$lighter-red: #ffe9e7
+$main-black: #4a4a4a
+$metal-blue: #7eb5bd
+$more-gray: #d8d8d8
+$pale-gray: #f4f5f8
+$pale-red: #ffd4cf
+$pale-blue: #e2e5e7
+$pinkish-grey: #bcbcbc
+$red: #ff7c6e
+$hover-orange: #ff9f90
+$sand: #f7f3f0
+$skeleton-background-color: #ddd
+$snow: #fffaf9
+$steel-gray: #6E7F89
+$wh-black: #171717
+$white-two: #dbdbdb
+$pale-blue: #f2f7f8
+$sea-blue: #136d79
+$tag-bg-orange: #fff1e7
+$tag-bg-blue: #f4f8f9
+$tag-col-blue: #87a7b4
+$tag-bg-blue2: #ecf2f9
+$tag-col-blue2: #437fcc
+
+$steel-gray-with-alpha: rgba(37, 65, 84, 0.6)
+
+$hover-colors: $light-red, $light-orange, $red, $metal-blue, $light-peach, $grey-blue, $light-blue-grey, $steel-gray
+
+$font-regular: 400
+$font-medium: 500
+$font-semi-bold: 600
+$font-extra-bold: 800
+
+$control-radius: 3px
+$radius: 10px
+
+$left-menu-width: 210px
+$body-line-height: 30px
+$body-size: 12px
+$gap: 24px
+$tablet	: 960px + (2 * $gap)
+$desktop: 960px + (2 * $gap)
+$navbar-breakpoint: $tablet
+
+$body-background-color: $light-gray
+$family-primary: 'Montserrat', sans-serif
+$family-secondary: 'Inconsolata', sans-serif
+
+$dropdown-content-background-color: $red
+$dropdown-item-color: $white
+
+$link: $grey-darker
+$link-hover: $grey-darker
+$link-hover-border: $grey-darker
+
+$navbar-height: 76px
+$navbar-padding-vertical: 0px
+$navbar-mobile-height: 46px
+$navbar-item-img-max-height: 40px
+$navbar-item-color: $steel-gray
+$navbar-item-hover-color: $steel-gray
+$navbar-dropdown-item-hover-color: $steel-gray
+$navbar-mobile-logo-height: 26px
+$navbar-background-color: transparent
+$promo-banner-height: 48px
+
+$file-cta-hover-color: white
+$file-cta-background-color: $red
+
+$navbar-z-index: 900
+$loader-z-index: 800
+
+@import "../bulma/sass/utilities/_all"
+@import "../bulma/sass/base/_all"
+@import "../bulma/sass/grid/columns"
+@import "../bulma/sass/form/_all"
+@import "../bulma/sass/elements/icon"
+@import "../bulma/sass/elements/table"
+@import "../bulma/sass/components/dropdown"
+@import "../bulma/sass/components/message"
+@import "../bulma/sass/components/navbar"
+
+// this throws an internal error :basic_string::substr: __pos (which is 18446744073709551615) > this->size()
+// (which is 44)
+// @import"../bulma/sass/components/pagination"
+
+.heavy-logo
+  font-weight: $font-extra-bold
+  margin-right: 2px
