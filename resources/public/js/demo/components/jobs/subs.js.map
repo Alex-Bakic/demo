@@ -1,0 +1,1 @@
+{"version":3,"file":"\/home\/alex\/demo\/resources\/public\/js\/demo\/components\/jobs\/subs.js","sources":["subs.cljs?rel=1575504596979"],"lineCount":9,"mappings":";AAAA;;;AAGA,gCAAA,hCAACA,qIAEC,WAAK,GAAG;AAAR,AACE,OAAA,0FAAYC","names":["re-frame.core\/reg-sub","db"]}

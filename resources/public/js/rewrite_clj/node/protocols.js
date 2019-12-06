@@ -293,4 +293,4 @@ rewrite_clj.node.protocols.assert_single_sexpr = (function rewrite_clj$node$prot
 return rewrite_clj.node.protocols.assert_sexpr_count.call(null,nodes,(1));
 });
 
-//# sourceMappingURL=protocols.js.map?rel=1575052409307
+//# sourceMappingURL=protocols.js.map?rel=1575465420753

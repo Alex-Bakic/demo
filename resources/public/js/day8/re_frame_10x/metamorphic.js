@@ -5,8 +5,8 @@ goog.require('cljs.core');
  * Returns a transducer that filters for :id between beginning and ending. Inclusive on both ends.
  */
 day8.re_frame_10x.metamorphic.id_between_xf = (function day8$re_frame_10x$metamorphic$id_between_xf(beginning,ending){
-return cljs.core.filter.call(null,(function (p1__39725_SHARP_){
-return (((beginning <= new cljs.core.Keyword(null,"id","id",-1388402092).cljs$core$IFn$_invoke$arity$1(p1__39725_SHARP_))) && ((new cljs.core.Keyword(null,"id","id",-1388402092).cljs$core$IFn$_invoke$arity$1(p1__39725_SHARP_) <= ending)));
+return cljs.core.filter.call(null,(function (p1__47897_SHARP_){
+return (((beginning <= new cljs.core.Keyword(null,"id","id",-1388402092).cljs$core$IFn$_invoke$arity$1(p1__47897_SHARP_))) && ((new cljs.core.Keyword(null,"id","id",-1388402092).cljs$core$IFn$_invoke$arity$1(p1__47897_SHARP_) <= ending)));
 }));
 });
 day8.re_frame_10x.metamorphic.fsm_trigger_QMARK_ = (function day8$re_frame_10x$metamorphic$fsm_trigger_QMARK_(event){
@@ -64,9 +64,9 @@ return false;
  * Is this part of re-frame internals?
  */
 day8.re_frame_10x.metamorphic.low_level_re_frame_trace_QMARK_ = (function day8$re_frame_10x$metamorphic$low_level_re_frame_trace_QMARK_(trace){
-var G__39726 = new cljs.core.Keyword(null,"op-type","op-type",-1636141668).cljs$core$IFn$_invoke$arity$1(trace);
-var G__39726__$1 = (((G__39726 instanceof cljs.core.Keyword))?G__39726.fqn:null);
-switch (G__39726__$1) {
+var G__47898 = new cljs.core.Keyword(null,"op-type","op-type",-1636141668).cljs$core$IFn$_invoke$arity$1(trace);
+var G__47898__$1 = (((G__47898 instanceof cljs.core.Keyword))?G__47898.fqn:null);
+switch (G__47898__$1) {
 case "re-frame.router/fsm-trigger":
 return true;
 
@@ -89,8 +89,8 @@ day8.re_frame_10x.metamorphic.unchanged_l2_subscription_QMARK_ = (function day8$
 var and__4036__auto__ = cljs.core.get_in.call(null,sub,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("sub","traits","sub/traits",1778340671),new cljs.core.Keyword(null,"unchanged?","unchanged?",1212001763)], null));
 if(cljs.core.truth_(and__4036__auto__)){
 return ((cljs.core.not_any_QMARK_.call(null,((function (and__4036__auto__){
-return (function (p1__39728_SHARP_){
-return cljs.core._EQ_.call(null,new cljs.core.Keyword("sub","dispose","sub/dispose",365440536),p1__39728_SHARP_);
+return (function (p1__47900_SHARP_){
+return cljs.core._EQ_.call(null,new cljs.core.Keyword("sub","dispose","sub/dispose",365440536),p1__47900_SHARP_);
 });})(and__4036__auto__))
 ,new cljs.core.Keyword(null,"order","order",-1254677256).cljs$core$IFn$_invoke$arity$1(sub))) && (cljs.core._EQ_.call(null,(2),cljs.core.get.call(null,sub,new cljs.core.Keyword(null,"layer","layer",-1601820589)))));
 } else {
@@ -158,8 +158,8 @@ return cljs.core.get_in.call(null,event_trace,new cljs.core.PersistentVector(nul
  */
 day8.re_frame_10x.metamorphic.subscription_info = (function day8$re_frame_10x$metamorphic$subscription_info(initial_state,filtered_traces,app_db_id){
 return cljs.core.reduce.call(null,(function (state,trace){
-return cljs.core.assoc_in.call(null,state,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"operation","operation",-1267664310).cljs$core$IFn$_invoke$arity$1(trace),new cljs.core.Keyword(null,"layer","layer",-1601820589)], null),(cljs.core.truth_(cljs.core.some.call(null,(function (p1__39729_SHARP_){
-return cljs.core._EQ_.call(null,app_db_id,p1__39729_SHARP_);
+return cljs.core.assoc_in.call(null,state,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"operation","operation",-1267664310).cljs$core$IFn$_invoke$arity$1(trace),new cljs.core.Keyword(null,"layer","layer",-1601820589)], null),(cljs.core.truth_(cljs.core.some.call(null,(function (p1__47901_SHARP_){
+return cljs.core._EQ_.call(null,app_db_id,p1__47901_SHARP_);
 }),cljs.core.get_in.call(null,trace,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"tags","tags",1771418977),new cljs.core.Keyword(null,"input-signals","input-signals",563633497)], null))))?(2):(3)));
 }),initial_state,cljs.core.filter.call(null,day8.re_frame_10x.metamorphic.subscription_re_run_QMARK_,filtered_traces));
 });
@@ -174,10 +174,10 @@ return null;
 } else {
 return me;
 }
-})),cljs.core.map.call(null,(function (p__39730){
-var vec__39731 = p__39730;
-var k = cljs.core.nth.call(null,vec__39731,(0),null);
-var v = cljs.core.nth.call(null,vec__39731,(1),null);
+})),cljs.core.map.call(null,(function (p__47902){
+var vec__47903 = p__47902;
+var k = cljs.core.nth.call(null,vec__47903,(0),null);
+var v = cljs.core.nth.call(null,vec__47903,(1),null);
 return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [k,cljs.core.dissoc.call(null,v,new cljs.core.Keyword(null,"order","order",-1254677256),new cljs.core.Keyword(null,"created?","created?",850508195),new cljs.core.Keyword(null,"run?","run?",752622859),new cljs.core.Keyword(null,"disposed?","disposed?",1178302522),new cljs.core.Keyword(null,"previous-value","previous-value",-1638799677),new cljs.core.Keyword("sub","traits","sub/traits",1778340671))], null);
 }))),state);
 });
@@ -186,18 +186,18 @@ var first_pass = cljs.core.reduce.call(null,(function (init_state,trace){
 var tags = cljs.core.get.call(null,trace,new cljs.core.Keyword(null,"tags","tags",1771418977));
 var reaction_id = new cljs.core.Keyword(null,"reaction","reaction",490869788).cljs$core$IFn$_invoke$arity$1(tags);
 var state = cljs.core.assoc_in.call(null,cljs.core.update_in.call(null,init_state,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [reaction_id,new cljs.core.Keyword(null,"order","order",-1254677256)], null),cljs.core.fnil.call(null,cljs.core.conj,cljs.core.PersistentVector.EMPTY),new cljs.core.Keyword(null,"op-type","op-type",-1636141668).cljs$core$IFn$_invoke$arity$1(trace)),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [reaction_id,new cljs.core.Keyword(null,"subscription","subscription",1949009182)], null),new cljs.core.Keyword(null,"query-v","query-v",-1514170131).cljs$core$IFn$_invoke$arity$1(tags));
-var new_state = (function (){var G__39734 = new cljs.core.Keyword(null,"op-type","op-type",-1636141668).cljs$core$IFn$_invoke$arity$1(trace);
-var G__39734__$1 = (((G__39734 instanceof cljs.core.Keyword))?G__39734.fqn:null);
-switch (G__39734__$1) {
+var new_state = (function (){var G__47906 = new cljs.core.Keyword(null,"op-type","op-type",-1636141668).cljs$core$IFn$_invoke$arity$1(trace);
+var G__47906__$1 = (((G__47906 instanceof cljs.core.Keyword))?G__47906.fqn:null);
+switch (G__47906__$1) {
 case "sub/create":
 return cljs.core.assoc_in.call(null,cljs.core.assoc_in.call(null,state,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [reaction_id,new cljs.core.Keyword(null,"created?","created?",850508195)], null),true),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [reaction_id,new cljs.core.Keyword(null,"subscription","subscription",1949009182)], null),new cljs.core.Keyword(null,"query-v","query-v",-1514170131).cljs$core$IFn$_invoke$arity$1(tags));
 
 break;
 case "sub/run":
-return cljs.core.update.call(null,state,reaction_id,((function (G__39734,G__39734__$1,tags,reaction_id,state){
+return cljs.core.update.call(null,state,reaction_id,((function (G__47906,G__47906__$1,tags,reaction_id,state){
 return (function (sub_state){
 return cljs.core.assoc.call(null,((cljs.core.contains_QMARK_.call(null,sub_state,new cljs.core.Keyword(null,"value","value",305978217)))?cljs.core.assoc.call(null,sub_state,new cljs.core.Keyword(null,"previous-value","previous-value",-1638799677),new cljs.core.Keyword(null,"value","value",305978217).cljs$core$IFn$_invoke$arity$1(sub_state)):sub_state),new cljs.core.Keyword(null,"run?","run?",752622859),true,new cljs.core.Keyword(null,"value","value",305978217),new cljs.core.Keyword(null,"value","value",305978217).cljs$core$IFn$_invoke$arity$1(tags));
-});})(G__39734,G__39734__$1,tags,reaction_id,state))
+});})(G__47906,G__47906__$1,tags,reaction_id,state))
 );
 
 break;
@@ -206,7 +206,7 @@ return cljs.core.assoc_in.call(null,state,new cljs.core.PersistentVector(null, 2
 
 break;
 default:
-throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__39734__$1)].join('')));
+throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__47906__$1)].join('')));
 
 }
 })();
@@ -218,10 +218,10 @@ console.warn(trace,cljs.core.get.call(null,new_state,reaction_id));
 return new_state;
 }),initial_state,traces);
 var second_pass = cljs.core.reduce.call(null,((function (first_pass){
-return (function (all_state,p__39735){
-var vec__39736 = p__39735;
-var sub_id = cljs.core.nth.call(null,vec__39736,(0),null);
-var sub_state = cljs.core.nth.call(null,vec__39736,(1),null);
+return (function (all_state,p__47907){
+var vec__47908 = p__47907;
+var sub_id = cljs.core.nth.call(null,vec__47908,(0),null);
+var sub_state = cljs.core.nth.call(null,vec__47908,(1),null);
 if(((cljs.core.contains_QMARK_.call(null,sub_state,new cljs.core.Keyword(null,"previous-value","previous-value",-1638799677))) && (cljs.core.contains_QMARK_.call(null,sub_state,new cljs.core.Keyword(null,"value","value",305978217))) && (cljs.core._EQ_.call(null,new cljs.core.Keyword(null,"previous-value","previous-value",-1638799677).cljs$core$IFn$_invoke$arity$1(sub_state),new cljs.core.Keyword(null,"value","value",305978217).cljs$core$IFn$_invoke$arity$1(sub_state))))){
 return cljs.core.assoc_in.call(null,all_state,new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [sub_id,new cljs.core.Keyword("sub","traits","sub/traits",1778340671),new cljs.core.Keyword(null,"unchanged?","unchanged?",1212001763)], null),true);
 } else {
@@ -249,4 +249,4 @@ return new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"pr
 }),sub_state,new_matches);
 });
 
-//# sourceMappingURL=metamorphic.js.map?rel=1575052414444
+//# sourceMappingURL=metamorphic.js.map?rel=1575465431513

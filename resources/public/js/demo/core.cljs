@@ -1,5 +1,7 @@
 (ns demo.core
-  (:require [re-frame.core :as rf]
+  (:require [demo.components.jobs.views :refer [jobsboard]]
+            [demo.components.navbar :refer [navbar]]
+            [re-frame.core :as rf]
             [reagent.core :as r]))
 
 (enable-console-print!)
@@ -7,7 +9,9 @@
 (defn main-panel
   []
   [:div
-   [:div "hello world"]])
+   [navbar]
+   [jobsboard]])
+
 
 (defn ^:export init
   []

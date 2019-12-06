@@ -59,17 +59,17 @@ if(cljs.core.truth_(zloc)){
 throw (new Error("Assert failed: zloc"));
 }
 
-var _PERCENT_ = rewrite_clj.zip.whitespace.skip_whitespace.call(null,clojure.zip.prev,clojure.zip.remove.call(null,rewrite_clj.zip.removez.remove_trailing_space.call(null,((((rewrite_clj.zip.move.rightmost_QMARK_.call(null,zloc)) || (rewrite_clj.zip.move.leftmost_QMARK_.call(null,zloc))))?rewrite_clj.zip.removez.remove_preceding_space.call(null,zloc,(function (p1__38516_SHARP_){
-var and__4036__auto__ = rewrite_clj.zip.whitespace.whitespace_QMARK_.call(null,p1__38516_SHARP_);
+var _PERCENT_ = rewrite_clj.zip.whitespace.skip_whitespace.call(null,clojure.zip.prev,clojure.zip.remove.call(null,rewrite_clj.zip.removez.remove_trailing_space.call(null,((((rewrite_clj.zip.move.rightmost_QMARK_.call(null,zloc)) || (rewrite_clj.zip.move.leftmost_QMARK_.call(null,zloc))))?rewrite_clj.zip.removez.remove_preceding_space.call(null,zloc,(function (p1__45559_SHARP_){
+var and__4036__auto__ = rewrite_clj.zip.whitespace.whitespace_QMARK_.call(null,p1__45559_SHARP_);
 if(cljs.core.truth_(and__4036__auto__)){
-return cljs.core.not.call(null,rewrite_clj.zip.whitespace.linebreak_QMARK_.call(null,p1__38516_SHARP_));
+return cljs.core.not.call(null,rewrite_clj.zip.whitespace.linebreak_QMARK_.call(null,p1__45559_SHARP_));
 } else {
 return and__4036__auto__;
 }
-})):zloc),(function (p1__38517_SHARP_){
-var and__4036__auto__ = rewrite_clj.zip.whitespace.whitespace_QMARK_.call(null,p1__38517_SHARP_);
+})):zloc),(function (p1__45560_SHARP_){
+var and__4036__auto__ = rewrite_clj.zip.whitespace.whitespace_QMARK_.call(null,p1__45560_SHARP_);
 if(cljs.core.truth_(and__4036__auto__)){
-return cljs.core.not.call(null,rewrite_clj.zip.whitespace.linebreak_QMARK_.call(null,p1__38517_SHARP_));
+return cljs.core.not.call(null,rewrite_clj.zip.whitespace.linebreak_QMARK_.call(null,p1__45560_SHARP_));
 } else {
 return and__4036__auto__;
 }
@@ -82,4 +82,4 @@ throw (new Error("Assert failed: %"));
 return _PERCENT_;
 });
 
-//# sourceMappingURL=removez.js.map?rel=1575052412394
+//# sourceMappingURL=removez.js.map?rel=1575465427884

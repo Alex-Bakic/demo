@@ -117,9 +117,9 @@ return and__4036__auto__;
 return (function (){
 return mranderson048.re_frame.v0v10v6.re_frame.core.dispatch.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("errors","dismiss-popup-failed","errors/dismiss-popup-failed",-286737091)], null));
 });})(selected_tab,panel_type,external_window_QMARK_,unloading_QMARK_,popup_failed_QMARK_,showing_settings_QMARK_,current_event))
-], null)], null):null),new cljs.core.PersistentVector(null, 7, 5, cljs.core.PersistentVector.EMPTY_NODE, [day8.re_frame_10x.utils.re_com.v_box,new cljs.core.Keyword(null,"size","size",1098693007),"auto",new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"margin-left","margin-left",2015598377),day8.re_frame_10x.common_styles.gs_19s,new cljs.core.Keyword(null,"overflow-y","overflow-y",-1436589285),((cljs.core.contains_QMARK_.call(null,new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 6, [new cljs.core.Keyword(null,"parts","parts",849007691),null,new cljs.core.Keyword(null,"settings","settings",1556144875),null,new cljs.core.Keyword(null,"debug","debug",-1608172596),null,new cljs.core.Keyword(null,"event","event",301435442),null,new cljs.core.Keyword(null,"timing","timing",-1849225195),null,new cljs.core.Keyword(null,"fx","fx",-1237829572),null], null), null),cljs.core.deref.call(null,selected_tab)))?"auto":"initial")], null),new cljs.core.Keyword(null,"children","children",-940561982),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [(function (){var G__37219 = cljs.core.deref.call(null,selected_tab);
-var G__37219__$1 = (((G__37219 instanceof cljs.core.Keyword))?G__37219.fqn:null);
-switch (G__37219__$1) {
+], null)], null):null),new cljs.core.PersistentVector(null, 7, 5, cljs.core.PersistentVector.EMPTY_NODE, [day8.re_frame_10x.utils.re_com.v_box,new cljs.core.Keyword(null,"size","size",1098693007),"auto",new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"margin-left","margin-left",2015598377),day8.re_frame_10x.common_styles.gs_19s,new cljs.core.Keyword(null,"overflow-y","overflow-y",-1436589285),((cljs.core.contains_QMARK_.call(null,new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 6, [new cljs.core.Keyword(null,"parts","parts",849007691),null,new cljs.core.Keyword(null,"settings","settings",1556144875),null,new cljs.core.Keyword(null,"debug","debug",-1608172596),null,new cljs.core.Keyword(null,"event","event",301435442),null,new cljs.core.Keyword(null,"timing","timing",-1849225195),null,new cljs.core.Keyword(null,"fx","fx",-1237829572),null], null), null),cljs.core.deref.call(null,selected_tab)))?"auto":"initial")], null),new cljs.core.Keyword(null,"children","children",-940561982),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [(function (){var G__52410 = cljs.core.deref.call(null,selected_tab);
+var G__52410__$1 = (((G__52410 instanceof cljs.core.Keyword))?G__52410.fqn:null);
+switch (G__52410__$1) {
 case "event":
 return new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [day8.re_frame_10x.view.event.render], null);
 
@@ -167,4 +167,4 @@ return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMP
 })()], null)], null)], null);
 });
 
-//# sourceMappingURL=container.js.map?rel=1575052462431
+//# sourceMappingURL=container.js.map?rel=1575465438001

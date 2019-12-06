@@ -6,8 +6,8 @@ goog.require('mranderson048.re_frame.v0v10v6.re_frame.loggers');
 mranderson048.re_frame.v0v10v6.re_frame.registrar.kinds = new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"sub","sub",-2093760025),null,new cljs.core.Keyword(null,"event","event",301435442),null,new cljs.core.Keyword(null,"cofx","cofx",2013202907),null,new cljs.core.Keyword(null,"fx","fx",-1237829572),null], null), null);
 mranderson048.re_frame.v0v10v6.re_frame.registrar.kind__GT_id__GT_handler = cljs.core.atom.call(null,cljs.core.PersistentArrayMap.EMPTY);
 mranderson048.re_frame.v0v10v6.re_frame.registrar.get_handler = (function mranderson048$re_frame$v0v10v6$re_frame$registrar$get_handler(var_args){
-var G__39745 = arguments.length;
-switch (G__39745) {
+var G__47927 = arguments.length;
+switch (G__47927) {
 case 1:
 return mranderson048.re_frame.v0v10v6.re_frame.registrar.get_handler.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -69,8 +69,8 @@ cljs.core.swap_BANG_.call(null,mranderson048.re_frame.v0v10v6.re_frame.registrar
 return handler_fn;
 });
 mranderson048.re_frame.v0v10v6.re_frame.registrar.clear_handlers = (function mranderson048$re_frame$v0v10v6$re_frame$registrar$clear_handlers(var_args){
-var G__39748 = arguments.length;
-switch (G__39748) {
+var G__47930 = arguments.length;
+switch (G__47930) {
 case 0:
 return mranderson048.re_frame.v0v10v6.re_frame.registrar.clear_handlers.cljs$core$IFn$_invoke$arity$0();
 
@@ -118,4 +118,4 @@ return mranderson048.re_frame.v0v10v6.re_frame.loggers.console.call(null,new clj
 mranderson048.re_frame.v0v10v6.re_frame.registrar.clear_handlers.cljs$lang$maxFixedArity = 2;
 
 
-//# sourceMappingURL=registrar.js.map?rel=1575052414482
+//# sourceMappingURL=registrar.js.map?rel=1575465431569

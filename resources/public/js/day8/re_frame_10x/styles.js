@@ -61,4 +61,4 @@ day8.re_frame_10x.styles.inject_inline_style.call(null,document,"--re-frame-10x-
 return day8.re_frame_10x.styles.inject_inline_style.call(null,document,"--re-frame-10x-styles--",day8.re_frame_10x.styles.panel_styles);
 });
 
-//# sourceMappingURL=styles.js.map?rel=1575052462645
+//# sourceMappingURL=styles.js.map?rel=1575465438199

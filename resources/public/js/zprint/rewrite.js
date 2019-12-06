@@ -22,17 +22,17 @@ if(cljs.core.truth_(p_QMARK_.call(null,loc))){
 var temp__5718__auto__ = f.call(null,loc);
 if(cljs.core.truth_(temp__5718__auto__)){
 var n = temp__5718__auto__;
-var G__38790 = rewrite_clj.zip.next.call(null,n);
-loc = G__38790;
+var G__46114 = rewrite_clj.zip.next.call(null,n);
+loc = G__46114;
 continue;
 } else {
-var G__38791 = rewrite_clj.zip.next.call(null,loc);
-loc = G__38791;
+var G__46115 = rewrite_clj.zip.next.call(null,loc);
+loc = G__46115;
 continue;
 }
 } else {
-var G__38792 = rewrite_clj.zip.next.call(null,loc);
-loc = G__38792;
+var G__46116 = rewrite_clj.zip.next.call(null,loc);
+loc = G__46116;
 continue;
 }
 }
@@ -40,12 +40,12 @@ break;
 }
 });
 zprint.rewrite.prewalk = (function zprint$rewrite$prewalk(zloc,p_QMARK_,f){
-return rewrite_clj.zip.replace.call(null,zloc,rewrite_clj.zip.root.call(null,zprint.rewrite.prewalk_subtree.call(null,p_QMARK_,f,(function (){var G__38793 = zloc;
-var G__38793__$1 = (((G__38793 == null))?null:rewrite_clj.zip.node.call(null,G__38793));
-if((G__38793__$1 == null)){
+return rewrite_clj.zip.replace.call(null,zloc,rewrite_clj.zip.root.call(null,zprint.rewrite.prewalk_subtree.call(null,p_QMARK_,f,(function (){var G__46117 = zloc;
+var G__46117__$1 = (((G__46117 == null))?null:rewrite_clj.zip.node.call(null,G__46117));
+if((G__46117__$1 == null)){
 return null;
 } else {
-return zprint.zutil.edn_STAR_.call(null,G__38793__$1);
+return zprint.zutil.edn_STAR_.call(null,G__46117__$1);
 }
 })())));
 });
@@ -64,8 +64,8 @@ return "";
 }
 })())].join('');
 } else {
-var G__38794 = rewrite_clj.zip.down.call(null,nloc);
-nloc = G__38794;
+var G__46118 = rewrite_clj.zip.down.call(null,nloc);
+nloc = G__46118;
 continue;
 }
 break;
@@ -80,10 +80,10 @@ var dep_seq = (function (){var nloc = zloc;
 var out = cljs.core.PersistentVector.EMPTY;
 while(true){
 if(cljs.core.truth_(nloc)){
-var G__38795 = rewrite_clj.zip.right.call(null,nloc);
-var G__38796 = cljs.core.conj.call(null,out,nloc);
-nloc = G__38795;
-out = G__38796;
+var G__46119 = rewrite_clj.zip.right.call(null,nloc);
+var G__46120 = cljs.core.conj.call(null,out,nloc);
+nloc = G__46119;
+out = G__46120;
 continue;
 } else {
 return out;
@@ -101,12 +101,12 @@ if(cljs.core.truth_(new_loc)){
 var new_z = cljs.core.first.call(null,new_loc);
 var new_node = ((cljs.core._EQ_.call(null,rewrite_clj.zip.tag.call(null,new_z),new cljs.core.Keyword(null,"uneval","uneval",1932037707)))?rewrite_clj.parser.parse_string.call(null,rewrite_clj.zip.string.call(null,new_z)):rewrite_clj.zip.node.call(null,new_z));
 var replaced_loc = clojure.zip.replace.call(null,nloc,new_node);
-var G__38797 = rewrite_clj.zip.right.call(null,replaced_loc);
-var G__38798 = cljs.core.next.call(null,new_loc);
-var G__38799 = replaced_loc;
-nloc = G__38797;
-new_loc = G__38798;
-last_loc = G__38799;
+var G__46121 = rewrite_clj.zip.right.call(null,replaced_loc);
+var G__46122 = cljs.core.next.call(null,new_loc);
+var G__46123 = replaced_loc;
+nloc = G__46121;
+new_loc = G__46122;
+last_loc = G__46123;
 continue;
 } else {
 return rewrite_clj.zip.up.call(null,last_loc);
@@ -124,10 +124,10 @@ return zprint.rewrite.sort_val.call(null,rewrite_clj.zip.down.call(null,rewrite_
  * Reorder the dependencies in a project.clj file.
  */
 zprint.rewrite.sort_dependencies = (function zprint$rewrite$sort_dependencies(caller,options,zloc){
-var new_dep = zprint.rewrite.prewalk.call(null,zloc,(function (p1__38800_SHARP_){
-return ((cljs.core._EQ_.call(null,rewrite_clj.zip.tag.call(null,p1__38800_SHARP_),new cljs.core.Keyword(null,"token","token",-1211463215))) && (cljs.core._EQ_.call(null,rewrite_clj.zip.sexpr.call(null,p1__38800_SHARP_),new cljs.core.Keyword(null,"dependencies","dependencies",1108064605))));
+var new_dep = zprint.rewrite.prewalk.call(null,zloc,(function (p1__46124_SHARP_){
+return ((cljs.core._EQ_.call(null,rewrite_clj.zip.tag.call(null,p1__46124_SHARP_),new cljs.core.Keyword(null,"token","token",-1211463215))) && (cljs.core._EQ_.call(null,rewrite_clj.zip.sexpr.call(null,p1__46124_SHARP_),new cljs.core.Keyword(null,"dependencies","dependencies",1108064605))));
 }),zprint.rewrite.sort_down);
 return new_dep;
 });
 
-//# sourceMappingURL=rewrite.js.map?rel=1575052412806
+//# sourceMappingURL=rewrite.js.map?rel=1575465428598

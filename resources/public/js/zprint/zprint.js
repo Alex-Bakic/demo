@@ -31,14 +31,14 @@ return null;
  */
 zprint.zprint.conj_it_BANG_ = (function zprint$zprint$conj_it_BANG_(var_args){
 var args__4647__auto__ = [];
-var len__4641__auto___39087 = arguments.length;
-var i__4642__auto___39088 = (0);
+var len__4641__auto___47049 = arguments.length;
+var i__4642__auto___47050 = (0);
 while(true){
-if((i__4642__auto___39088 < len__4641__auto___39087)){
-args__4647__auto__.push((arguments[i__4642__auto___39088]));
+if((i__4642__auto___47050 < len__4641__auto___47049)){
+args__4647__auto__.push((arguments[i__4642__auto___47050]));
 
-var G__39089 = (i__4642__auto___39088 + (1));
-i__4642__auto___39088 = G__39089;
+var G__47051 = (i__4642__auto___47050 + (1));
+i__4642__auto___47050 = G__47051;
 continue;
 } else {
 }
@@ -54,10 +54,10 @@ var out = cljs.core.first.call(null,rest);
 var more = cljs.core.next.call(null,rest);
 while(true){
 if(more){
-var G__39090 = cljs.core.conj_BANG_.call(null,out,cljs.core.first.call(null,more));
-var G__39091 = cljs.core.next.call(null,more);
-out = G__39090;
-more = G__39091;
+var G__47052 = cljs.core.conj_BANG_.call(null,out,cljs.core.first.call(null,more));
+var G__47053 = cljs.core.next.call(null,more);
+out = G__47052;
+more = G__47053;
 continue;
 } else {
 return out;
@@ -69,9 +69,9 @@ break;
 zprint.zprint.conj_it_BANG_.cljs$lang$maxFixedArity = (0);
 
 /** @this {Function} */
-zprint.zprint.conj_it_BANG_.cljs$lang$applyTo = (function (seq39086){
+zprint.zprint.conj_it_BANG_.cljs$lang$applyTo = (function (seq47048){
 var self__4629__auto__ = this;
-return self__4629__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq39086));
+return self__4629__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq47048));
 });
 
 /**
@@ -86,10 +86,10 @@ return out;
 } else {
 var next_lf = clojure.string.index_of.call(null,input,"\n");
 var chunk = (cljs.core.truth_(next_lf)?cljs.core.subs.call(null,input,(0),next_lf):input);
-var G__39092 = (cljs.core.truth_(next_lf)?cljs.core.subs.call(null,input,(next_lf + (1))):null);
-var G__39093 = cljs.core.conj.call(null,out,chunk);
-input = G__39092;
-out = G__39093;
+var G__47054 = (cljs.core.truth_(next_lf)?cljs.core.subs.call(null,input,(next_lf + (1))):null);
+var G__47055 = cljs.core.conj.call(null,out,chunk);
+input = G__47054;
+out = G__47055;
 continue;
 }
 break;
@@ -109,8 +109,8 @@ return new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMP
 }
 });
 zprint.zprint.zpmap = (function zprint$zprint$zpmap(var_args){
-var G__39095 = arguments.length;
-switch (G__39095) {
+var G__47057 = arguments.length;
+switch (G__47057) {
 case 3:
 return zprint.zprint.zpmap.cljs$core$IFn$_invoke$arity$3((arguments[(0)]),(arguments[(1)]),(arguments[(2)]));
 
@@ -148,13 +148,13 @@ zprint.zprint.fzprint_dbg = cljs.core.atom.call(null,null);
  * Accept a style-vec that we are about to hand to style-lines, and
  *   output it if called for, to aid in debugging.
  */
-zprint.zprint.log_lines = (function zprint$zprint$log_lines(p__39097,dbg_output,ind,style_vec){
-var map__39098 = p__39097;
-var map__39098__$1 = (((((!((map__39098 == null))))?(((((map__39098.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__39098.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__39098):map__39098);
-var options = map__39098__$1;
-var dbg_print_QMARK_ = cljs.core.get.call(null,map__39098__$1,new cljs.core.Keyword(null,"dbg-print?","dbg-print?",-660113872));
-var dbg_indent = cljs.core.get.call(null,map__39098__$1,new cljs.core.Keyword(null,"dbg-indent","dbg-indent",1534856778));
-var in_hang_QMARK_ = cljs.core.get.call(null,map__39098__$1,new cljs.core.Keyword(null,"in-hang?","in-hang?",-1065695639));
+zprint.zprint.log_lines = (function zprint$zprint$log_lines(p__47059,dbg_output,ind,style_vec){
+var map__47060 = p__47059;
+var map__47060__$1 = (((((!((map__47060 == null))))?(((((map__47060.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47060.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47060):map__47060);
+var options = map__47060__$1;
+var dbg_print_QMARK_ = cljs.core.get.call(null,map__47060__$1,new cljs.core.Keyword(null,"dbg-print?","dbg-print?",-660113872));
+var dbg_indent = cljs.core.get.call(null,map__47060__$1,new cljs.core.Keyword(null,"dbg-indent","dbg-indent",1534856778));
+var in_hang_QMARK_ = cljs.core.get.call(null,map__47060__$1,new cljs.core.Keyword(null,"in-hang?","in-hang?",-1065695639));
 if(cljs.core.truth_(dbg_print_QMARK_)){
 if(cljs.core.truth_(style_vec)){
 cljs.core.println.call(null,dbg_indent,dbg_output,"--------------","in-hang?",in_hang_QMARK_);
@@ -188,7 +188,7 @@ return or__4047__auto____$2;
 } else {
 return fn_map.call(null,cljs.core.name.call(null,f));
 }
-}catch (e39100){var e = e39100;
+}catch (e47062){var e = e47062;
 return null;
 }} else {
 return null;
@@ -218,7 +218,7 @@ return or__4047__auto____$1;
 } else {
 return cljs.core.get.call(null,user_fn_map,cljs.core.name.call(null,f));
 }
-}catch (e39101){var e = e39101;
+}catch (e47063){var e = e47063;
 return null;
 }} else {
 return null;
@@ -234,36 +234,36 @@ zprint.zprint.right_separator_map = new cljs.core.PersistentArrayMap(null, 3, ["
  *   doing. p is pretty, which is typically hanging, and b is basic, which
  *   is typically flow. p-count is the number of elements in the hang.
  */
-zprint.zprint.good_enough_QMARK_ = (function zprint$zprint$good_enough_QMARK_(caller,p__39102,fn_style,p_count,indent_diff,p__39103,p__39104){
-var map__39105 = p__39102;
-var map__39105__$1 = (((((!((map__39105 == null))))?(((((map__39105.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__39105.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__39105):map__39105);
-var options = map__39105__$1;
-var map__39106 = cljs.core.get.call(null,map__39105__$1,new cljs.core.Keyword(null,"tuning","tuning",-48660925));
-var map__39106__$1 = (((((!((map__39106 == null))))?(((((map__39106.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__39106.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__39106):map__39106);
-var hang_flow = cljs.core.get.call(null,map__39106__$1,new cljs.core.Keyword(null,"hang-flow","hang-flow",428126548));
-var hang_type_flow = cljs.core.get.call(null,map__39106__$1,new cljs.core.Keyword(null,"hang-type-flow","hang-type-flow",-1585576590));
-var hang_flow_limit = cljs.core.get.call(null,map__39106__$1,new cljs.core.Keyword(null,"hang-flow-limit","hang-flow-limit",389146586));
-var general_hang_adjust = cljs.core.get.call(null,map__39106__$1,new cljs.core.Keyword(null,"general-hang-adjust","general-hang-adjust",-1631406987));
-var hang_if_equal_flow_QMARK_ = cljs.core.get.call(null,map__39106__$1,new cljs.core.Keyword(null,"hang-if-equal-flow?","hang-if-equal-flow?",-1113113992));
-var map__39107 = cljs.core.get.call(null,map__39105__$1,caller);
-var map__39107__$1 = (((((!((map__39107 == null))))?(((((map__39107.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__39107.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__39107):map__39107);
-var hang_expand = cljs.core.get.call(null,map__39107__$1,new cljs.core.Keyword(null,"hang-expand","hang-expand",1086807559));
-var hang_diff = cljs.core.get.call(null,map__39107__$1,new cljs.core.Keyword(null,"hang-diff","hang-diff",-1575205424));
-var hang_size = cljs.core.get.call(null,map__39107__$1,new cljs.core.Keyword(null,"hang-size","hang-size",-347944063));
-var hang_adjust = cljs.core.get.call(null,map__39107__$1,new cljs.core.Keyword(null,"hang-adjust","hang-adjust",-613514382));
-var width = cljs.core.get.call(null,map__39105__$1,new cljs.core.Keyword(null,"width","width",-384071477));
-var rightcnt = cljs.core.get.call(null,map__39105__$1,new cljs.core.Keyword(null,"rightcnt","rightcnt",-45750070));
-var dbg_QMARK_ = cljs.core.get.call(null,map__39105__$1,new cljs.core.Keyword(null,"dbg?","dbg?",1845730771));
-var vec__39108 = p__39103;
-var p_lines = cljs.core.nth.call(null,vec__39108,(0),null);
-var p_maxwidth = cljs.core.nth.call(null,vec__39108,(1),null);
-var p_length_seq = cljs.core.nth.call(null,vec__39108,(2),null);
-var p_what = cljs.core.nth.call(null,vec__39108,(3),null);
-var vec__39111 = p__39104;
-var b_lines = cljs.core.nth.call(null,vec__39111,(0),null);
-var b_maxwidth = cljs.core.nth.call(null,vec__39111,(1),null);
-var _ = cljs.core.nth.call(null,vec__39111,(2),null);
-var b_what = cljs.core.nth.call(null,vec__39111,(3),null);
+zprint.zprint.good_enough_QMARK_ = (function zprint$zprint$good_enough_QMARK_(caller,p__47064,fn_style,p_count,indent_diff,p__47065,p__47066){
+var map__47067 = p__47064;
+var map__47067__$1 = (((((!((map__47067 == null))))?(((((map__47067.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47067.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47067):map__47067);
+var options = map__47067__$1;
+var map__47068 = cljs.core.get.call(null,map__47067__$1,new cljs.core.Keyword(null,"tuning","tuning",-48660925));
+var map__47068__$1 = (((((!((map__47068 == null))))?(((((map__47068.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47068.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47068):map__47068);
+var hang_flow = cljs.core.get.call(null,map__47068__$1,new cljs.core.Keyword(null,"hang-flow","hang-flow",428126548));
+var hang_type_flow = cljs.core.get.call(null,map__47068__$1,new cljs.core.Keyword(null,"hang-type-flow","hang-type-flow",-1585576590));
+var hang_flow_limit = cljs.core.get.call(null,map__47068__$1,new cljs.core.Keyword(null,"hang-flow-limit","hang-flow-limit",389146586));
+var general_hang_adjust = cljs.core.get.call(null,map__47068__$1,new cljs.core.Keyword(null,"general-hang-adjust","general-hang-adjust",-1631406987));
+var hang_if_equal_flow_QMARK_ = cljs.core.get.call(null,map__47068__$1,new cljs.core.Keyword(null,"hang-if-equal-flow?","hang-if-equal-flow?",-1113113992));
+var map__47069 = cljs.core.get.call(null,map__47067__$1,caller);
+var map__47069__$1 = (((((!((map__47069 == null))))?(((((map__47069.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47069.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47069):map__47069);
+var hang_expand = cljs.core.get.call(null,map__47069__$1,new cljs.core.Keyword(null,"hang-expand","hang-expand",1086807559));
+var hang_diff = cljs.core.get.call(null,map__47069__$1,new cljs.core.Keyword(null,"hang-diff","hang-diff",-1575205424));
+var hang_size = cljs.core.get.call(null,map__47069__$1,new cljs.core.Keyword(null,"hang-size","hang-size",-347944063));
+var hang_adjust = cljs.core.get.call(null,map__47069__$1,new cljs.core.Keyword(null,"hang-adjust","hang-adjust",-613514382));
+var width = cljs.core.get.call(null,map__47067__$1,new cljs.core.Keyword(null,"width","width",-384071477));
+var rightcnt = cljs.core.get.call(null,map__47067__$1,new cljs.core.Keyword(null,"rightcnt","rightcnt",-45750070));
+var dbg_QMARK_ = cljs.core.get.call(null,map__47067__$1,new cljs.core.Keyword(null,"dbg?","dbg?",1845730771));
+var vec__47070 = p__47065;
+var p_lines = cljs.core.nth.call(null,vec__47070,(0),null);
+var p_maxwidth = cljs.core.nth.call(null,vec__47070,(1),null);
+var p_length_seq = cljs.core.nth.call(null,vec__47070,(2),null);
+var p_what = cljs.core.nth.call(null,vec__47070,(3),null);
+var vec__47073 = p__47066;
+var b_lines = cljs.core.nth.call(null,vec__47073,(0),null);
+var b_maxwidth = cljs.core.nth.call(null,vec__47073,(1),null);
+var _ = cljs.core.nth.call(null,vec__47073,(2),null);
+var b_what = cljs.core.nth.call(null,vec__47073,(3),null);
 var p_last_maxwidth = cljs.core.last.call(null,p_length_seq);
 var hang_diff__$1 = (function (){var or__4047__auto__ = hang_diff;
 if(cljs.core.truth_(or__4047__auto__)){
@@ -382,11 +382,11 @@ return options;
  *   present (if any), and nil otherwise.
  */
 zprint.zprint.contains_nil_QMARK_ = (function zprint$zprint$contains_nil_QMARK_(coll){
-var n = cljs.core.count.call(null,cljs.core.filter.call(null,(function (p1__39117_SHARP_){
-if(cljs.core.coll_QMARK_.call(null,p1__39117_SHARP_)){
-return cljs.core.empty_QMARK_.call(null,p1__39117_SHARP_);
+var n = cljs.core.count.call(null,cljs.core.filter.call(null,(function (p1__47079_SHARP_){
+if(cljs.core.coll_QMARK_.call(null,p1__47079_SHARP_)){
+return cljs.core.empty_QMARK_.call(null,p1__47079_SHARP_);
 } else {
-return (p1__39117_SHARP_ == null);
+return (p1__47079_SHARP_ == null);
 }
 }),coll));
 if((!((n === (0))))){
@@ -402,14 +402,14 @@ return null;
  */
 zprint.zprint.concat_no_nil_alt = (function zprint$zprint$concat_no_nil_alt(var_args){
 var args__4647__auto__ = [];
-var len__4641__auto___39119 = arguments.length;
-var i__4642__auto___39120 = (0);
+var len__4641__auto___47081 = arguments.length;
+var i__4642__auto___47082 = (0);
 while(true){
-if((i__4642__auto___39120 < len__4641__auto___39119)){
-args__4647__auto__.push((arguments[i__4642__auto___39120]));
+if((i__4642__auto___47082 < len__4641__auto___47081)){
+args__4647__auto__.push((arguments[i__4642__auto___47082]));
 
-var G__39121 = (i__4642__auto___39120 + (1));
-i__4642__auto___39120 = G__39121;
+var G__47083 = (i__4642__auto___47082 + (1));
+i__4642__auto___47082 = G__47083;
 continue;
 } else {
 }
@@ -429,10 +429,10 @@ if(cljs.core.not.call(null,c)){
 return cljs.core.persistent_BANG_.call(null,out);
 } else {
 if(((((cljs.core.coll_QMARK_.call(null,c)) && ((!(cljs.core.empty_QMARK_.call(null,c)))))) || ((!((c == null)))))){
-var G__39122 = cljs.core.next.call(null,coll);
-var G__39123 = cljs.core.conj_BANG_.call(null,out,c);
-coll = G__39122;
-out = G__39123;
+var G__47084 = cljs.core.next.call(null,coll);
+var G__47085 = cljs.core.conj_BANG_.call(null,out,c);
+coll = G__47084;
+out = G__47085;
 continue;
 } else {
 return null;
@@ -445,9 +445,9 @@ break;
 zprint.zprint.concat_no_nil_alt.cljs$lang$maxFixedArity = (0);
 
 /** @this {Function} */
-zprint.zprint.concat_no_nil_alt.cljs$lang$applyTo = (function (seq39118){
+zprint.zprint.concat_no_nil_alt.cljs$lang$applyTo = (function (seq47080){
 var self__4629__auto__ = this;
-return self__4629__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq39118));
+return self__4629__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq47080));
 });
 
 /**
@@ -456,14 +456,14 @@ return self__4629__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.cal
  */
 zprint.zprint.concat_no_nil = (function zprint$zprint$concat_no_nil(var_args){
 var args__4647__auto__ = [];
-var len__4641__auto___39125 = arguments.length;
-var i__4642__auto___39126 = (0);
+var len__4641__auto___47087 = arguments.length;
+var i__4642__auto___47088 = (0);
 while(true){
-if((i__4642__auto___39126 < len__4641__auto___39125)){
-args__4647__auto__.push((arguments[i__4642__auto___39126]));
+if((i__4642__auto___47088 < len__4641__auto___47087)){
+args__4647__auto__.push((arguments[i__4642__auto___47088]));
 
-var G__39127 = (i__4642__auto___39126 + (1));
-i__4642__auto___39126 = G__39127;
+var G__47089 = (i__4642__auto___47088 + (1));
+i__4642__auto___47088 = G__47089;
 continue;
 } else {
 }
@@ -500,9 +500,9 @@ return null;
 zprint.zprint.concat_no_nil.cljs$lang$maxFixedArity = (0);
 
 /** @this {Function} */
-zprint.zprint.concat_no_nil.cljs$lang$applyTo = (function (seq39124){
+zprint.zprint.concat_no_nil.cljs$lang$applyTo = (function (seq47086){
 var self__4629__auto__ = this;
-return self__4629__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq39124));
+return self__4629__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq47086));
 });
 
 /**
@@ -520,9 +520,9 @@ return cljs.core.into.call(null,cljs.core.PersistentVector.EMPTY,coll);
  *   without the : it can be found in the fn-map.
  */
 zprint.zprint.keyword_fn_QMARK_ = (function zprint$zprint$keyword_fn_QMARK_(options,s){
-var vec__39128 = clojure.string.split.call(null,s,/^:/);
-var left = cljs.core.nth.call(null,vec__39128,(0),null);
-var right = cljs.core.nth.call(null,vec__39128,(1),null);
+var vec__47090 = clojure.string.split.call(null,s,/^:/);
+var left = cljs.core.nth.call(null,vec__47090,(0),null);
+var right = cljs.core.nth.call(null,vec__47090,(1),null);
 if(cljs.core.truth_(right)){
 return new cljs.core.Keyword(null,"fn-map","fn-map",565481146).cljs$core$IFn$_invoke$arity$1(options).call(null,right);
 } else {
@@ -534,12 +534,12 @@ return null;
  *   a constant number, but it might be based on the depth as well.
  *   Returns nil of there is no max-length set.
  */
-zprint.zprint.get_max_length = (function zprint$zprint$get_max_length(p__39131){
-var map__39132 = p__39131;
-var map__39132__$1 = (((((!((map__39132 == null))))?(((((map__39132.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__39132.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__39132):map__39132);
-var options = map__39132__$1;
-var max_length = cljs.core.get.call(null,map__39132__$1,new cljs.core.Keyword(null,"max-length","max-length",-254826109));
-var depth = cljs.core.get.call(null,map__39132__$1,new cljs.core.Keyword(null,"depth","depth",1768663640));
+zprint.zprint.get_max_length = (function zprint$zprint$get_max_length(p__47093){
+var map__47094 = p__47093;
+var map__47094__$1 = (((((!((map__47094 == null))))?(((((map__47094.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47094.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47094):map__47094);
+var options = map__47094__$1;
+var max_length = cljs.core.get.call(null,map__47094__$1,new cljs.core.Keyword(null,"max-length","max-length",-254826109));
+var depth = cljs.core.get.call(null,map__47094__$1,new cljs.core.Keyword(null,"depth","depth",1768663640));
 if(cljs.core.truth_(max_length)){
 if(cljs.core.vector_QMARK_.call(null,max_length)){
 return cljs.core.nth.call(null,max_length,(function (){var x__4138__auto__ = (depth - (1));
@@ -573,13 +573,13 @@ return cljs.core.assoc.call(null,options,new cljs.core.Keyword(null,"max-length"
  *   tag - element type of string (comment's don't count in length)
  *   eol? - should we terminate line after adding count of s
  */
-zprint.zprint.accumulate_ll = (function zprint$zprint$accumulate_ll(count_comment_QMARK_,p__39134,s,tag,eol_QMARK_){
-var vec__39135 = p__39134;
-var out = cljs.core.nth.call(null,vec__39135,(0),null);
-var cur_len = cljs.core.nth.call(null,vec__39135,(1),null);
-var just_eol_QMARK_ = cljs.core.nth.call(null,vec__39135,(2),null);
-var just_comment_QMARK_ = cljs.core.nth.call(null,vec__39135,(3),null);
-var in$ = vec__39135;
+zprint.zprint.accumulate_ll = (function zprint$zprint$accumulate_ll(count_comment_QMARK_,p__47096,s,tag,eol_QMARK_){
+var vec__47097 = p__47096;
+var out = cljs.core.nth.call(null,vec__47097,(0),null);
+var cur_len = cljs.core.nth.call(null,vec__47097,(1),null);
+var just_eol_QMARK_ = cljs.core.nth.call(null,vec__47097,(2),null);
+var just_comment_QMARK_ = cljs.core.nth.call(null,vec__47097,(3),null);
+var in$ = vec__47097;
 var comment_QMARK_ = ((cljs.core._EQ_.call(null,tag,new cljs.core.Keyword(null,"comment","comment",532206069))) || (cljs.core._EQ_.call(null,tag,new cljs.core.Keyword(null,"comment-inline","comment-inline",712944405))));
 var count_s = ((((comment_QMARK_) && (cljs.core.not.call(null,count_comment_QMARK_))))?(0):cljs.core.count.call(null,s));
 if(cljs.core.truth_((function (){var or__4047__auto__ = (function (){var and__4036__auto__ = eol_QMARK_;
@@ -607,21 +607,21 @@ return new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMP
 
 }
 });
-zprint.zprint.generate_ll = (function zprint$zprint$generate_ll(count_comment_QMARK_,p__39138,p__39139){
-var vec__39140 = p__39138;
-var out = cljs.core.nth.call(null,vec__39140,(0),null);
-var cur_len = cljs.core.nth.call(null,vec__39140,(1),null);
-var just_eol_QMARK_ = cljs.core.nth.call(null,vec__39140,(2),null);
-var just_comment_QMARK_ = cljs.core.nth.call(null,vec__39140,(3),null);
-var in$ = vec__39140;
-var vec__39143 = p__39139;
-var s = cljs.core.nth.call(null,vec__39143,(0),null);
-var _ = cljs.core.nth.call(null,vec__39143,(1),null);
-var tag = cljs.core.nth.call(null,vec__39143,(2),null);
-var element = vec__39143;
-var vec__39146 = ((((cljs.core._EQ_.call(null,tag,new cljs.core.Keyword(null,"whitespace","whitespace",-1340035483))) || (cljs.core._EQ_.call(null,tag,new cljs.core.Keyword(null,"indent","indent",-148200125))) || (cljs.core._EQ_.call(null,tag,new cljs.core.Keyword(null,"newline","newline",1790071323)))))?zprint.zprint.split_lf_2.call(null,s):(new cljs.core.List(null,s,null,(1),null)));
-var l = cljs.core.nth.call(null,vec__39146,(0),null);
-var r = cljs.core.nth.call(null,vec__39146,(1),null);
+zprint.zprint.generate_ll = (function zprint$zprint$generate_ll(count_comment_QMARK_,p__47100,p__47101){
+var vec__47102 = p__47100;
+var out = cljs.core.nth.call(null,vec__47102,(0),null);
+var cur_len = cljs.core.nth.call(null,vec__47102,(1),null);
+var just_eol_QMARK_ = cljs.core.nth.call(null,vec__47102,(2),null);
+var just_comment_QMARK_ = cljs.core.nth.call(null,vec__47102,(3),null);
+var in$ = vec__47102;
+var vec__47105 = p__47101;
+var s = cljs.core.nth.call(null,vec__47105,(0),null);
+var _ = cljs.core.nth.call(null,vec__47105,(1),null);
+var tag = cljs.core.nth.call(null,vec__47105,(2),null);
+var element = vec__47105;
+var vec__47108 = ((((cljs.core._EQ_.call(null,tag,new cljs.core.Keyword(null,"whitespace","whitespace",-1340035483))) || (cljs.core._EQ_.call(null,tag,new cljs.core.Keyword(null,"indent","indent",-148200125))) || (cljs.core._EQ_.call(null,tag,new cljs.core.Keyword(null,"newline","newline",1790071323)))))?zprint.zprint.split_lf_2.call(null,s):(new cljs.core.List(null,s,null,(1),null)));
+var l = cljs.core.nth.call(null,vec__47108,(0),null);
+var r = cljs.core.nth.call(null,vec__47108,(1),null);
 var in$__$1 = zprint.zprint.accumulate_ll.call(null,count_comment_QMARK_,in$,l,tag,(!((r == null))));
 var in$__$2 = ((cljs.core.empty_QMARK_.call(null,r))?in$__$1:zprint.zprint.accumulate_ll.call(null,count_comment_QMARK_,in$__$1,r,tag,null));
 return in$__$2;
@@ -665,13 +665,13 @@ return cljs.core.conj.call(null,out,line_length);
 }
 } else {
 var advance_QMARK_ = cljs.core.empty_QMARK_.call(null,current_string);
-var vec__39149 = ((advance_QMARK_)?cljs.core.first.call(null,next_vec):null);
-var next_string = cljs.core.nth.call(null,vec__39149,(0),null);
-var _ = cljs.core.nth.call(null,vec__39149,(1),null);
-var tag = cljs.core.nth.call(null,vec__39149,(2),null);
+var vec__47111 = ((advance_QMARK_)?cljs.core.first.call(null,next_vec):null);
+var next_string = cljs.core.nth.call(null,vec__47111,(0),null);
+var _ = cljs.core.nth.call(null,vec__47111,(1),null);
+var tag = cljs.core.nth.call(null,vec__47111,(2),null);
 var comment_QMARK_ = ((cljs.core._EQ_.call(null,tag,new cljs.core.Keyword(null,"comment","comment",532206069))) || (cljs.core._EQ_.call(null,tag,new cljs.core.Keyword(null,"comment-inline","comment-inline",712944405))));
 var s = ((advance_QMARK_)?next_string:current_string);
-var vec__39152 = (cljs.core.truth_(s)?((((comment_QMARK_) && (cljs.core.not.call(null,count_comment_QMARK_))))?new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [""], null):(cljs.core.truth_((function (){var or__4047__auto__ = ((advance_QMARK_) && (((cljs.core._EQ_.call(null,tag,new cljs.core.Keyword(null,"whitespace","whitespace",-1340035483))) || (cljs.core._EQ_.call(null,tag,new cljs.core.Keyword(null,"newline","newline",1790071323))) || (cljs.core._EQ_.call(null,tag,new cljs.core.Keyword(null,"indent","indent",-148200125))))));
+var vec__47114 = (cljs.core.truth_(s)?((((comment_QMARK_) && (cljs.core.not.call(null,count_comment_QMARK_))))?new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [""], null):(cljs.core.truth_((function (){var or__4047__auto__ = ((advance_QMARK_) && (((cljs.core._EQ_.call(null,tag,new cljs.core.Keyword(null,"whitespace","whitespace",-1340035483))) || (cljs.core._EQ_.call(null,tag,new cljs.core.Keyword(null,"newline","newline",1790071323))) || (cljs.core._EQ_.call(null,tag,new cljs.core.Keyword(null,"indent","indent",-148200125))))));
 if(or__4047__auto__){
 return or__4047__auto__;
 } else {
@@ -679,8 +679,8 @@ return current_string;
 }
 })())?zprint.zprint.split_lf_2.call(null,s):new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [s], null)
 )):null);
-var l = cljs.core.nth.call(null,vec__39152,(0),null);
-var r = cljs.core.nth.call(null,vec__39152,(1),null);
+var l = cljs.core.nth.call(null,vec__47114,(0),null);
+var r = cljs.core.nth.call(null,vec__47114,(1),null);
 var force_newline_QMARK_ = (function (){var and__4036__auto__ = previous_comment_QMARK_;
 if(cljs.core.truth_(and__4036__auto__)){
 return (!(cljs.core.empty_QMARK_.call(null,l)));
@@ -691,16 +691,16 @@ return and__4036__auto__;
 var r__$1 = (cljs.core.truth_(force_newline_QMARK_)?[cljs.core.str.cljs$core$IFn$_invoke$arity$1(l),cljs.core.str.cljs$core$IFn$_invoke$arity$1(r)].join(''):r);
 var l__$1 = (cljs.core.truth_(force_newline_QMARK_)?null:l);
 var new_line_length = (line_length + cljs.core.count.call(null,l__$1));
-var G__39155 = ((advance_QMARK_)?cljs.core.next.call(null,next_vec):next_vec);
-var G__39156 = r__$1;
-var G__39157 = (cljs.core.truth_(r__$1)?(0):new_line_length);
-var G__39158 = comment_QMARK_;
-var G__39159 = (cljs.core.truth_(r__$1)?cljs.core.conj.call(null,out,new_line_length):out);
-next_vec = G__39155;
-current_string = G__39156;
-line_length = G__39157;
-previous_comment_QMARK_ = G__39158;
-out = G__39159;
+var G__47117 = ((advance_QMARK_)?cljs.core.next.call(null,next_vec):next_vec);
+var G__47118 = r__$1;
+var G__47119 = (cljs.core.truth_(r__$1)?(0):new_line_length);
+var G__47120 = comment_QMARK_;
+var G__47121 = (cljs.core.truth_(r__$1)?cljs.core.conj.call(null,out,new_line_length):out);
+next_vec = G__47117;
+current_string = G__47118;
+line_length = G__47119;
+previous_comment_QMARK_ = G__47120;
+out = G__47121;
 continue;
 }
 break;
@@ -724,12 +724,12 @@ break;
  */
 zprint.zprint.line_lengths = (function zprint$zprint$line_lengths(options,ind,style_vec){
 var length_vec = cljs.core.first.call(null,(function (){var count_comment_QMARK_ = new cljs.core.Keyword(null,"count?","count?",-122202128).cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"comment","comment",532206069).cljs$core$IFn$_invoke$arity$1(options));
-var vec__39160 = cljs.core.reduce.call(null,cljs.core.partial.call(null,zprint.zprint.generate_ll,count_comment_QMARK_),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.PersistentVector.EMPTY,((cljs.core.coll_QMARK_.call(null,ind))?cljs.core.first.call(null,ind):ind),null,null], null),style_vec);
-var _ = cljs.core.nth.call(null,vec__39160,(0),null);
-var ___$1 = cljs.core.nth.call(null,vec__39160,(1),null);
-var just_eol_QMARK_ = cljs.core.nth.call(null,vec__39160,(2),null);
-var just_comment_QMARK_ = cljs.core.nth.call(null,vec__39160,(3),null);
-var result = vec__39160;
+var vec__47122 = cljs.core.reduce.call(null,cljs.core.partial.call(null,zprint.zprint.generate_ll,count_comment_QMARK_),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.PersistentVector.EMPTY,((cljs.core.coll_QMARK_.call(null,ind))?cljs.core.first.call(null,ind):ind),null,null], null),style_vec);
+var _ = cljs.core.nth.call(null,vec__47122,(0),null);
+var ___$1 = cljs.core.nth.call(null,vec__47122,(1),null);
+var just_eol_QMARK_ = cljs.core.nth.call(null,vec__47122,(2),null);
+var just_comment_QMARK_ = cljs.core.nth.call(null,vec__47122,(3),null);
+var result = vec__47122;
 if(cljs.core.truth_((function (){var and__4036__auto__ = just_eol_QMARK_;
 if(cljs.core.truth_(and__4036__auto__)){
 return cljs.core.not.call(null,just_comment_QMARK_);
@@ -750,15 +750,15 @@ return length_vec;
  *   doesn't find one.
  */
 zprint.zprint.single_line_QMARK_ = (function zprint$zprint$single_line_QMARK_(style_vec){
-return cljs.core.not.call(null,cljs.core.reduce.call(null,(function (p1__39163_SHARP_,p2__39164_SHARP_){
-var or__4047__auto__ = p1__39163_SHARP_;
+return cljs.core.not.call(null,cljs.core.reduce.call(null,(function (p1__47125_SHARP_,p2__47126_SHARP_){
+var or__4047__auto__ = p1__47125_SHARP_;
 if(cljs.core.truth_(or__4047__auto__)){
 return or__4047__auto__;
 } else {
-return p2__39164_SHARP_;
+return p2__47126_SHARP_;
 }
-}),false,cljs.core.map.call(null,(function (p1__39165_SHARP_){
-return clojure.string.includes_QMARK_.call(null,cljs.core.first.call(null,p1__39165_SHARP_),"\n");
+}),false,cljs.core.map.call(null,(function (p1__47127_SHARP_){
+return clojure.string.includes_QMARK_.call(null,cljs.core.first.call(null,p1__47127_SHARP_),"\n");
 }),style_vec)));
 });
 /**
@@ -769,15 +769,15 @@ zprint.zprint.find_what = (function zprint$zprint$find_what(style_vec){
 var s_vec = style_vec;
 while(true){
 if(cljs.core.truth_(s_vec)){
-var vec__39166 = cljs.core.first.call(null,s_vec);
-var what = cljs.core.nth.call(null,vec__39166,(0),null);
-var _ = cljs.core.nth.call(null,vec__39166,(1),null);
-var this$ = cljs.core.nth.call(null,vec__39166,(2),null);
+var vec__47128 = cljs.core.first.call(null,s_vec);
+var what = cljs.core.nth.call(null,vec__47128,(0),null);
+var _ = cljs.core.nth.call(null,vec__47128,(1),null);
+var this$ = cljs.core.nth.call(null,vec__47128,(2),null);
 if(cljs.core._EQ_.call(null,this$,new cljs.core.Keyword(null,"element","element",1974019749))){
 return what;
 } else {
-var G__39169 = cljs.core.next.call(null,s_vec);
-s_vec = G__39169;
+var G__47131 = cljs.core.next.call(null,s_vec);
+s_vec = G__47131;
 continue;
 }
 } else {
@@ -827,17 +827,17 @@ return null;
  * Given output from style-lines and options, see if it fits the width.  
  *   Return the number of lines it takes if it fits, nil otherwise.
  */
-zprint.zprint.fzfit = (function zprint$zprint$fzfit(p__39170,p__39171){
-var map__39172 = p__39170;
-var map__39172__$1 = (((((!((map__39172 == null))))?(((((map__39172.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__39172.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__39172):map__39172);
-var options = map__39172__$1;
-var width = cljs.core.get.call(null,map__39172__$1,new cljs.core.Keyword(null,"width","width",-384071477));
-var rightcnt = cljs.core.get.call(null,map__39172__$1,new cljs.core.Keyword(null,"rightcnt","rightcnt",-45750070));
-var dbg_QMARK_ = cljs.core.get.call(null,map__39172__$1,new cljs.core.Keyword(null,"dbg?","dbg?",1845730771));
-var vec__39173 = p__39171;
-var line_count = cljs.core.nth.call(null,vec__39173,(0),null);
-var max_width = cljs.core.nth.call(null,vec__39173,(1),null);
-var style_lines_return = vec__39173;
+zprint.zprint.fzfit = (function zprint$zprint$fzfit(p__47132,p__47133){
+var map__47134 = p__47132;
+var map__47134__$1 = (((((!((map__47134 == null))))?(((((map__47134.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47134.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47134):map__47134);
+var options = map__47134__$1;
+var width = cljs.core.get.call(null,map__47134__$1,new cljs.core.Keyword(null,"width","width",-384071477));
+var rightcnt = cljs.core.get.call(null,map__47134__$1,new cljs.core.Keyword(null,"rightcnt","rightcnt",-45750070));
+var dbg_QMARK_ = cljs.core.get.call(null,map__47134__$1,new cljs.core.Keyword(null,"dbg?","dbg?",1845730771));
+var vec__47135 = p__47133;
+var line_count = cljs.core.nth.call(null,vec__47135,(0),null);
+var max_width = cljs.core.nth.call(null,vec__47135,(1),null);
+var style_lines_return = vec__47135;
 if(cljs.core.truth_(new cljs.core.Keyword(null,"dbg?","dbg?",1845730771).cljs$core$IFn$_invoke$arity$1(options))){
 cljs.core.println.call(null,new cljs.core.Keyword(null,"dbg-indent","dbg-indent",1534856778).cljs$core$IFn$_invoke$arity$1(options),"fzfit: fixed-rightcnt:",zprint.zprint.fix_rightcnt.call(null,rightcnt),"line-count:",line_count,"max-width:",max_width,"width:",width);
 } else {
@@ -911,11 +911,11 @@ zprint.zprint.str__GT_key = cljs.core.PersistentHashMap.fromArrays(["]","'",")",
  * Look up the thing in the zprint-color-map.  Accepts keywords or
  *   strings.
  */
-zprint.zprint.zcolor_map = (function zprint$zprint$zcolor_map(p__39177,key_or_str){
-var map__39178 = p__39177;
-var map__39178__$1 = (((((!((map__39178 == null))))?(((((map__39178.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__39178.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__39178):map__39178);
-var options = map__39178__$1;
-var color_map = cljs.core.get.call(null,map__39178__$1,new cljs.core.Keyword(null,"color-map","color-map",-207789684));
+zprint.zprint.zcolor_map = (function zprint$zprint$zcolor_map(p__47139,key_or_str){
+var map__47140 = p__47139;
+var map__47140__$1 = (((((!((map__47140 == null))))?(((((map__47140.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47140.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47140):map__47140);
+var options = map__47140__$1;
+var color_map = cljs.core.get.call(null,map__47140__$1,new cljs.core.Keyword(null,"color-map","color-map",-207789684));
 return color_map.call(null,(((key_or_str instanceof cljs.core.Keyword))?key_or_str:zprint.zprint.str__GT_key.call(null,key_or_str)));
 });
 /**
@@ -947,7 +947,7 @@ cljs.core.println.call(null,new cljs.core.Keyword(null,"dbg-indent","dbg-indent"
 }
 
 var hanging = fzfn.call(null,zprint.zprint.in_hang.call(null,options),hindent,zloc);
-var value__39060__auto__ = (cljs.core.truth_((function (){var and__4036__auto__ = hanging;
+var value__46621__auto__ = (cljs.core.truth_((function (){var and__4036__auto__ = hanging;
 if(cljs.core.truth_(and__4036__auto__)){
 return zprint.zprint.fzfit.call(null,options,zprint.zprint.style_lines.call(null,options,hindent,hanging));
 } else {
@@ -963,11 +963,11 @@ return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMP
 })()
 );
 if(cljs.core.truth_(new cljs.core.Keyword(null,"dbg?","dbg?",1845730771).cljs$core$IFn$_invoke$arity$1(options))){
-cljs.core.println.call(null,new cljs.core.Keyword(null,"dbg-indent","dbg-indent",1534856778).cljs$core$IFn$_invoke$arity$1(options),"fzprint-hang-unless-fail: exit:",cljs.core.pr_str.call(null,value__39060__auto__));
+cljs.core.println.call(null,new cljs.core.Keyword(null,"dbg-indent","dbg-indent",1534856778).cljs$core$IFn$_invoke$arity$1(options),"fzprint-hang-unless-fail: exit:",cljs.core.pr_str.call(null,value__46621__auto__));
 } else {
 }
 
-return value__39060__auto__;
+return value__46621__auto__;
 });
 /**
  * Given a style-vec with exactly one thing in it, replace the color
@@ -975,11 +975,11 @@ return value__39060__auto__;
  */
 zprint.zprint.replace_color = (function zprint$zprint$replace_color(local_color,style_vec){
 if(cljs.core._EQ_.call(null,cljs.core.count.call(null,style_vec),(1))){
-var vec__39180 = style_vec;
-var vec__39183 = cljs.core.nth.call(null,vec__39180,(0),null);
-var string = cljs.core.nth.call(null,vec__39183,(0),null);
-var color = cljs.core.nth.call(null,vec__39183,(1),null);
-var element = cljs.core.nth.call(null,vec__39183,(2),null);
+var vec__47142 = style_vec;
+var vec__47145 = cljs.core.nth.call(null,vec__47142,(0),null);
+var string = cljs.core.nth.call(null,vec__47145,(0),null);
+var color = cljs.core.nth.call(null,vec__47145,(1),null);
+var element = cljs.core.nth.call(null,vec__47145,(2),null);
 return new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [string,local_color,element], null)], null);
 } else {
 return style_vec;
@@ -995,32 +995,32 @@ return style_vec;
  *   the upstream folks know whether this was a hang or flow and can
  *   do the right thing based on that.
  */
-zprint.zprint.fzprint_two_up = (function zprint$zprint$fzprint_two_up(caller,p__39186,ind,commas_QMARK_,justify_width,rightmost_pair_QMARK_,p__39187){
-var map__39188 = p__39186;
-var map__39188__$1 = (((((!((map__39188 == null))))?(((((map__39188.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__39188.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__39188):map__39188);
-var options = map__39188__$1;
-var map__39189 = cljs.core.get.call(null,map__39188__$1,caller);
-var map__39189__$1 = (((((!((map__39189 == null))))?(((((map__39189.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__39189.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__39189):map__39189);
-var hang_QMARK_ = cljs.core.get.call(null,map__39189__$1,new cljs.core.Keyword(null,"hang?","hang?",-579442854));
-var flow_QMARK_ = cljs.core.get.call(null,map__39189__$1,new cljs.core.Keyword(null,"flow?","flow?",96929057));
-var indent_arg = cljs.core.get.call(null,map__39189__$1,new cljs.core.Keyword(null,"indent-arg","indent-arg",58691874));
-var key_depth_color = cljs.core.get.call(null,map__39189__$1,new cljs.core.Keyword(null,"key-depth-color","key-depth-color",1448522819));
-var indent = cljs.core.get.call(null,map__39189__$1,new cljs.core.Keyword(null,"indent","indent",-148200125));
-var key_value_color = cljs.core.get.call(null,map__39189__$1,new cljs.core.Keyword(null,"key-value-color","key-value-color",676042889));
-var dbg_cnt_QMARK_ = cljs.core.get.call(null,map__39189__$1,new cljs.core.Keyword(null,"dbg-cnt?","dbg-cnt?",-1638028976));
-var dbg_local_QMARK_ = cljs.core.get.call(null,map__39189__$1,new cljs.core.Keyword(null,"dbg-local?","dbg-local?",-895545325));
-var key_color = cljs.core.get.call(null,map__39189__$1,new cljs.core.Keyword(null,"key-color","key-color",-209002572));
-var one_line_QMARK_ = cljs.core.get.call(null,map__39188__$1,new cljs.core.Keyword(null,"one-line?","one-line?",2055953111));
-var dbg_QMARK_ = cljs.core.get.call(null,map__39188__$1,new cljs.core.Keyword(null,"dbg?","dbg?",1845730771));
-var dbg_indent = cljs.core.get.call(null,map__39188__$1,new cljs.core.Keyword(null,"dbg-indent","dbg-indent",1534856778));
-var in_hang_QMARK_ = cljs.core.get.call(null,map__39188__$1,new cljs.core.Keyword(null,"in-hang?","in-hang?",-1065695639));
-var do_in_hang_QMARK_ = cljs.core.get.call(null,map__39188__$1,new cljs.core.Keyword(null,"do-in-hang?","do-in-hang?",-1235364947));
-var map_depth = cljs.core.get.call(null,map__39188__$1,new cljs.core.Keyword(null,"map-depth","map-depth",-191378641));
-var vec__39190 = p__39187;
-var lloc = cljs.core.nth.call(null,vec__39190,(0),null);
-var rloc = cljs.core.nth.call(null,vec__39190,(1),null);
-var xloc = cljs.core.nth.call(null,vec__39190,(2),null);
-var pair = vec__39190;
+zprint.zprint.fzprint_two_up = (function zprint$zprint$fzprint_two_up(caller,p__47148,ind,commas_QMARK_,justify_width,rightmost_pair_QMARK_,p__47149){
+var map__47150 = p__47148;
+var map__47150__$1 = (((((!((map__47150 == null))))?(((((map__47150.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47150.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47150):map__47150);
+var options = map__47150__$1;
+var map__47151 = cljs.core.get.call(null,map__47150__$1,caller);
+var map__47151__$1 = (((((!((map__47151 == null))))?(((((map__47151.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47151.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47151):map__47151);
+var hang_QMARK_ = cljs.core.get.call(null,map__47151__$1,new cljs.core.Keyword(null,"hang?","hang?",-579442854));
+var flow_QMARK_ = cljs.core.get.call(null,map__47151__$1,new cljs.core.Keyword(null,"flow?","flow?",96929057));
+var indent_arg = cljs.core.get.call(null,map__47151__$1,new cljs.core.Keyword(null,"indent-arg","indent-arg",58691874));
+var key_depth_color = cljs.core.get.call(null,map__47151__$1,new cljs.core.Keyword(null,"key-depth-color","key-depth-color",1448522819));
+var indent = cljs.core.get.call(null,map__47151__$1,new cljs.core.Keyword(null,"indent","indent",-148200125));
+var key_value_color = cljs.core.get.call(null,map__47151__$1,new cljs.core.Keyword(null,"key-value-color","key-value-color",676042889));
+var dbg_cnt_QMARK_ = cljs.core.get.call(null,map__47151__$1,new cljs.core.Keyword(null,"dbg-cnt?","dbg-cnt?",-1638028976));
+var dbg_local_QMARK_ = cljs.core.get.call(null,map__47151__$1,new cljs.core.Keyword(null,"dbg-local?","dbg-local?",-895545325));
+var key_color = cljs.core.get.call(null,map__47151__$1,new cljs.core.Keyword(null,"key-color","key-color",-209002572));
+var one_line_QMARK_ = cljs.core.get.call(null,map__47150__$1,new cljs.core.Keyword(null,"one-line?","one-line?",2055953111));
+var dbg_QMARK_ = cljs.core.get.call(null,map__47150__$1,new cljs.core.Keyword(null,"dbg?","dbg?",1845730771));
+var dbg_indent = cljs.core.get.call(null,map__47150__$1,new cljs.core.Keyword(null,"dbg-indent","dbg-indent",1534856778));
+var in_hang_QMARK_ = cljs.core.get.call(null,map__47150__$1,new cljs.core.Keyword(null,"in-hang?","in-hang?",-1065695639));
+var do_in_hang_QMARK_ = cljs.core.get.call(null,map__47150__$1,new cljs.core.Keyword(null,"do-in-hang?","do-in-hang?",-1235364947));
+var map_depth = cljs.core.get.call(null,map__47150__$1,new cljs.core.Keyword(null,"map-depth","map-depth",-191378641));
+var vec__47152 = p__47149;
+var lloc = cljs.core.nth.call(null,vec__47152,(0),null);
+var rloc = cljs.core.nth.call(null,vec__47152,(1),null);
+var xloc = cljs.core.nth.call(null,vec__47152,(2),null);
+var pair = vec__47152;
 if(cljs.core.truth_(dbg_cnt_QMARK_)){
 cljs.core.println.call(null,"two-up: caller:",caller,"hang?",hang_QMARK_,"dbg?",dbg_QMARK_);
 } else {
@@ -1099,10 +1099,10 @@ var local_color = cljs.core.get.call(null,key_depth_color,(map_depth - (1)));
 var local_color__$1 = (cljs.core.truth_(key_color)?key_color.call(null,zprint.zfns.zsexpr.call(null,lloc)):local_color);
 var arg_1 = zprint.zprint.fzprint_STAR_.call(null,loptions,ind,lloc);
 var arg_1__$1 = (cljs.core.truth_(local_color__$1)?zprint.zprint.replace_color.call(null,local_color__$1,arg_1):arg_1);
-var vec__39195 = zprint.zprint.style_lines.call(null,options,ind,arg_1__$1);
-var arg_1_line_count = cljs.core.nth.call(null,vec__39195,(0),null);
-var arg_1_max_width = cljs.core.nth.call(null,vec__39195,(1),null);
-var arg_1_lines = vec__39195;
+var vec__47157 = zprint.zprint.style_lines.call(null,options,ind,arg_1__$1);
+var arg_1_line_count = cljs.core.nth.call(null,vec__47157,(0),null);
+var arg_1_max_width = cljs.core.nth.call(null,vec__47157,(1),null);
+var arg_1_lines = vec__47157;
 var _ = (cljs.core.truth_(new cljs.core.Keyword(null,"dbg?","dbg?",1845730771).cljs$core$IFn$_invoke$arity$1(options))?cljs.core.println.call(null,new cljs.core.Keyword(null,"dbg-indent","dbg-indent",1534856778).cljs$core$IFn$_invoke$arity$1(options),"fzprint-two-up before modifier: arg-1-line-count:",arg_1_line_count,"arg-1-max-width:",arg_1_max_width):null);
 var modifier_QMARK___$1 = (cljs.core.truth_((function (){var and__4036__auto__ = arg_1_line_count;
 if(cljs.core.truth_(and__4036__auto__)){
@@ -1114,10 +1114,10 @@ return and__4036__auto__;
 var combined_arg_1 = (cljs.core.truth_(modifier_QMARK___$1)?zprint.zprint.concat_no_nil.call(null,arg_1__$1,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [" ",new cljs.core.Keyword(null,"none","none",1333468478),new cljs.core.Keyword(null,"whitespace","whitespace",-1340035483)], null)], null),zprint.zprint.fzprint_STAR_.call(null,zprint.zprint.in_hang.call(null,loptions),(ind + arg_1_max_width),rloc)):arg_1__$1);
 var arg_1__$2 = (cljs.core.truth_(combined_arg_1)?combined_arg_1:arg_1__$1);
 var modifier_QMARK___$2 = (cljs.core.truth_(combined_arg_1)?modifier_QMARK___$1:null);
-var vec__39198 = (cljs.core.truth_(combined_arg_1)?zprint.zprint.style_lines.call(null,options,ind,arg_1__$2):arg_1_lines);
-var arg_1_line_count__$1 = cljs.core.nth.call(null,vec__39198,(0),null);
-var arg_1_max_width__$1 = cljs.core.nth.call(null,vec__39198,(1),null);
-var arg_1_lines__$1 = vec__39198;
+var vec__47160 = (cljs.core.truth_(combined_arg_1)?zprint.zprint.style_lines.call(null,options,ind,arg_1__$2):arg_1_lines);
+var arg_1_line_count__$1 = cljs.core.nth.call(null,vec__47160,(0),null);
+var arg_1_max_width__$1 = cljs.core.nth.call(null,vec__47160,(1),null);
+var arg_1_lines__$1 = vec__47160;
 var ___$1 = (cljs.core.truth_(new cljs.core.Keyword(null,"dbg?","dbg?",1845730771).cljs$core$IFn$_invoke$arity$1(options))?cljs.core.println.call(null,new cljs.core.Keyword(null,"dbg-indent","dbg-indent",1534856778).cljs$core$IFn$_invoke$arity$1(options),"fzprint-two-up after modifier: arg-1-line-count:",arg_1_line_count__$1,"arg-1-max-width:",arg_1_max_width__$1):null);
 var lloc__$1 = (cljs.core.truth_(modifier_QMARK___$2)?rloc:lloc);
 var rloc__$1 = (cljs.core.truth_(modifier_QMARK___$2)?xloc:rloc);
@@ -1183,9 +1183,9 @@ return and__4036__auto____$1;
 return and__4036__auto__;
 }
 })())){
-var vec__39201 = zprint.zprint.fzprint_hang_unless_fail.call(null,loptions,hanging_indent,flow_indent,zprint.zprint.fzprint_binding_vec,rloc__$1);
-var hang_or_flow = cljs.core.nth.call(null,vec__39201,(0),null);
-var style_vec = cljs.core.nth.call(null,vec__39201,(1),null);
+var vec__47163 = zprint.zprint.fzprint_hang_unless_fail.call(null,loptions,hanging_indent,flow_indent,zprint.zprint.fzprint_binding_vec,rloc__$1);
+var hang_or_flow = cljs.core.nth.call(null,vec__47163,(0),null);
+var style_vec = cljs.core.nth.call(null,vec__47163,(1),null);
 var arg_1__$3 = ((cljs.core._EQ_.call(null,hang_or_flow,new cljs.core.Keyword(null,"hang","hang",-1007256173)))?zprint.zprint.concat_no_nil.call(null,arg_1__$2,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [zprint.zprint.blanks.call(null,hanging_spaces),new cljs.core.Keyword(null,"none","none",1333468478),new cljs.core.Keyword(null,"whitespace","whitespace",-1340035483)], null)], null)):arg_1__$2);
 return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [hang_or_flow,zprint.zprint.concat_no_nil.call(null,arg_1__$3,style_vec)], null);
 } else {
@@ -1282,38 +1282,38 @@ return null;
  *   Also, decide if it makes any sense to justify the pairs at all.
  *   For instance, they all need to be one-line.
  */
-zprint.zprint.fzprint_justify_width = (function zprint$zprint$fzprint_justify_width(caller,p__39209,ind,coll){
-var map__39210 = p__39209;
-var map__39210__$1 = (((((!((map__39210 == null))))?(((((map__39210.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__39210.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__39210):map__39210);
-var options = map__39210__$1;
-var map__39211 = cljs.core.get.call(null,map__39210__$1,caller);
-var map__39211__$1 = (((((!((map__39211 == null))))?(((((map__39211.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__39211.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__39211):map__39211);
-var justify_QMARK_ = cljs.core.get.call(null,map__39211__$1,new cljs.core.Keyword(null,"justify?","justify?",294994148));
-var firsts = cljs.core.remove.call(null,cljs.core.nil_QMARK_,cljs.core.map.call(null,((function (map__39210,map__39210__$1,options,map__39211,map__39211__$1,justify_QMARK_){
-return (function (p1__39204_SHARP_){
-if((cljs.core.count.call(null,p1__39204_SHARP_) > (1))){
-return zprint.zprint.fzprint_STAR_.call(null,options,ind,cljs.core.first.call(null,p1__39204_SHARP_));
+zprint.zprint.fzprint_justify_width = (function zprint$zprint$fzprint_justify_width(caller,p__47171,ind,coll){
+var map__47172 = p__47171;
+var map__47172__$1 = (((((!((map__47172 == null))))?(((((map__47172.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47172.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47172):map__47172);
+var options = map__47172__$1;
+var map__47173 = cljs.core.get.call(null,map__47172__$1,caller);
+var map__47173__$1 = (((((!((map__47173 == null))))?(((((map__47173.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47173.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47173):map__47173);
+var justify_QMARK_ = cljs.core.get.call(null,map__47173__$1,new cljs.core.Keyword(null,"justify?","justify?",294994148));
+var firsts = cljs.core.remove.call(null,cljs.core.nil_QMARK_,cljs.core.map.call(null,((function (map__47172,map__47172__$1,options,map__47173,map__47173__$1,justify_QMARK_){
+return (function (p1__47166_SHARP_){
+if((cljs.core.count.call(null,p1__47166_SHARP_) > (1))){
+return zprint.zprint.fzprint_STAR_.call(null,options,ind,cljs.core.first.call(null,p1__47166_SHARP_));
 } else {
 return null;
 }
-});})(map__39210,map__39210__$1,options,map__39211,map__39211__$1,justify_QMARK_))
+});})(map__47172,map__47172__$1,options,map__47173,map__47173__$1,justify_QMARK_))
 ,coll));
 var style_seq = cljs.core.map.call(null,cljs.core.partial.call(null,zprint.zprint.style_lines,options,ind),firsts);
-var each_one_line_QMARK_ = cljs.core.reduce.call(null,((function (firsts,style_seq,map__39210,map__39210__$1,options,map__39211,map__39211__$1,justify_QMARK_){
-return (function (p1__39205_SHARP_,p2__39206_SHARP_){
-if(cljs.core.truth_(p1__39205_SHARP_)){
-return cljs.core._EQ_.call(null,cljs.core.first.call(null,p2__39206_SHARP_),(1));
+var each_one_line_QMARK_ = cljs.core.reduce.call(null,((function (firsts,style_seq,map__47172,map__47172__$1,options,map__47173,map__47173__$1,justify_QMARK_){
+return (function (p1__47167_SHARP_,p2__47168_SHARP_){
+if(cljs.core.truth_(p1__47167_SHARP_)){
+return cljs.core._EQ_.call(null,cljs.core.first.call(null,p2__47168_SHARP_),(1));
 } else {
 return null;
 }
-});})(firsts,style_seq,map__39210,map__39210__$1,options,map__39211,map__39211__$1,justify_QMARK_))
+});})(firsts,style_seq,map__47172,map__47172__$1,options,map__47173,map__47173__$1,justify_QMARK_))
 ,true,style_seq);
-var justify_width = (cljs.core.truth_(each_one_line_QMARK_)?cljs.core.reduce.call(null,((function (firsts,style_seq,each_one_line_QMARK_,map__39210,map__39210__$1,options,map__39211,map__39211__$1,justify_QMARK_){
-return (function (p1__39207_SHARP_,p2__39208_SHARP_){
-var x__4135__auto__ = p1__39207_SHARP_;
-var y__4136__auto__ = cljs.core.second.call(null,p2__39208_SHARP_);
+var justify_width = (cljs.core.truth_(each_one_line_QMARK_)?cljs.core.reduce.call(null,((function (firsts,style_seq,each_one_line_QMARK_,map__47172,map__47172__$1,options,map__47173,map__47173__$1,justify_QMARK_){
+return (function (p1__47169_SHARP_,p2__47170_SHARP_){
+var x__4135__auto__ = p1__47169_SHARP_;
+var y__4136__auto__ = cljs.core.second.call(null,p2__47170_SHARP_);
 return ((x__4135__auto__ > y__4136__auto__) ? x__4135__auto__ : y__4136__auto__);
-});})(firsts,style_seq,each_one_line_QMARK_,map__39210,map__39210__$1,options,map__39211,map__39211__$1,justify_QMARK_))
+});})(firsts,style_seq,each_one_line_QMARK_,map__47172,map__47172__$1,options,map__47173,map__47173__$1,justify_QMARK_))
 ,(0),style_seq):null);
 if(cljs.core.truth_(justify_width)){
 return (justify_width - ind);
@@ -1329,8 +1329,8 @@ return null;
  *   *any* separators, so it really underestimates the size.
  */
 zprint.zprint.fit_within_QMARK_ = (function zprint$zprint$fit_within_QMARK_(var_args){
-var G__39215 = arguments.length;
-switch (G__39215) {
+var G__47177 = arguments.length;
+switch (G__47177) {
 case 3:
 return zprint.zprint.fit_within_QMARK_.cljs$core$IFn$_invoke$arity$3((arguments[(0)]),(arguments[(1)]),(arguments[(2)]));
 
@@ -1396,18 +1396,18 @@ return null;
  *   return yourself.  It will, however, make an estimate of whether or not
  *   it will fit and if it clearly doesn't, it will return a nil.
  */
-zprint.zprint.fzprint_map_two_up = (function zprint$zprint$fzprint_map_two_up(caller,p__39217,ind,commas_QMARK_,coll){
-var map__39218 = p__39217;
-var map__39218__$1 = (((((!((map__39218 == null))))?(((((map__39218.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__39218.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__39218):map__39218);
-var options = map__39218__$1;
-var map__39219 = cljs.core.get.call(null,map__39218__$1,caller);
-var map__39219__$1 = (((((!((map__39219 == null))))?(((((map__39219.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__39219.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__39219):map__39219);
-var justify_QMARK_ = cljs.core.get.call(null,map__39219__$1,new cljs.core.Keyword(null,"justify?","justify?",294994148));
-var force_nl_QMARK_ = cljs.core.get.call(null,map__39219__$1,new cljs.core.Keyword(null,"force-nl?","force-nl?",-1299761462));
-var width = cljs.core.get.call(null,map__39218__$1,new cljs.core.Keyword(null,"width","width",-384071477));
-var rightcnt = cljs.core.get.call(null,map__39218__$1,new cljs.core.Keyword(null,"rightcnt","rightcnt",-45750070));
-var one_line_QMARK_ = cljs.core.get.call(null,map__39218__$1,new cljs.core.Keyword(null,"one-line?","one-line?",2055953111));
-var parallel_QMARK_ = cljs.core.get.call(null,map__39218__$1,new cljs.core.Keyword(null,"parallel?","parallel?",-25273892));
+zprint.zprint.fzprint_map_two_up = (function zprint$zprint$fzprint_map_two_up(caller,p__47179,ind,commas_QMARK_,coll){
+var map__47180 = p__47179;
+var map__47180__$1 = (((((!((map__47180 == null))))?(((((map__47180.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47180.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47180):map__47180);
+var options = map__47180__$1;
+var map__47181 = cljs.core.get.call(null,map__47180__$1,caller);
+var map__47181__$1 = (((((!((map__47181 == null))))?(((((map__47181.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47181.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47181):map__47181);
+var justify_QMARK_ = cljs.core.get.call(null,map__47181__$1,new cljs.core.Keyword(null,"justify?","justify?",294994148));
+var force_nl_QMARK_ = cljs.core.get.call(null,map__47181__$1,new cljs.core.Keyword(null,"force-nl?","force-nl?",-1299761462));
+var width = cljs.core.get.call(null,map__47180__$1,new cljs.core.Keyword(null,"width","width",-384071477));
+var rightcnt = cljs.core.get.call(null,map__47180__$1,new cljs.core.Keyword(null,"rightcnt","rightcnt",-45750070));
+var one_line_QMARK_ = cljs.core.get.call(null,map__47180__$1,new cljs.core.Keyword(null,"one-line?","one-line?",2055953111));
+var parallel_QMARK_ = cljs.core.get.call(null,map__47180__$1,new cljs.core.Keyword(null,"parallel?","parallel?",-25273892));
 var caller_map = caller.call(null,options);
 var len = cljs.core.count.call(null,coll);
 var justify_width = (cljs.core.truth_((function (){var and__4036__auto__ = justify_QMARK_;
@@ -1482,10 +1482,10 @@ return cljs.core.not.call(null,justify_width__$1);
 })())){
 return result;
 } else {
-var G__39222 = null;
-var G__39223 = options;
-justify_width__$1 = G__39222;
-justify_options = G__39223;
+var G__47184 = null;
+var G__47185 = options;
+justify_width__$1 = G__47184;
+justify_options = G__47185;
 continue;
 }
 break;
@@ -1546,17 +1546,17 @@ return zprint.zprint.compare_keys.call(null,x,y);
  *   that vector and place them first (in order) before sorting the
  *   other keys.  If sorting is not called for, does nothing.
  */
-zprint.zprint.order_out = (function zprint$zprint$order_out(caller,p__39226,access,out){
-var map__39227 = p__39226;
-var map__39227__$1 = (((((!((map__39227 == null))))?(((((map__39227.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__39227.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__39227):map__39227);
-var options = map__39227__$1;
-var map__39228 = cljs.core.get.call(null,map__39227__$1,caller);
-var map__39228__$1 = (((((!((map__39228 == null))))?(((((map__39228.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__39228.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__39228):map__39228);
-var sort_QMARK_ = cljs.core.get.call(null,map__39228__$1,new cljs.core.Keyword(null,"sort?","sort?",-567661924));
-var sort_in_code_QMARK_ = cljs.core.get.call(null,map__39228__$1,new cljs.core.Keyword(null,"sort-in-code?","sort-in-code?",111878497));
-var key_order = cljs.core.get.call(null,map__39228__$1,new cljs.core.Keyword(null,"key-order","key-order",-356936372));
-var key_value = cljs.core.get.call(null,map__39228__$1,new cljs.core.Keyword(null,"key-value","key-value",-34906839));
-var in_code_QMARK_ = cljs.core.get.call(null,map__39227__$1,new cljs.core.Keyword(null,"in-code?","in-code?",194866464));
+zprint.zprint.order_out = (function zprint$zprint$order_out(caller,p__47188,access,out){
+var map__47189 = p__47188;
+var map__47189__$1 = (((((!((map__47189 == null))))?(((((map__47189.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47189.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47189):map__47189);
+var options = map__47189__$1;
+var map__47190 = cljs.core.get.call(null,map__47189__$1,caller);
+var map__47190__$1 = (((((!((map__47190 == null))))?(((((map__47190.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47190.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47190):map__47190);
+var sort_QMARK_ = cljs.core.get.call(null,map__47190__$1,new cljs.core.Keyword(null,"sort?","sort?",-567661924));
+var sort_in_code_QMARK_ = cljs.core.get.call(null,map__47190__$1,new cljs.core.Keyword(null,"sort-in-code?","sort-in-code?",111878497));
+var key_order = cljs.core.get.call(null,map__47190__$1,new cljs.core.Keyword(null,"key-order","key-order",-356936372));
+var key_value = cljs.core.get.call(null,map__47190__$1,new cljs.core.Keyword(null,"key-value","key-value",-34906839));
+var in_code_QMARK_ = cljs.core.get.call(null,map__47189__$1,new cljs.core.Keyword(null,"in-code?","in-code?",194866464));
 if(cljs.core.truth_((function (){var and__4036__auto__ = sort_QMARK_;
 if(cljs.core.truth_(and__4036__auto__)){
 if(cljs.core.truth_(in_code_QMARK_)){
@@ -1568,16 +1568,16 @@ return true;
 return and__4036__auto__;
 }
 })())){
-return cljs.core.sort.call(null,((function (map__39227,map__39227__$1,options,map__39228,map__39228__$1,sort_QMARK_,sort_in_code_QMARK_,key_order,key_value,in_code_QMARK_){
-return (function (p1__39224_SHARP_,p2__39225_SHARP_){
+return cljs.core.sort.call(null,((function (map__47189,map__47189__$1,options,map__47190,map__47190__$1,sort_QMARK_,sort_in_code_QMARK_,key_order,key_value,in_code_QMARK_){
+return (function (p1__47186_SHARP_,p2__47187_SHARP_){
 return cljs.core.partial.call(null,zprint.zprint.compare_ordered_keys,(function (){var or__4047__auto__ = key_value;
 if(cljs.core.truth_(or__4047__auto__)){
 return or__4047__auto__;
 } else {
 return cljs.core.PersistentArrayMap.EMPTY;
 }
-})(),zprint.zfns.zdotdotdot.call(null)).call(null,zprint.zfns.zsexpr.call(null,access.call(null,p1__39224_SHARP_)),zprint.zfns.zsexpr.call(null,access.call(null,p2__39225_SHARP_)));
-});})(map__39227,map__39227__$1,options,map__39228,map__39228__$1,sort_QMARK_,sort_in_code_QMARK_,key_order,key_value,in_code_QMARK_))
+})(),zprint.zfns.zdotdotdot.call(null)).call(null,zprint.zfns.zsexpr.call(null,access.call(null,p1__47186_SHARP_)),zprint.zfns.zsexpr.call(null,access.call(null,p2__47187_SHARP_)));
+});})(map__47189,map__47189__$1,options,map__47190,map__47190__$1,sort_QMARK_,sort_in_code_QMARK_,key_order,key_value,in_code_QMARK_))
 ,out);
 } else {
 return out;
@@ -1603,11 +1603,11 @@ return zprint.zfns.zuneval_QMARK_.call(null,zloc);
  *   of a pair.  At some point, we can expand this, but for now there is only
  *   one middle element.
  */
-zprint.zprint.middle_element_QMARK_ = (function zprint$zprint$middle_element_QMARK_(p__39231,zloc){
-var map__39232 = p__39231;
-var map__39232__$1 = (((((!((map__39232 == null))))?(((((map__39232.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__39232.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__39232):map__39232);
-var options = map__39232__$1;
-var in_code_QMARK_ = cljs.core.get.call(null,map__39232__$1,new cljs.core.Keyword(null,"in-code?","in-code?",194866464));
+zprint.zprint.middle_element_QMARK_ = (function zprint$zprint$middle_element_QMARK_(p__47193,zloc){
+var map__47194 = p__47193;
+var map__47194__$1 = (((((!((map__47194 == null))))?(((((map__47194.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47194.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47194):map__47194);
+var options = map__47194__$1;
+var in_code_QMARK_ = cljs.core.get.call(null,map__47194__$1,new cljs.core.Keyword(null,"in-code?","in-code?",194866464));
 if(cljs.core._EQ_.call(null,in_code_QMARK_,"condp")){
 return cljs.core._EQ_.call(null,zprint.zfns.zstring.call(null,zloc),":>>");
 } else {
@@ -1680,14 +1680,14 @@ return cljs.core.assoc.call(null,m,ks,new cljs.core.Keyword(null,"zprint-ignored
  * Take a map and remove any of the key sequences specified from it.
  *   Note that this only works for sexpressions, not for actual zippers.
  */
-zprint.zprint.map_ignore = (function zprint$zprint$map_ignore(caller,p__39234,zloc){
-var map__39235 = p__39234;
-var map__39235__$1 = (((((!((map__39235 == null))))?(((((map__39235.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__39235.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__39235):map__39235);
-var options = map__39235__$1;
-var map__39236 = cljs.core.get.call(null,map__39235__$1,caller);
-var map__39236__$1 = (((((!((map__39236 == null))))?(((((map__39236.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__39236.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__39236):map__39236);
-var key_ignore = cljs.core.get.call(null,map__39236__$1,new cljs.core.Keyword(null,"key-ignore","key-ignore",75506668));
-var key_ignore_silent = cljs.core.get.call(null,map__39236__$1,new cljs.core.Keyword(null,"key-ignore-silent","key-ignore-silent",-1720115060));
+zprint.zprint.map_ignore = (function zprint$zprint$map_ignore(caller,p__47196,zloc){
+var map__47197 = p__47196;
+var map__47197__$1 = (((((!((map__47197 == null))))?(((((map__47197.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47197.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47197):map__47197);
+var options = map__47197__$1;
+var map__47198 = cljs.core.get.call(null,map__47197__$1,caller);
+var map__47198__$1 = (((((!((map__47198 == null))))?(((((map__47198.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47198.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47198):map__47198);
+var key_ignore = cljs.core.get.call(null,map__47198__$1,new cljs.core.Keyword(null,"key-ignore","key-ignore",75506668));
+var key_ignore_silent = cljs.core.get.call(null,map__47198__$1,new cljs.core.Keyword(null,"key-ignore-silent","key-ignore-silent",-1720115060));
 var ignored_silent = (cljs.core.truth_(key_ignore_silent)?cljs.core.reduce.call(null,zprint.zprint.ignore_key_seq_silent,zloc,key_ignore_silent):zloc);
 var ignored = (cljs.core.truth_(key_ignore)?cljs.core.reduce.call(null,zprint.zprint.ignore_key_seq,ignored_silent,key_ignore):ignored_silent);
 return ignored;
@@ -1718,31 +1718,31 @@ while(true){
 if(cljs.core.not.call(null,remaining)){
 return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [no_sort_QMARK_,cljs.core.persistent_BANG_.call(null,out)], null);
 } else {
-var vec__39240 = (cljs.core.truth_(zprint.zprint.pair_element_QMARK_.call(null,cljs.core.first.call(null,remaining)))?new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.next.call(null,remaining),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.first.call(null,remaining)], null),true], null):(cljs.core.truth_((function (){var or__4047__auto__ = zprint.zprint.pair_element_QMARK_.call(null,cljs.core.second.call(null,remaining));
+var vec__47202 = (cljs.core.truth_(zprint.zprint.pair_element_QMARK_.call(null,cljs.core.first.call(null,remaining)))?new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.next.call(null,remaining),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.first.call(null,remaining)], null),true], null):(cljs.core.truth_((function (){var or__4047__auto__ = zprint.zprint.pair_element_QMARK_.call(null,cljs.core.second.call(null,remaining));
 if(cljs.core.truth_(or__4047__auto__)){
 return or__4047__auto__;
 } else {
 return zprint.zprint.middle_element_QMARK_.call(null,options,cljs.core.second.call(null,remaining));
 }
-})())?(function (){var vec__39243 = cljs.core.split_with.call(null,((function (remaining,no_sort_QMARK_,index,out,max_length){
-return (function (p1__39239_SHARP_){
-var or__4047__auto__ = zprint.zprint.pair_element_QMARK_.call(null,p1__39239_SHARP_);
+})())?(function (){var vec__47205 = cljs.core.split_with.call(null,((function (remaining,no_sort_QMARK_,index,out,max_length){
+return (function (p1__47201_SHARP_){
+var or__4047__auto__ = zprint.zprint.pair_element_QMARK_.call(null,p1__47201_SHARP_);
 if(cljs.core.truth_(or__4047__auto__)){
 return or__4047__auto__;
 } else {
-return zprint.zprint.middle_element_QMARK_.call(null,options,p1__39239_SHARP_);
+return zprint.zprint.middle_element_QMARK_.call(null,options,p1__47201_SHARP_);
 }
 });})(remaining,no_sort_QMARK_,index,out,max_length))
 ,cljs.core.next.call(null,remaining));
-var comment_seq = cljs.core.nth.call(null,vec__39243,(0),null);
-var rest_seq = cljs.core.nth.call(null,vec__39243,(1),null);
+var comment_seq = cljs.core.nth.call(null,vec__47205,(0),null);
+var rest_seq = cljs.core.nth.call(null,vec__47205,(1),null);
 return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.next.call(null,rest_seq),cljs.core.into.call(null,cljs.core.PersistentVector.EMPTY,cljs.core.concat.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.first.call(null,remaining)], null),comment_seq,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.first.call(null,rest_seq)], null))),true], null);
 })():((cljs.core._EQ_.call(null,cljs.core.count.call(null,remaining),(1)))?new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.next.call(null,remaining),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.first.call(null,remaining)], null),null], null):new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.next.call(null,cljs.core.next.call(null,remaining)),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.first.call(null,remaining),cljs.core.second.call(null,remaining)], null),null], null)
 )));
-var new_remaining = cljs.core.nth.call(null,vec__39240,(0),null);
-var pair_vec = cljs.core.nth.call(null,vec__39240,(1),null);
-var new_no_sort_QMARK_ = cljs.core.nth.call(null,vec__39240,(2),null);
-var G__39246 = ((((index + (1)) < max_length))?new_remaining:(cljs.core.truth_((function (){var and__4036__auto__ = cljs.core._EQ_.call(null,(index + (1)),max_length);
+var new_remaining = cljs.core.nth.call(null,vec__47202,(0),null);
+var pair_vec = cljs.core.nth.call(null,vec__47202,(1),null);
+var new_no_sort_QMARK_ = cljs.core.nth.call(null,vec__47202,(2),null);
+var G__47208 = ((((index + (1)) < max_length))?new_remaining:(cljs.core.truth_((function (){var and__4036__auto__ = cljs.core._EQ_.call(null,(index + (1)),max_length);
 if(and__4036__auto__){
 return new_remaining;
 } else {
@@ -1750,19 +1750,19 @@ return and__4036__auto__;
 }
 })())?(new cljs.core.List(null,zprint.zfns.zdotdotdot.call(null),null,(1),null)):null
 ));
-var G__39247 = (function (){var or__4047__auto__ = no_sort_QMARK_;
+var G__47209 = (function (){var or__4047__auto__ = no_sort_QMARK_;
 if(cljs.core.truth_(or__4047__auto__)){
 return or__4047__auto__;
 } else {
 return new_no_sort_QMARK_;
 }
 })();
-var G__39248 = (index + (1));
-var G__39249 = cljs.core.conj_BANG_.call(null,out,pair_vec);
-remaining = G__39246;
-no_sort_QMARK_ = G__39247;
-index = G__39248;
-out = G__39249;
+var G__47210 = (index + (1));
+var G__47211 = cljs.core.conj_BANG_.call(null,out,pair_vec);
+remaining = G__47208;
+no_sort_QMARK_ = G__47209;
+index = G__47210;
+out = G__47211;
 continue;
 }
 break;
@@ -1786,19 +1786,19 @@ return zprint.zfns.zreader_cond_w_symbol_QMARK_.call(null,cljs.core.first.call(n
 return (new cljs.core.List(null,coll,null,(1),null));
 } else {
 var rev_seq = cljs.core.reverse.call(null,coll);
-var vec__39251 = cljs.core.split_with.call(null,((function (rev_seq){
-return (function (p1__39250_SHARP_){
-return cljs.core.not.call(null,(function (){var or__4047__auto__ = zprint.zfns.zcoll_QMARK_.call(null,p1__39250_SHARP_);
+var vec__47213 = cljs.core.split_with.call(null,((function (rev_seq){
+return (function (p1__47212_SHARP_){
+return cljs.core.not.call(null,(function (){var or__4047__auto__ = zprint.zfns.zcoll_QMARK_.call(null,p1__47212_SHARP_);
 if(cljs.core.truth_(or__4047__auto__)){
 return or__4047__auto__;
 } else {
-return zprint.zfns.zreader_cond_w_coll_QMARK_.call(null,p1__39250_SHARP_);
+return zprint.zfns.zreader_cond_w_coll_QMARK_.call(null,p1__47212_SHARP_);
 }
 })());
 });})(rev_seq))
 ,rev_seq);
-var split_non_coll = cljs.core.nth.call(null,vec__39251,(0),null);
-var _ = cljs.core.nth.call(null,vec__39251,(1),null);
+var split_non_coll = cljs.core.nth.call(null,vec__47213,(0),null);
+var _ = cljs.core.nth.call(null,vec__47213,(1),null);
 var split_non_coll__$1 = cljs.core.map.call(null,cljs.core.list,cljs.core.reverse.call(null,split_non_coll));
 var remainder = cljs.core.take.call(null,(cljs.core.count.call(null,coll) - cljs.core.count.call(null,split_non_coll__$1)),coll);
 if(cljs.core.empty_QMARK_.call(null,remainder)){
@@ -1828,16 +1828,16 @@ cljs.core.println.call(null,new cljs.core.Keyword(null,"dbg-indent","dbg-indent"
 } else {
 }
 
-var part_sym = cljs.core.partition_by.call(null,(function (p1__39254_SHARP_){
-var or__4047__auto__ = zprint.zfns.zsymbol_QMARK_.call(null,p1__39254_SHARP_);
+var part_sym = cljs.core.partition_by.call(null,(function (p1__47216_SHARP_){
+var or__4047__auto__ = zprint.zfns.zsymbol_QMARK_.call(null,p1__47216_SHARP_);
 if(cljs.core.truth_(or__4047__auto__)){
 return or__4047__auto__;
 } else {
-var or__4047__auto____$1 = zprint.zfns.znil_QMARK_.call(null,p1__39254_SHARP_);
+var or__4047__auto____$1 = zprint.zfns.znil_QMARK_.call(null,p1__47216_SHARP_);
 if(cljs.core.truth_(or__4047__auto____$1)){
 return or__4047__auto____$1;
 } else {
-return zprint.zfns.zreader_cond_w_symbol_QMARK_.call(null,p1__39254_SHARP_);
+return zprint.zfns.zreader_cond_w_symbol_QMARK_.call(null,p1__47216_SHARP_);
 }
 }
 }),coll);
@@ -1848,7 +1848,7 @@ while(true){
 if(cljs.core.empty_QMARK_.call(null,remaining)){
 return cljs.core.persistent_BANG_.call(null,out);
 } else {
-var vec__39255 = (cljs.core.truth_((function (){var and__4036__auto__ = (function (){var or__4047__auto__ = zprint.zfns.zsymbol_QMARK_.call(null,cljs.core.ffirst.call(null,remaining));
+var vec__47217 = (cljs.core.truth_((function (){var and__4036__auto__ = (function (){var or__4047__auto__ = zprint.zfns.zsymbol_QMARK_.call(null,cljs.core.ffirst.call(null,remaining));
 if(cljs.core.truth_(or__4047__auto__)){
 return or__4047__auto__;
 } else {
@@ -1873,12 +1873,12 @@ return and__4036__auto__;
 }
 })())?((cljs.core._EQ_.call(null,cljs.core.count.call(null,cljs.core.first.call(null,remaining)),(2)))?new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.nthnext.call(null,remaining,(2)),cljs.core.conj_BANG_.call(null,out,cljs.core.concat.call(null,cljs.core.first.call(null,remaining),cljs.core.second.call(null,remaining)))], null):new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [((cljs.core.next.call(null,cljs.core.next.call(null,cljs.core.first.call(null,remaining))))?cljs.core.cons.call(null,cljs.core.next.call(null,cljs.core.next.call(null,cljs.core.first.call(null,remaining))),cljs.core.next.call(null,remaining)):cljs.core.next.call(null,remaining)),cljs.core.conj_BANG_.call(null,out,(new cljs.core.List(null,cljs.core.ffirst.call(null,remaining),(new cljs.core.List(null,cljs.core.second.call(null,cljs.core.first.call(null,remaining)),null,(1),null)),(2),null)))], null)):new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cons.call(null,cljs.core.next.call(null,cljs.core.first.call(null,remaining)),cljs.core.next.call(null,remaining)),cljs.core.conj_BANG_.call(null,out,(new cljs.core.List(null,cljs.core.ffirst.call(null,remaining),null,(1),null)))], null))):new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.next.call(null,remaining),cljs.core.conj_BANG_.call(null,out,cljs.core.first.call(null,remaining))], null)
 );
-var next_remaining = cljs.core.nth.call(null,vec__39255,(0),null);
-var new_out = cljs.core.nth.call(null,vec__39255,(1),null);
-var G__39258 = next_remaining;
-var G__39259 = new_out;
-remaining = G__39258;
-out = G__39259;
+var next_remaining = cljs.core.nth.call(null,vec__47217,(0),null);
+var new_out = cljs.core.nth.call(null,vec__47217,(1),null);
+var G__47220 = next_remaining;
+var G__47221 = new_out;
+remaining = G__47220;
+out = G__47221;
 continue;
 }
 break;
@@ -1889,8 +1889,8 @@ break;
  *   the last thing before it is a comment.
  */
 zprint.zprint.rstr_vec = (function zprint$zprint$rstr_vec(var_args){
-var G__39261 = arguments.length;
-switch (G__39261) {
+var G__47223 = arguments.length;
+switch (G__47223) {
 case 5:
 return zprint.zprint.rstr_vec.cljs$core$IFn$_invoke$arity$5((arguments[(0)]),(arguments[(1)]),(arguments[(2)]),(arguments[(3)]),(arguments[(4)]));
 
@@ -1928,13 +1928,13 @@ return zprint.zprint.rstr_vec.call(null,options,ind,zloc,r_str,null);
 
 zprint.zprint.rstr_vec.cljs$lang$maxFixedArity = 5;
 
-zprint.zprint.fzprint_binding_vec = (function zprint$zprint$fzprint_binding_vec(p__39263,ind,zloc){
-var map__39264 = p__39263;
-var map__39264__$1 = (((((!((map__39264 == null))))?(((((map__39264.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__39264.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__39264):map__39264);
-var options = map__39264__$1;
-var map__39265 = cljs.core.get.call(null,map__39264__$1,new cljs.core.Keyword(null,"binding","binding",539932593));
-var map__39265__$1 = (((((!((map__39265 == null))))?(((((map__39265.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__39265.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__39265):map__39265);
-var nl_separator_QMARK_ = cljs.core.get.call(null,map__39265__$1,new cljs.core.Keyword(null,"nl-separator?","nl-separator?",-758068767));
+zprint.zprint.fzprint_binding_vec = (function zprint$zprint$fzprint_binding_vec(p__47225,ind,zloc){
+var map__47226 = p__47225;
+var map__47226__$1 = (((((!((map__47226 == null))))?(((((map__47226.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47226.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47226):map__47226);
+var options = map__47226__$1;
+var map__47227 = cljs.core.get.call(null,map__47226__$1,new cljs.core.Keyword(null,"binding","binding",539932593));
+var map__47227__$1 = (((((!((map__47227 == null))))?(((((map__47227.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47227.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47227):map__47227);
+var nl_separator_QMARK_ = cljs.core.get.call(null,map__47227__$1,new cljs.core.Keyword(null,"nl-separator?","nl-separator?",-758068767));
 if(cljs.core.truth_(new cljs.core.Keyword(null,"dbg?","dbg?",1845730771).cljs$core$IFn$_invoke$arity$1(options))){
 cljs.core.println.call(null,new cljs.core.Keyword(null,"dbg-indent","dbg-indent",1534856778).cljs$core$IFn$_invoke$arity$1(options),"fzprint-binding-vec:",zprint.zfns.zstring.call(null,zprint.zfns.zfirst.call(null,zloc)));
 } else {
@@ -1945,13 +1945,13 @@ var l_str = "[";
 var r_str = "]";
 var l_str_vec = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [l_str,zprint.zprint.zcolor_map.call(null,options__$1,l_str),new cljs.core.Keyword(null,"left","left",-399115937)], null)], null);
 var r_str_vec = zprint.zprint.rstr_vec.call(null,options__$1,(ind + (1)),zloc,r_str);
-var value__39060__auto__ = ((cljs.core._EQ_.call(null,zprint.zfns.zcount.call(null,zloc),(0)))?zprint.zprint.concat_no_nil.call(null,l_str_vec,r_str_vec):zprint.zprint.concat_no_nil.call(null,l_str_vec,zprint.zprint.interpose_nl_hf.call(null,new cljs.core.Keyword(null,"binding","binding",539932593).cljs$core$IFn$_invoke$arity$1(options__$1),(ind + (1)),zprint.zprint.fzprint_map_two_up.call(null,new cljs.core.Keyword(null,"binding","binding",539932593),options__$1,(ind + (1)),false,cljs.core.second.call(null,zprint.zprint.partition_all_2_nc.call(null,options__$1,zprint.zfns.zseqnws.call(null,zloc))))),r_str_vec));
+var value__46621__auto__ = ((cljs.core._EQ_.call(null,zprint.zfns.zcount.call(null,zloc),(0)))?zprint.zprint.concat_no_nil.call(null,l_str_vec,r_str_vec):zprint.zprint.concat_no_nil.call(null,l_str_vec,zprint.zprint.interpose_nl_hf.call(null,new cljs.core.Keyword(null,"binding","binding",539932593).cljs$core$IFn$_invoke$arity$1(options__$1),(ind + (1)),zprint.zprint.fzprint_map_two_up.call(null,new cljs.core.Keyword(null,"binding","binding",539932593),options__$1,(ind + (1)),false,cljs.core.second.call(null,zprint.zprint.partition_all_2_nc.call(null,options__$1,zprint.zfns.zseqnws.call(null,zloc))))),r_str_vec));
 if(cljs.core.truth_(new cljs.core.Keyword(null,"dbg?","dbg?",1845730771).cljs$core$IFn$_invoke$arity$1(options__$1))){
-cljs.core.println.call(null,new cljs.core.Keyword(null,"dbg-indent","dbg-indent",1534856778).cljs$core$IFn$_invoke$arity$1(options__$1),"fzprint-binding-vec exit:",cljs.core.pr_str.call(null,value__39060__auto__));
+cljs.core.println.call(null,new cljs.core.Keyword(null,"dbg-indent","dbg-indent",1534856778).cljs$core$IFn$_invoke$arity$1(options__$1),"fzprint-binding-vec exit:",cljs.core.pr_str.call(null,value__46621__auto__));
 } else {
 }
 
-return value__39060__auto__;
+return value__46621__auto__;
 });
 /**
  * Try to hang something and try to flow it, and then see which is
@@ -1961,11 +1961,11 @@ return value__39060__auto__;
  *   caller knows what the fzfn does, so it has to count the items
  *   itself and pass it in here as zloc-count if it isn't just (zcount zloc).
  */
-zprint.zprint.fzprint_hang = (function zprint$zprint$fzprint_hang(p__39268,caller,hindent,findent,fzfn,zloc_count,zloc){
-var map__39269 = p__39268;
-var map__39269__$1 = (((((!((map__39269 == null))))?(((((map__39269.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__39269.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__39269):map__39269);
-var options = map__39269__$1;
-var one_line_QMARK_ = cljs.core.get.call(null,map__39269__$1,new cljs.core.Keyword(null,"one-line?","one-line?",2055953111));
+zprint.zprint.fzprint_hang = (function zprint$zprint$fzprint_hang(p__47230,caller,hindent,findent,fzfn,zloc_count,zloc){
+var map__47231 = p__47230;
+var map__47231__$1 = (((((!((map__47231 == null))))?(((((map__47231.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47231.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47231):map__47231);
+var options = map__47231__$1;
+var one_line_QMARK_ = cljs.core.get.call(null,map__47231__$1,new cljs.core.Keyword(null,"one-line?","one-line?",2055953111));
 if(cljs.core.truth_(new cljs.core.Keyword(null,"dbg?","dbg?",1845730771).cljs$core$IFn$_invoke$arity$1(options))){
 cljs.core.println.call(null,new cljs.core.Keyword(null,"dbg-indent","dbg-indent",1534856778).cljs$core$IFn$_invoke$arity$1(options),"fzprint-hang:",zprint.zfns.zstring.call(null,zprint.zfns.zfirst.call(null,zloc)),"caller:",caller);
 } else {
@@ -2010,21 +2010,21 @@ return flow;
 /**
  * Always prints pairs on a different line from other pairs.
  */
-zprint.zprint.fzprint_pairs = (function zprint$zprint$fzprint_pairs(p__39271,ind,zloc){
-var map__39272 = p__39271;
-var map__39272__$1 = (((((!((map__39272 == null))))?(((((map__39272.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__39272.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__39272):map__39272);
-var options = map__39272__$1;
-var map__39273 = cljs.core.get.call(null,map__39272__$1,new cljs.core.Keyword(null,"pair","pair",-447516312));
-var map__39273__$1 = (((((!((map__39273 == null))))?(((((map__39273.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__39273.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__39273):map__39273);
-var nl_separator_QMARK_ = cljs.core.get.call(null,map__39273__$1,new cljs.core.Keyword(null,"nl-separator?","nl-separator?",-758068767));
+zprint.zprint.fzprint_pairs = (function zprint$zprint$fzprint_pairs(p__47233,ind,zloc){
+var map__47234 = p__47233;
+var map__47234__$1 = (((((!((map__47234 == null))))?(((((map__47234.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47234.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47234):map__47234);
+var options = map__47234__$1;
+var map__47235 = cljs.core.get.call(null,map__47234__$1,new cljs.core.Keyword(null,"pair","pair",-447516312));
+var map__47235__$1 = (((((!((map__47235 == null))))?(((((map__47235.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47235.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47235):map__47235);
+var nl_separator_QMARK_ = cljs.core.get.call(null,map__47235__$1,new cljs.core.Keyword(null,"nl-separator?","nl-separator?",-758068767));
 if(cljs.core.truth_(new cljs.core.Keyword(null,"dbg?","dbg?",1845730771).cljs$core$IFn$_invoke$arity$1(options))){
 cljs.core.println.call(null,new cljs.core.Keyword(null,"dbg-indent","dbg-indent",1534856778).cljs$core$IFn$_invoke$arity$1(options),"fzprint-pairs:",zprint.zfns.zstring.call(null,zprint.zfns.zfirst.call(null,zloc)));
 } else {
 }
 
-var value__39060__auto__ = zprint.zprint.interpose_nl_hf.call(null,new cljs.core.Keyword(null,"pair","pair",-447516312).cljs$core$IFn$_invoke$arity$1(options),ind,zprint.zprint.fzprint_map_two_up.call(null,new cljs.core.Keyword(null,"pair","pair",-447516312),options,ind,false,(function (){var vec__39276 = zprint.zprint.partition_all_2_nc.call(null,options,zprint.zfns.zmap_right.call(null,cljs.core.identity,zloc));
-var _ = cljs.core.nth.call(null,vec__39276,(0),null);
-var part = cljs.core.nth.call(null,vec__39276,(1),null);
+var value__46621__auto__ = zprint.zprint.interpose_nl_hf.call(null,new cljs.core.Keyword(null,"pair","pair",-447516312).cljs$core$IFn$_invoke$arity$1(options),ind,zprint.zprint.fzprint_map_two_up.call(null,new cljs.core.Keyword(null,"pair","pair",-447516312),options,ind,false,(function (){var vec__47238 = zprint.zprint.partition_all_2_nc.call(null,options,zprint.zfns.zmap_right.call(null,cljs.core.identity,zloc));
+var _ = cljs.core.nth.call(null,vec__47238,(0),null);
+var part = cljs.core.nth.call(null,vec__47238,(1),null);
 if(cljs.core.truth_(new cljs.core.Keyword(null,"dbg?","dbg?",1845730771).cljs$core$IFn$_invoke$arity$1(options))){
 cljs.core.println.call(null,new cljs.core.Keyword(null,"dbg-indent","dbg-indent",1534856778).cljs$core$IFn$_invoke$arity$1(options),"fzprint-pairs: partition:",cljs.core.map.call(null,cljs.core.comp.call(null,zprint.zfns.zstring,cljs.core.first),part));
 } else {
@@ -2033,35 +2033,35 @@ cljs.core.println.call(null,new cljs.core.Keyword(null,"dbg-indent","dbg-indent"
 return part;
 })()));
 if(cljs.core.truth_(new cljs.core.Keyword(null,"dbg?","dbg?",1845730771).cljs$core$IFn$_invoke$arity$1(options))){
-cljs.core.println.call(null,new cljs.core.Keyword(null,"dbg-indent","dbg-indent",1534856778).cljs$core$IFn$_invoke$arity$1(options),"fzprint-pairs: exit:",cljs.core.pr_str.call(null,value__39060__auto__));
+cljs.core.println.call(null,new cljs.core.Keyword(null,"dbg-indent","dbg-indent",1534856778).cljs$core$IFn$_invoke$arity$1(options),"fzprint-pairs: exit:",cljs.core.pr_str.call(null,value__46621__auto__));
 } else {
 }
 
-return value__39060__auto__;
+return value__46621__auto__;
 });
 /**
  * Print things with a symbol and collections following.  Kind of like with
  *   pairs, but not quite. This skips over zloc and does everything to the
  *   right of it!
  */
-zprint.zprint.fzprint_extend = (function zprint$zprint$fzprint_extend(p__39280,ind,zloc){
-var map__39281 = p__39280;
-var map__39281__$1 = (((((!((map__39281 == null))))?(((((map__39281.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__39281.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__39281):map__39281);
-var options = map__39281__$1;
-var map__39282 = cljs.core.get.call(null,map__39281__$1,new cljs.core.Keyword(null,"extend","extend",1836484006));
-var map__39282__$1 = (((((!((map__39282 == null))))?(((((map__39282.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__39282.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__39282):map__39282);
-var nl_separator_QMARK_ = cljs.core.get.call(null,map__39282__$1,new cljs.core.Keyword(null,"nl-separator?","nl-separator?",-758068767));
+zprint.zprint.fzprint_extend = (function zprint$zprint$fzprint_extend(p__47242,ind,zloc){
+var map__47243 = p__47242;
+var map__47243__$1 = (((((!((map__47243 == null))))?(((((map__47243.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47243.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47243):map__47243);
+var options = map__47243__$1;
+var map__47244 = cljs.core.get.call(null,map__47243__$1,new cljs.core.Keyword(null,"extend","extend",1836484006));
+var map__47244__$1 = (((((!((map__47244 == null))))?(((((map__47244.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47244.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47244):map__47244);
+var nl_separator_QMARK_ = cljs.core.get.call(null,map__47244__$1,new cljs.core.Keyword(null,"nl-separator?","nl-separator?",-758068767));
 if(cljs.core.truth_(new cljs.core.Keyword(null,"dbg?","dbg?",1845730771).cljs$core$IFn$_invoke$arity$1(options))){
 cljs.core.println.call(null,new cljs.core.Keyword(null,"dbg-indent","dbg-indent",1534856778).cljs$core$IFn$_invoke$arity$1(options),"fzprint-extend:",zprint.zfns.zstring.call(null,zprint.zfns.zfirst.call(null,zloc)));
 } else {
 }
 
-var value__39060__auto__ = zprint.zprint.interpose_nl_hf.call(null,new cljs.core.Keyword(null,"extend","extend",1836484006).cljs$core$IFn$_invoke$arity$1(options),ind,zprint.zprint.fzprint_map_two_up.call(null,new cljs.core.Keyword(null,"extend","extend",1836484006),cljs.core.assoc.call(null,options,new cljs.core.Keyword(null,"fn-style","fn-style",1330516917),new cljs.core.Keyword(null,"fn","fn",-1175266204)),ind,false,(function (){var part = zprint.zprint.partition_all_sym.call(null,options,new cljs.core.Keyword(null,"modifiers","modifiers",50378834).cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"extend","extend",1836484006).cljs$core$IFn$_invoke$arity$1(options)),zprint.zfns.zmap_right.call(null,cljs.core.identity,zloc));
+var value__46621__auto__ = zprint.zprint.interpose_nl_hf.call(null,new cljs.core.Keyword(null,"extend","extend",1836484006).cljs$core$IFn$_invoke$arity$1(options),ind,zprint.zprint.fzprint_map_two_up.call(null,new cljs.core.Keyword(null,"extend","extend",1836484006),cljs.core.assoc.call(null,options,new cljs.core.Keyword(null,"fn-style","fn-style",1330516917),new cljs.core.Keyword(null,"fn","fn",-1175266204)),ind,false,(function (){var part = zprint.zprint.partition_all_sym.call(null,options,new cljs.core.Keyword(null,"modifiers","modifiers",50378834).cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"extend","extend",1836484006).cljs$core$IFn$_invoke$arity$1(options)),zprint.zfns.zmap_right.call(null,cljs.core.identity,zloc));
 if(cljs.core.truth_(new cljs.core.Keyword(null,"dbg?","dbg?",1845730771).cljs$core$IFn$_invoke$arity$1(options))){
-cljs.core.println.call(null,new cljs.core.Keyword(null,"dbg-indent","dbg-indent",1534856778).cljs$core$IFn$_invoke$arity$1(options),"fzprint-extend: partition:",cljs.core.map.call(null,((function (part,map__39281,map__39281__$1,options,map__39282,map__39282__$1,nl_separator_QMARK_){
-return (function (p1__39279_SHARP_){
-return cljs.core.map.call(null,zprint.zfns.zstring,p1__39279_SHARP_);
-});})(part,map__39281,map__39281__$1,options,map__39282,map__39282__$1,nl_separator_QMARK_))
+cljs.core.println.call(null,new cljs.core.Keyword(null,"dbg-indent","dbg-indent",1534856778).cljs$core$IFn$_invoke$arity$1(options),"fzprint-extend: partition:",cljs.core.map.call(null,((function (part,map__47243,map__47243__$1,options,map__47244,map__47244__$1,nl_separator_QMARK_){
+return (function (p1__47241_SHARP_){
+return cljs.core.map.call(null,zprint.zfns.zstring,p1__47241_SHARP_);
+});})(part,map__47243,map__47243__$1,options,map__47244,map__47244__$1,nl_separator_QMARK_))
 ,part));
 } else {
 }
@@ -2069,11 +2069,11 @@ return cljs.core.map.call(null,zprint.zfns.zstring,p1__39279_SHARP_);
 return part;
 })()));
 if(cljs.core.truth_(new cljs.core.Keyword(null,"dbg?","dbg?",1845730771).cljs$core$IFn$_invoke$arity$1(options))){
-cljs.core.println.call(null,new cljs.core.Keyword(null,"dbg-indent","dbg-indent",1534856778).cljs$core$IFn$_invoke$arity$1(options),"fzprint-extend: exit:",cljs.core.pr_str.call(null,value__39060__auto__));
+cljs.core.println.call(null,new cljs.core.Keyword(null,"dbg-indent","dbg-indent",1534856778).cljs$core$IFn$_invoke$arity$1(options),"fzprint-extend: exit:",cljs.core.pr_str.call(null,value__46621__auto__));
 } else {
 }
 
-return value__39060__auto__;
+return value__46621__auto__;
 });
 /**
  * Given a transient vector v, concatenate all of the other
@@ -2081,14 +2081,14 @@ return value__39060__auto__;
  */
 zprint.zprint.concatv_BANG_ = (function zprint$zprint$concatv_BANG_(var_args){
 var args__4647__auto__ = [];
-var len__4641__auto___39287 = arguments.length;
-var i__4642__auto___39288 = (0);
+var len__4641__auto___47249 = arguments.length;
+var i__4642__auto___47250 = (0);
 while(true){
-if((i__4642__auto___39288 < len__4641__auto___39287)){
-args__4647__auto__.push((arguments[i__4642__auto___39288]));
+if((i__4642__auto___47250 < len__4641__auto___47249)){
+args__4647__auto__.push((arguments[i__4642__auto___47250]));
 
-var G__39289 = (i__4642__auto___39288 + (1));
-i__4642__auto___39288 = G__39289;
+var G__47251 = (i__4642__auto___47250 + (1));
+i__4642__auto___47250 = G__47251;
 continue;
 } else {
 }
@@ -2104,15 +2104,15 @@ var cols = rest;
 var out = v;
 while(true){
 if(cljs.core.truth_(cols)){
-var G__39290 = cljs.core.next.call(null,cols);
-var G__39291 = (function (){var col = cljs.core.first.call(null,cols);
+var G__47252 = cljs.core.next.call(null,cols);
+var G__47253 = (function (){var col = cljs.core.first.call(null,cols);
 var out__$1 = out;
 while(true){
 if(cljs.core.truth_(col)){
-var G__39292 = cljs.core.next.call(null,col);
-var G__39293 = cljs.core.conj_BANG_.call(null,out__$1,cljs.core.first.call(null,col));
-col = G__39292;
-out__$1 = G__39293;
+var G__47254 = cljs.core.next.call(null,col);
+var G__47255 = cljs.core.conj_BANG_.call(null,out__$1,cljs.core.first.call(null,col));
+col = G__47254;
+out__$1 = G__47255;
 continue;
 } else {
 return out__$1;
@@ -2120,8 +2120,8 @@ return out__$1;
 break;
 }
 })();
-cols = G__39290;
-out = G__39291;
+cols = G__47252;
+out = G__47253;
 continue;
 } else {
 return out;
@@ -2133,11 +2133,11 @@ break;
 zprint.zprint.concatv_BANG_.cljs$lang$maxFixedArity = (1);
 
 /** @this {Function} */
-zprint.zprint.concatv_BANG_.cljs$lang$applyTo = (function (seq39285){
-var G__39286 = cljs.core.first.call(null,seq39285);
-var seq39285__$1 = cljs.core.next.call(null,seq39285);
+zprint.zprint.concatv_BANG_.cljs$lang$applyTo = (function (seq47247){
+var G__47248 = cljs.core.first.call(null,seq47247);
+var seq47247__$1 = cljs.core.next.call(null,seq47247);
 var self__4628__auto__ = this;
-return self__4628__auto__.cljs$core$IFn$_invoke$arity$variadic(G__39286,seq39285__$1);
+return self__4628__auto__.cljs$core$IFn$_invoke$arity$variadic(G__47248,seq47247__$1);
 });
 
 /**
@@ -2175,16 +2175,16 @@ cljs.core.println.call(null,new cljs.core.Keyword(null,"dbg-indent","dbg-indent"
 return cljs.core.persistent_BANG_.call(null,out);
 } else {
 var next_zloc = cljs.core.first.call(null,zloc_seq);
-var vec__39294 = ((cljs.core._EQ_.call(null,index,last_index))?new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [(((!((index === (0)))))?new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [" ",new cljs.core.Keyword(null,"none","none",1333468478),new cljs.core.Keyword(null,"whitespace","whitespace",-1340035483)], null)], null):null),options__$1], null):((cljs.core._EQ_.call(null,index,(0)))?new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [null,zprint.zprint.not_rightmost.call(null,options__$1)], null):new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [" ",new cljs.core.Keyword(null,"none","none",1333468478),new cljs.core.Keyword(null,"whitespace","whitespace",-1340035483)], null)], null),zprint.zprint.not_rightmost.call(null,options__$1)], null)
+var vec__47256 = ((cljs.core._EQ_.call(null,index,last_index))?new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [(((!((index === (0)))))?new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [" ",new cljs.core.Keyword(null,"none","none",1333468478),new cljs.core.Keyword(null,"whitespace","whitespace",-1340035483)], null)], null):null),options__$1], null):((cljs.core._EQ_.call(null,index,(0)))?new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [null,zprint.zprint.not_rightmost.call(null,options__$1)], null):new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [" ",new cljs.core.Keyword(null,"none","none",1333468478),new cljs.core.Keyword(null,"whitespace","whitespace",-1340035483)], null)], null),zprint.zprint.not_rightmost.call(null,options__$1)], null)
 ));
-var sep = cljs.core.nth.call(null,vec__39294,(0),null);
-var next_options = cljs.core.nth.call(null,vec__39294,(1),null);
+var sep = cljs.core.nth.call(null,vec__47256,(0),null);
+var next_options = cljs.core.nth.call(null,vec__47256,(1),null);
 var next_out = zprint.zprint.fzprint_STAR_.call(null,next_options,new_ind,next_zloc);
 var _ = zprint.zprint.log_lines.call(null,options__$1,"fzprint-one-line:",new_ind,next_out);
-var vec__39297 = zprint.zprint.style_lines.call(null,options__$1,new_ind,next_out);
-var line_count = cljs.core.nth.call(null,vec__39297,(0),null);
-var max_width = cljs.core.nth.call(null,vec__39297,(1),null);
-var next_lines = vec__39297;
+var vec__47259 = zprint.zprint.style_lines.call(null,options__$1,new_ind,next_out);
+var line_count = cljs.core.nth.call(null,vec__47259,(0),null);
+var max_width = cljs.core.nth.call(null,vec__47259,(1),null);
+var next_lines = vec__47259;
 if((!(zprint.zprint.fzfit_one_line.call(null,next_options,next_lines)))){
 if(cljs.core.truth_(new cljs.core.Keyword(null,"dbg?","dbg?",1845730771).cljs$core$IFn$_invoke$arity$1(options__$1))){
 cljs.core.println.call(null,new cljs.core.Keyword(null,"dbg-indent","dbg-indent",1534856778).cljs$core$IFn$_invoke$arity$1(options__$1),"fzprint-one-line: failed, too wide or too many lines!");
@@ -2193,14 +2193,14 @@ cljs.core.println.call(null,new cljs.core.Keyword(null,"dbg-indent","dbg-indent"
 
 return null;
 } else {
-var G__39300 = cljs.core.next.call(null,zloc_seq);
-var G__39301 = (cljs.core.long$.call(null,max_width) + (1));
-var G__39302 = (index + (1));
-var G__39303 = zprint.zprint.concatv_BANG_.call(null,out,sep,next_out);
-zloc_seq = G__39300;
-new_ind = G__39301;
-index = G__39302;
-out = G__39303;
+var G__47262 = cljs.core.next.call(null,zloc_seq);
+var G__47263 = (cljs.core.long$.call(null,max_width) + (1));
+var G__47264 = (index + (1));
+var G__47265 = zprint.zprint.concatv_BANG_.call(null,out,sep,next_out);
+zloc_seq = G__47262;
+new_ind = G__47263;
+index = G__47264;
+out = G__47265;
 continue;
 }
 }
@@ -2234,8 +2234,8 @@ if((max_length === (0))){
 return new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, ["#?#",zprint.zprint.zcolor_map.call(null,options,new cljs.core.Keyword(null,"keyword","keyword",811389747)),new cljs.core.Keyword(null,"element","element",1974019749)], null)], null)], null);
 } else {
 var left = zprint.zprint.zpmap.call(null,options,((function (max_length,len,zloc_seq__$1,len__$1){
-return (function (p1__39304_SHARP_,p2__39305_SHARP_){
-return zprint.zprint.fzprint_STAR_.call(null,zprint.zprint.not_rightmost.call(null,options),p1__39304_SHARP_,p2__39305_SHARP_);
+return (function (p1__47266_SHARP_,p2__47267_SHARP_){
+return zprint.zprint.fzprint_STAR_.call(null,zprint.zprint.not_rightmost.call(null,options),p1__47266_SHARP_,p2__47267_SHARP_);
 });})(max_length,len,zloc_seq__$1,len__$1))
 ,((cljs.core.coll_QMARK_.call(null,ind))?ind:cljs.core.repeat.call(null,ind)),cljs.core.butlast.call(null,zloc_seq__$1));
 var right = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [zprint.zprint.fzprint_STAR_.call(null,options,((cljs.core.coll_QMARK_.call(null,ind))?cljs.core.last.call(null,ind):ind),cljs.core.last.call(null,zloc_seq__$1))], null);
@@ -2259,8 +2259,8 @@ return zprint.zprint.concat_no_nil.call(null,left,right);
  *   or a seq of indents, one for each element in zloc-seq.
  */
 zprint.zprint.fzprint_flow_seq = (function zprint$zprint$fzprint_flow_seq(var_args){
-var G__39308 = arguments.length;
-switch (G__39308) {
+var G__47270 = arguments.length;
+switch (G__47270) {
 case 4:
 return zprint.zprint.fzprint_flow_seq.cljs$core$IFn$_invoke$arity$4((arguments[(0)]),(arguments[(1)]),(arguments[(2)]),(arguments[(3)]));
 
@@ -2285,17 +2285,17 @@ var coll_print = zprint.zprint.fzprint_seq.call(null,options,ind,zloc_seq);
 var one_line = cljs.core.apply.call(null,zprint.zprint.concat_no_nil,cljs.core.interpose.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [" ",new cljs.core.Keyword(null,"none","none",1333468478),new cljs.core.Keyword(null,"whitespace","whitespace",-1340035483)], null)], null),coll_print));
 var _ = zprint.zprint.log_lines.call(null,options,"fzprint-flow-seq:",ind,one_line);
 var one_line_lines = zprint.zprint.style_lines.call(null,options,ind,one_line);
-var value__39060__auto__ = ((((cljs.core.not.call(null,force_nl_QMARK_)) && (zprint.zprint.fzfit_one_line.call(null,options,one_line_lines))))?one_line:cljs.core.apply.call(null,zprint.zprint.concat_no_nil,((cljs.core.coll_QMARK_.call(null,ind))?cljs.core.drop.call(null,(1),cljs.core.interleave.call(null,cljs.core.map.call(null,((function (coll_print,one_line,_,one_line_lines){
-return (function (p1__39306_SHARP_){
-return (new cljs.core.PersistentVector(null,1,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [["\n",cljs.core.str.cljs$core$IFn$_invoke$arity$1(zprint.zprint.blanks.call(null,p1__39306_SHARP_))].join(''),new cljs.core.Keyword(null,"none","none",1333468478),new cljs.core.Keyword(null,"indent","indent",-148200125)], null)],null));
+var value__46621__auto__ = ((((cljs.core.not.call(null,force_nl_QMARK_)) && (zprint.zprint.fzfit_one_line.call(null,options,one_line_lines))))?one_line:cljs.core.apply.call(null,zprint.zprint.concat_no_nil,((cljs.core.coll_QMARK_.call(null,ind))?cljs.core.drop.call(null,(1),cljs.core.interleave.call(null,cljs.core.map.call(null,((function (coll_print,one_line,_,one_line_lines){
+return (function (p1__47268_SHARP_){
+return (new cljs.core.PersistentVector(null,1,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [["\n",cljs.core.str.cljs$core$IFn$_invoke$arity$1(zprint.zprint.blanks.call(null,p1__47268_SHARP_))].join(''),new cljs.core.Keyword(null,"none","none",1333468478),new cljs.core.Keyword(null,"indent","indent",-148200125)], null)],null));
 });})(coll_print,one_line,_,one_line_lines))
 ,ind),coll_print)):cljs.core.interpose.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [["\n",cljs.core.str.cljs$core$IFn$_invoke$arity$1(zprint.zprint.blanks.call(null,ind))].join(''),new cljs.core.Keyword(null,"none","none",1333468478),new cljs.core.Keyword(null,"indent","indent",-148200125)], null)], null),coll_print))));
 if(cljs.core.truth_(new cljs.core.Keyword(null,"dbg?","dbg?",1845730771).cljs$core$IFn$_invoke$arity$1(options))){
-cljs.core.println.call(null,new cljs.core.Keyword(null,"dbg-indent","dbg-indent",1534856778).cljs$core$IFn$_invoke$arity$1(options),"fzprint-flow-seq: exit:",cljs.core.pr_str.call(null,value__39060__auto__));
+cljs.core.println.call(null,new cljs.core.Keyword(null,"dbg-indent","dbg-indent",1534856778).cljs$core$IFn$_invoke$arity$1(options),"fzprint-flow-seq: exit:",cljs.core.pr_str.call(null,value__46621__auto__));
 } else {
 }
 
-return value__39060__auto__;
+return value__46621__auto__;
 });
 
 zprint.zprint.fzprint_flow_seq.cljs$core$IFn$_invoke$arity$3 = (function (options,ind,zloc_seq){
@@ -2313,11 +2313,11 @@ zprint.zprint.fzprint_flow_seq.cljs$lang$maxFixedArity = 4;
  *   findent is flow-indent, and each contains the initial separator.  
  *   Might be nice if the fn-style actually got sent to this fn.
  */
-zprint.zprint.fzprint_hang_one = (function zprint$zprint$fzprint_hang_one(caller,p__39310,hindent,findent,zloc){
-var map__39311 = p__39310;
-var map__39311__$1 = (((((!((map__39311 == null))))?(((((map__39311.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__39311.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__39311):map__39311);
-var options = map__39311__$1;
-var one_line_QMARK_ = cljs.core.get.call(null,map__39311__$1,new cljs.core.Keyword(null,"one-line?","one-line?",2055953111));
+zprint.zprint.fzprint_hang_one = (function zprint$zprint$fzprint_hang_one(caller,p__47272,hindent,findent,zloc){
+var map__47273 = p__47272;
+var map__47273__$1 = (((((!((map__47273 == null))))?(((((map__47273.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47273.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47273):map__47273);
+var options = map__47273__$1;
+var one_line_QMARK_ = cljs.core.get.call(null,map__47273__$1,new cljs.core.Keyword(null,"one-line?","one-line?",2055953111));
 if(cljs.core.truth_(new cljs.core.Keyword(null,"dbg?","dbg?",1845730771).cljs$core$IFn$_invoke$arity$1(options))){
 cljs.core.println.call(null,new cljs.core.Keyword(null,"dbg-indent","dbg-indent",1534856778).cljs$core$IFn$_invoke$arity$1(options),"fzprint-hang-one: hindent:",hindent,"findent:",findent);
 } else {
@@ -2411,20 +2411,20 @@ return and__4036__auto__;
 })())){
 return (element_count - pair_size);
 } else {
-var G__39313 = cljs.core.next.call(null,seq_right_rev);
-var G__39314 = (element_count + (1));
-var G__39315 = (cljs.core.truth_(comment_QMARK_)?constant_required_QMARK_:cljs.core.not.call(null,constant_required_QMARK_));
-var G__39316 = (cljs.core.truth_((function (){var and__4036__auto__ = constant_required_QMARK_;
+var G__47275 = cljs.core.next.call(null,seq_right_rev);
+var G__47276 = (element_count + (1));
+var G__47277 = (cljs.core.truth_(comment_QMARK_)?constant_required_QMARK_:cljs.core.not.call(null,constant_required_QMARK_));
+var G__47278 = (cljs.core.truth_((function (){var and__4036__auto__ = constant_required_QMARK_;
 if(cljs.core.truth_(and__4036__auto__)){
 return cljs.core.not.call(null,comment_QMARK_);
 } else {
 return and__4036__auto__;
 }
 })())?(0):(pair_size + (1)));
-seq_right_rev = G__39313;
-element_count = G__39314;
-constant_required_QMARK_ = G__39315;
-pair_size = G__39316;
+seq_right_rev = G__47275;
+element_count = G__47276;
+constant_required_QMARK_ = G__47277;
+pair_size = G__47278;
 continue;
 }
 }
@@ -2437,14 +2437,14 @@ break;
  *   if any.  If there are no pair-seqs, pair-seq must be nil, not
  *   an empty seq.
  */
-zprint.zprint.constant_pair = (function zprint$zprint$constant_pair(caller,p__39317,seq_right){
-var map__39318 = p__39317;
-var map__39318__$1 = (((((!((map__39318 == null))))?(((((map__39318.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__39318.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__39318):map__39318);
-var options = map__39318__$1;
-var map__39319 = cljs.core.get.call(null,map__39318__$1,caller);
-var map__39319__$1 = (((((!((map__39319 == null))))?(((((map__39319.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__39319.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__39319):map__39319);
-var constant_pair_QMARK_ = cljs.core.get.call(null,map__39319__$1,new cljs.core.Keyword(null,"constant-pair?","constant-pair?",-1009181437));
-var constant_pair_min = cljs.core.get.call(null,map__39319__$1,new cljs.core.Keyword(null,"constant-pair-min","constant-pair-min",1245759721));
+zprint.zprint.constant_pair = (function zprint$zprint$constant_pair(caller,p__47279,seq_right){
+var map__47280 = p__47279;
+var map__47280__$1 = (((((!((map__47280 == null))))?(((((map__47280.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47280.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47280):map__47280);
+var options = map__47280__$1;
+var map__47281 = cljs.core.get.call(null,map__47280__$1,caller);
+var map__47281__$1 = (((((!((map__47281 == null))))?(((((map__47281.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47281.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47281):map__47281);
+var constant_pair_QMARK_ = cljs.core.get.call(null,map__47281__$1,new cljs.core.Keyword(null,"constant-pair?","constant-pair?",-1009181437));
+var constant_pair_min = cljs.core.get.call(null,map__47281__$1,new cljs.core.Keyword(null,"constant-pair-min","constant-pair-min",1245759721));
 if(cljs.core.truth_(constant_pair_QMARK_)){
 var paired_item_count = zprint.zprint.count_constant_pairs.call(null,seq_right);
 var non_paired_item_count = (cljs.core.count.call(null,seq_right) - paired_item_count);
@@ -2469,8 +2469,8 @@ return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMP
  *   elements of zloc.
  */
 zprint.zprint.fzprint_hang_remaining = (function zprint$zprint$fzprint_hang_remaining(var_args){
-var G__39323 = arguments.length;
-switch (G__39323) {
+var G__47285 = arguments.length;
+switch (G__47285) {
 case 7:
 return zprint.zprint.fzprint_hang_remaining.cljs$core$IFn$_invoke$arity$7((arguments[(0)]),(arguments[(1)]),(arguments[(2)]),(arguments[(3)]),(arguments[(4)]),(arguments[(5)]),(arguments[(6)]));
 
@@ -2485,21 +2485,21 @@ throw (new Error(["Invalid arity: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(
 }
 });
 
-zprint.zprint.fzprint_hang_remaining.cljs$core$IFn$_invoke$arity$7 = (function (caller,p__39324,hindent,findent,zloc,fn_style,zloc_count){
-var map__39325 = p__39324;
-var map__39325__$1 = (((((!((map__39325 == null))))?(((((map__39325.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__39325.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__39325):map__39325);
-var options = map__39325__$1;
-var map__39326 = cljs.core.get.call(null,map__39325__$1,caller);
-var map__39326__$1 = (((((!((map__39326 == null))))?(((((map__39326.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__39326.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__39326):map__39326);
-var hang_QMARK_ = cljs.core.get.call(null,map__39326__$1,new cljs.core.Keyword(null,"hang?","hang?",-579442854));
-var constant_pair_QMARK_ = cljs.core.get.call(null,map__39326__$1,new cljs.core.Keyword(null,"constant-pair?","constant-pair?",-1009181437));
-var constant_pair_min = cljs.core.get.call(null,map__39326__$1,new cljs.core.Keyword(null,"constant-pair-min","constant-pair-min",1245759721));
-var hang_avoid = cljs.core.get.call(null,map__39326__$1,new cljs.core.Keyword(null,"hang-avoid","hang-avoid",-138703568));
-var hang_expand = cljs.core.get.call(null,map__39326__$1,new cljs.core.Keyword(null,"hang-expand","hang-expand",1086807559));
-var hang_diff = cljs.core.get.call(null,map__39326__$1,new cljs.core.Keyword(null,"hang-diff","hang-diff",-1575205424));
-var nl_separator_QMARK_ = cljs.core.get.call(null,map__39326__$1,new cljs.core.Keyword(null,"nl-separator?","nl-separator?",-758068767));
-var dbg_QMARK_ = cljs.core.get.call(null,map__39325__$1,new cljs.core.Keyword(null,"dbg?","dbg?",1845730771));
-var width = cljs.core.get.call(null,map__39325__$1,new cljs.core.Keyword(null,"width","width",-384071477));
+zprint.zprint.fzprint_hang_remaining.cljs$core$IFn$_invoke$arity$7 = (function (caller,p__47286,hindent,findent,zloc,fn_style,zloc_count){
+var map__47287 = p__47286;
+var map__47287__$1 = (((((!((map__47287 == null))))?(((((map__47287.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47287.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47287):map__47287);
+var options = map__47287__$1;
+var map__47288 = cljs.core.get.call(null,map__47287__$1,caller);
+var map__47288__$1 = (((((!((map__47288 == null))))?(((((map__47288.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47288.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47288):map__47288);
+var hang_QMARK_ = cljs.core.get.call(null,map__47288__$1,new cljs.core.Keyword(null,"hang?","hang?",-579442854));
+var constant_pair_QMARK_ = cljs.core.get.call(null,map__47288__$1,new cljs.core.Keyword(null,"constant-pair?","constant-pair?",-1009181437));
+var constant_pair_min = cljs.core.get.call(null,map__47288__$1,new cljs.core.Keyword(null,"constant-pair-min","constant-pair-min",1245759721));
+var hang_avoid = cljs.core.get.call(null,map__47288__$1,new cljs.core.Keyword(null,"hang-avoid","hang-avoid",-138703568));
+var hang_expand = cljs.core.get.call(null,map__47288__$1,new cljs.core.Keyword(null,"hang-expand","hang-expand",1086807559));
+var hang_diff = cljs.core.get.call(null,map__47288__$1,new cljs.core.Keyword(null,"hang-diff","hang-diff",-1575205424));
+var nl_separator_QMARK_ = cljs.core.get.call(null,map__47288__$1,new cljs.core.Keyword(null,"nl-separator?","nl-separator?",-758068767));
+var dbg_QMARK_ = cljs.core.get.call(null,map__47287__$1,new cljs.core.Keyword(null,"dbg?","dbg?",1845730771));
+var width = cljs.core.get.call(null,map__47287__$1,new cljs.core.Keyword(null,"width","width",-384071477));
 if(cljs.core.truth_(new cljs.core.Keyword(null,"dbg-hang","dbg-hang",-1928862076).cljs$core$IFn$_invoke$arity$1(options))){
 cljs.core.println.call(null,zprint.zprint.dots.call(null,new cljs.core.Keyword(null,"pdepth","pdepth",-1943862342).cljs$core$IFn$_invoke$arity$1(options)),"hr",zprint.zfns.zstring.call(null,zloc));
 } else {
@@ -2512,9 +2512,9 @@ cljs.core.println.call(null,new cljs.core.Keyword(null,"dbg-indent","dbg-indent"
 
 var seq_right = zprint.zfns.zmap_right.call(null,cljs.core.identity,zloc);
 var seq_right__$1 = (cljs.core.truth_(zloc_count)?cljs.core.take.call(null,zloc_count,seq_right):seq_right);
-var vec__39329 = zprint.zprint.constant_pair.call(null,caller,options,seq_right__$1);
-var pair_seq = cljs.core.nth.call(null,vec__39329,(0),null);
-var non_paired_item_count = cljs.core.nth.call(null,vec__39329,(1),null);
+var vec__47291 = zprint.zprint.constant_pair.call(null,caller,options,seq_right__$1);
+var pair_seq = cljs.core.nth.call(null,vec__47291,(0),null);
+var non_paired_item_count = cljs.core.nth.call(null,vec__47291,(1),null);
 var _ = (cljs.core.truth_(new cljs.core.Keyword(null,"dbg?","dbg?",1845730771).cljs$core$IFn$_invoke$arity$1(options))?cljs.core.println.call(null,new cljs.core.Keyword(null,"dbg-indent","dbg-indent",1534856778).cljs$core$IFn$_invoke$arity$1(options),"fzprint-hang-remaining count pair-seq:",cljs.core.count.call(null,pair_seq)):null);
 var flow = (function (){var flow_result = ((cljs.core.not.call(null,pair_seq))?cljs.core.apply.call(null,zprint.zprint.concat_no_nil,cljs.core.interpose.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [["\n",cljs.core.str.cljs$core$IFn$_invoke$arity$1(zprint.zprint.blanks.call(null,findent))].join(''),new cljs.core.Keyword(null,"none","none",1333468478),new cljs.core.Keyword(null,"indent","indent",-148200125)], null)], null),zprint.zprint.fzprint_seq.call(null,options,findent,seq_right__$1))):(((!((non_paired_item_count === (0)))))?zprint.zprint.concat_no_nil.call(null,cljs.core.apply.call(null,zprint.zprint.concat_no_nil,cljs.core.interpose.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [["\n",cljs.core.str.cljs$core$IFn$_invoke$arity$1(zprint.zprint.blanks.call(null,findent))].join(''),new cljs.core.Keyword(null,"none","none",1333468478),new cljs.core.Keyword(null,"indent","indent",-148200125)], null)], null),zprint.zprint.zpmap.call(null,options,cljs.core.partial.call(null,zprint.zprint.fzprint_STAR_,zprint.zprint.not_rightmost.call(null,options),findent),cljs.core.take.call(null,non_paired_item_count,seq_right__$1)))),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [["\n",cljs.core.str.cljs$core$IFn$_invoke$arity$1(zprint.zprint.blanks.call(null,findent))].join(''),new cljs.core.Keyword(null,"none","none",1333468478),new cljs.core.Keyword(null,"indent","indent",-148200125)], null)], null),zprint.zprint.interpose_nl_hf.call(null,new cljs.core.Keyword(null,"pair","pair",-447516312).cljs$core$IFn$_invoke$arity$1(options),findent,zprint.zprint.fzprint_map_two_up.call(null,new cljs.core.Keyword(null,"pair","pair",-447516312),options,findent,null,pair_seq))):zprint.zprint.interpose_nl_hf.call(null,new cljs.core.Keyword(null,"pair","pair",-447516312).cljs$core$IFn$_invoke$arity$1(options),findent,zprint.zprint.fzprint_map_two_up.call(null,new cljs.core.Keyword(null,"pair","pair",-447516312),options,findent,null,pair_seq))));
 return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [flow_result,zprint.zprint.style_lines.call(null,options,findent,flow_result)], null);
@@ -2526,29 +2526,29 @@ return ((cljs.core.not_EQ_.call(null,hindent,findent)) && (((cljs.core.not.call(
 return and__4036__auto__;
 }
 })();
-var hanging = (function (){var hang_result = (cljs.core.truth_(hang_QMARK___$1)?((cljs.core.not.call(null,pair_seq))?cljs.core.apply.call(null,zprint.zprint.concat_no_nil,cljs.core.interpose.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [["\n",cljs.core.str.cljs$core$IFn$_invoke$arity$1(zprint.zprint.blanks.call(null,hindent))].join(''),new cljs.core.Keyword(null,"none","none",1333468478),new cljs.core.Keyword(null,"indent","indent",-148200125)], null)], null),zprint.zprint.fzprint_seq.call(null,zprint.zprint.in_hang.call(null,options),hindent,seq_right__$1))):(((!((non_paired_item_count === (0)))))?zprint.zprint.concat_no_nil.call(null,(function (){var value__39060__auto__ = cljs.core.apply.call(null,zprint.zprint.concat_no_nil,cljs.core.interpose.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [["\n",cljs.core.str.cljs$core$IFn$_invoke$arity$1(zprint.zprint.blanks.call(null,hindent))].join(''),new cljs.core.Keyword(null,"none","none",1333468478),new cljs.core.Keyword(null,"indent","indent",-148200125)], null)], null),zprint.zprint.zpmap.call(null,options,cljs.core.partial.call(null,zprint.zprint.fzprint_STAR_,zprint.zprint.not_rightmost.call(null,zprint.zprint.in_hang.call(null,options)),hindent),cljs.core.take.call(null,non_paired_item_count,seq_right__$1))));
+var hanging = (function (){var hang_result = (cljs.core.truth_(hang_QMARK___$1)?((cljs.core.not.call(null,pair_seq))?cljs.core.apply.call(null,zprint.zprint.concat_no_nil,cljs.core.interpose.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [["\n",cljs.core.str.cljs$core$IFn$_invoke$arity$1(zprint.zprint.blanks.call(null,hindent))].join(''),new cljs.core.Keyword(null,"none","none",1333468478),new cljs.core.Keyword(null,"indent","indent",-148200125)], null)], null),zprint.zprint.fzprint_seq.call(null,zprint.zprint.in_hang.call(null,options),hindent,seq_right__$1))):(((!((non_paired_item_count === (0)))))?zprint.zprint.concat_no_nil.call(null,(function (){var value__46621__auto__ = cljs.core.apply.call(null,zprint.zprint.concat_no_nil,cljs.core.interpose.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [["\n",cljs.core.str.cljs$core$IFn$_invoke$arity$1(zprint.zprint.blanks.call(null,hindent))].join(''),new cljs.core.Keyword(null,"none","none",1333468478),new cljs.core.Keyword(null,"indent","indent",-148200125)], null)], null),zprint.zprint.zpmap.call(null,options,cljs.core.partial.call(null,zprint.zprint.fzprint_STAR_,zprint.zprint.not_rightmost.call(null,zprint.zprint.in_hang.call(null,options)),hindent),cljs.core.take.call(null,non_paired_item_count,seq_right__$1))));
 if(cljs.core.truth_(new cljs.core.Keyword(null,"dbg?","dbg?",1845730771).cljs$core$IFn$_invoke$arity$1(options))){
-cljs.core.println.call(null,new cljs.core.Keyword(null,"dbg-indent","dbg-indent",1534856778).cljs$core$IFn$_invoke$arity$1(options),"fzprint-hang-remaining: mapv:",cljs.core.pr_str.call(null,value__39060__auto__));
+cljs.core.println.call(null,new cljs.core.Keyword(null,"dbg-indent","dbg-indent",1534856778).cljs$core$IFn$_invoke$arity$1(options),"fzprint-hang-remaining: mapv:",cljs.core.pr_str.call(null,value__46621__auto__));
 } else {
 }
 
-return value__39060__auto__;
-})(),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [["\n",cljs.core.str.cljs$core$IFn$_invoke$arity$1(zprint.zprint.blanks.call(null,hindent))].join(''),new cljs.core.Keyword(null,"none","none",1333468478),new cljs.core.Keyword(null,"indent","indent",-148200125)], null)], null),(function (){var value__39060__auto__ = zprint.zprint.interpose_nl_hf.call(null,new cljs.core.Keyword(null,"pair","pair",-447516312).cljs$core$IFn$_invoke$arity$1(options),hindent,zprint.zprint.fzprint_map_two_up.call(null,new cljs.core.Keyword(null,"pair","pair",-447516312),zprint.zprint.in_hang.call(null,options),hindent,null,pair_seq));
+return value__46621__auto__;
+})(),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [["\n",cljs.core.str.cljs$core$IFn$_invoke$arity$1(zprint.zprint.blanks.call(null,hindent))].join(''),new cljs.core.Keyword(null,"none","none",1333468478),new cljs.core.Keyword(null,"indent","indent",-148200125)], null)], null),(function (){var value__46621__auto__ = zprint.zprint.interpose_nl_hf.call(null,new cljs.core.Keyword(null,"pair","pair",-447516312).cljs$core$IFn$_invoke$arity$1(options),hindent,zprint.zprint.fzprint_map_two_up.call(null,new cljs.core.Keyword(null,"pair","pair",-447516312),zprint.zprint.in_hang.call(null,options),hindent,null,pair_seq));
 if(cljs.core.truth_(new cljs.core.Keyword(null,"dbg?","dbg?",1845730771).cljs$core$IFn$_invoke$arity$1(options))){
-cljs.core.println.call(null,new cljs.core.Keyword(null,"dbg-indent","dbg-indent",1534856778).cljs$core$IFn$_invoke$arity$1(options),"fzprint-hang-remaining: fzprint-hang:",cljs.core.pr_str.call(null,value__39060__auto__));
+cljs.core.println.call(null,new cljs.core.Keyword(null,"dbg-indent","dbg-indent",1534856778).cljs$core$IFn$_invoke$arity$1(options),"fzprint-hang-remaining: fzprint-hang:",cljs.core.pr_str.call(null,value__46621__auto__));
 } else {
 }
 
-return value__39060__auto__;
+return value__46621__auto__;
 })()):zprint.zprint.interpose_nl_hf.call(null,new cljs.core.Keyword(null,"pair","pair",-447516312).cljs$core$IFn$_invoke$arity$1(options),hindent,zprint.zprint.fzprint_map_two_up.call(null,new cljs.core.Keyword(null,"pair","pair",-447516312),zprint.zprint.in_hang.call(null,options),hindent,null,pair_seq)))):null);
 return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [hang_result,zprint.zprint.style_lines.call(null,options,hindent,hang_result)], null);
 })();
-var vec__39332 = zprint.zprint.zat.call(null,options,flow);
-var flow__$1 = cljs.core.nth.call(null,vec__39332,(0),null);
-var flow_lines = cljs.core.nth.call(null,vec__39332,(1),null);
-var vec__39335 = zprint.zprint.zat.call(null,options,hanging);
-var hanging__$1 = cljs.core.nth.call(null,vec__39335,(0),null);
-var hanging_lines = cljs.core.nth.call(null,vec__39335,(1),null);
+var vec__47294 = zprint.zprint.zat.call(null,options,flow);
+var flow__$1 = cljs.core.nth.call(null,vec__47294,(0),null);
+var flow_lines = cljs.core.nth.call(null,vec__47294,(1),null);
+var vec__47297 = zprint.zprint.zat.call(null,options,hanging);
+var hanging__$1 = cljs.core.nth.call(null,vec__47297,(0),null);
+var hanging_lines = cljs.core.nth.call(null,vec__47297,(1),null);
 var hang_count = cljs.core.count.call(null,seq_right__$1);
 var ___$1 = zprint.zprint.log_lines.call(null,options,"fzprint-hang-remaining: hanging:",hindent,hanging__$1);
 var ___$2 = (cljs.core.truth_(new cljs.core.Keyword(null,"dbg?","dbg?",1845730771).cljs$core$IFn$_invoke$arity$1(options))?cljs.core.println.call(null,new cljs.core.Keyword(null,"dbg-indent","dbg-indent",1534856778).cljs$core$IFn$_invoke$arity$1(options),"fzprint-hang-remaining: hanging-lines:",hanging_lines,"hang-count:",hang_count):null);
@@ -2602,13 +2602,13 @@ zprint.zprint.fn_style__GT_caller = new cljs.core.PersistentArrayMap(null, 8, [n
 /**
  * Should we allow this function to print on a single line?
  */
-zprint.zprint.allow_one_line_QMARK_ = (function zprint$zprint$allow_one_line_QMARK_(p__39339,len,fn_style){
-var map__39340 = p__39339;
-var map__39340__$1 = (((((!((map__39340 == null))))?(((((map__39340.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__39340.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__39340):map__39340);
-var options = map__39340__$1;
-var fn_force_nl = cljs.core.get.call(null,map__39340__$1,new cljs.core.Keyword(null,"fn-force-nl","fn-force-nl",1501458692));
-var fn_gt2_force_nl = cljs.core.get.call(null,map__39340__$1,new cljs.core.Keyword(null,"fn-gt2-force-nl","fn-gt2-force-nl",1348579537));
-var fn_gt3_force_nl = cljs.core.get.call(null,map__39340__$1,new cljs.core.Keyword(null,"fn-gt3-force-nl","fn-gt3-force-nl",-58306985));
+zprint.zprint.allow_one_line_QMARK_ = (function zprint$zprint$allow_one_line_QMARK_(p__47301,len,fn_style){
+var map__47302 = p__47301;
+var map__47302__$1 = (((((!((map__47302 == null))))?(((((map__47302.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47302.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47302):map__47302);
+var options = map__47302__$1;
+var fn_force_nl = cljs.core.get.call(null,map__47302__$1,new cljs.core.Keyword(null,"fn-force-nl","fn-force-nl",1501458692));
+var fn_gt2_force_nl = cljs.core.get.call(null,map__47302__$1,new cljs.core.Keyword(null,"fn-gt2-force-nl","fn-gt2-force-nl",1348579537));
+var fn_gt3_force_nl = cljs.core.get.call(null,map__47302__$1,new cljs.core.Keyword(null,"fn-gt3-force-nl","fn-gt3-force-nl",-58306985));
 return cljs.core.not.call(null,(function (){var or__4047__auto__ = fn_force_nl.call(null,fn_style);
 if(cljs.core.truth_(or__4047__auto__)){
 return or__4047__auto__;
@@ -2660,11 +2660,11 @@ return null;
  *   return a new zloc.
  */
 zprint.zprint.modify_zloc = (function zprint$zprint$modify_zloc(caller,options,zloc){
-var vec__39342 = new cljs.core.Keyword(null,"return-altered-zipper","return-altered-zipper",837872379).cljs$core$IFn$_invoke$arity$1(caller.call(null,options));
-var depth = cljs.core.nth.call(null,vec__39342,(0),null);
-var trigger_symbol = cljs.core.nth.call(null,vec__39342,(1),null);
-var modify_fn = cljs.core.nth.call(null,vec__39342,(2),null);
-var return_altered_zipper_value = vec__39342;
+var vec__47304 = new cljs.core.Keyword(null,"return-altered-zipper","return-altered-zipper",837872379).cljs$core$IFn$_invoke$arity$1(caller.call(null,options));
+var depth = cljs.core.nth.call(null,vec__47304,(0),null);
+var trigger_symbol = cljs.core.nth.call(null,vec__47304,(1),null);
+var modify_fn = cljs.core.nth.call(null,vec__47304,(2),null);
+var return_altered_zipper_value = vec__47304;
 if(cljs.core.truth_(new cljs.core.Keyword(null,"dbg?","dbg?",1845730771).cljs$core$IFn$_invoke$arity$1(options))){
 cljs.core.println.call(null,new cljs.core.Keyword(null,"dbg-indent","dbg-indent",1534856778).cljs$core$IFn$_invoke$arity$1(options),"modify-zloc caller:",caller,"ztype",new cljs.core.Keyword(null,"ztype","ztype",-562179020).cljs$core$IFn$_invoke$arity$1(options),"return-altered-zipper-value:",return_altered_zipper_value);
 } else {
@@ -2708,16 +2708,16 @@ return zloc;
  *   Lots of work to make a list look good, as that is typically code. 
  *   Presently all of the callers of this are :list.
  */
-zprint.zprint.fzprint_list_STAR_ = (function zprint$zprint$fzprint_list_STAR_(caller,l_str,r_str,p__39346,ind,zloc){
-var map__39347 = p__39346;
-var map__39347__$1 = (((((!((map__39347 == null))))?(((((map__39347.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__39347.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__39347):map__39347);
-var options = map__39347__$1;
-var fn_map = cljs.core.get.call(null,map__39347__$1,new cljs.core.Keyword(null,"fn-map","fn-map",565481146));
-var user_fn_map = cljs.core.get.call(null,map__39347__$1,new cljs.core.Keyword(null,"user-fn-map","user-fn-map",-908243227));
-var one_line_QMARK_ = cljs.core.get.call(null,map__39347__$1,new cljs.core.Keyword(null,"one-line?","one-line?",2055953111));
-var fn_style = cljs.core.get.call(null,map__39347__$1,new cljs.core.Keyword(null,"fn-style","fn-style",1330516917));
-var no_arg1_QMARK_ = cljs.core.get.call(null,map__39347__$1,new cljs.core.Keyword(null,"no-arg1?","no-arg1?",1560368430));
-var fn_force_nl = cljs.core.get.call(null,map__39347__$1,new cljs.core.Keyword(null,"fn-force-nl","fn-force-nl",1501458692));
+zprint.zprint.fzprint_list_STAR_ = (function zprint$zprint$fzprint_list_STAR_(caller,l_str,r_str,p__47308,ind,zloc){
+var map__47309 = p__47308;
+var map__47309__$1 = (((((!((map__47309 == null))))?(((((map__47309.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47309.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47309):map__47309);
+var options = map__47309__$1;
+var fn_map = cljs.core.get.call(null,map__47309__$1,new cljs.core.Keyword(null,"fn-map","fn-map",565481146));
+var user_fn_map = cljs.core.get.call(null,map__47309__$1,new cljs.core.Keyword(null,"user-fn-map","user-fn-map",-908243227));
+var one_line_QMARK_ = cljs.core.get.call(null,map__47309__$1,new cljs.core.Keyword(null,"one-line?","one-line?",2055953111));
+var fn_style = cljs.core.get.call(null,map__47309__$1,new cljs.core.Keyword(null,"fn-style","fn-style",1330516917));
+var no_arg1_QMARK_ = cljs.core.get.call(null,map__47309__$1,new cljs.core.Keyword(null,"no-arg1?","no-arg1?",1560368430));
+var fn_force_nl = cljs.core.get.call(null,map__47309__$1,new cljs.core.Keyword(null,"fn-force-nl","fn-force-nl",1501458692));
 var max_length = zprint.zprint.get_max_length.call(null,options);
 var zloc__$1 = zprint.zprint.modify_zloc.call(null,caller,options,zloc);
 var len = zprint.zfns.zcount.call(null,zloc__$1);
@@ -2859,9 +2859,9 @@ return and__4036__auto____$1;
 return and__4036__auto__;
 }
 })())){
-var vec__39349 = zprint.zprint.fzprint_hang_unless_fail.call(null,loptions,arg_1_indent__$1,(indent__$1 + ind),zprint.zprint.fzprint_binding_vec,zprint.zfns.zsecond.call(null,zloc__$2));
-var hang_or_flow = cljs.core.nth.call(null,vec__39349,(0),null);
-var binding_style_vec = cljs.core.nth.call(null,vec__39349,(1),null);
+var vec__47311 = zprint.zprint.fzprint_hang_unless_fail.call(null,loptions,arg_1_indent__$1,(indent__$1 + ind),zprint.zprint.fzprint_binding_vec,zprint.zfns.zsecond.call(null,zloc__$2));
+var hang_or_flow = cljs.core.nth.call(null,vec__47311,(0),null);
+var binding_style_vec = cljs.core.nth.call(null,vec__47311,(1),null);
 var binding_style_vec__$1 = ((cljs.core._EQ_.call(null,hang_or_flow,new cljs.core.Keyword(null,"hang","hang",-1007256173)))?zprint.zprint.concat_no_nil.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [" ",new cljs.core.Keyword(null,"none","none",1333468478),new cljs.core.Keyword(null,"whitespace","whitespace",-1340035483)], null)], null),binding_style_vec):binding_style_vec);
 return zprint.zprint.concat_no_nil.call(null,l_str_vec,zprint.zprint.fzprint_STAR_.call(null,loptions,(ind + (1)),zprint.zfns.zfirst.call(null,zloc__$2)),binding_style_vec__$1,(((len__$1 > (2)))?zprint.zprint.concat_no_nil.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [["\n",cljs.core.str.cljs$core$IFn$_invoke$arity$1(zprint.zprint.blanks.call(null,(indent__$1 + ind)))].join(''),new cljs.core.Keyword(null,"none","none",1333468478),new cljs.core.Keyword(null,"indent","indent",-148200125)], null)], null),zprint.zprint.fzprint_flow_seq.call(null,options__$5,(indent__$1 + ind),cljs.core.nthnext.call(null,zprint.zfns.zmap.call(null,cljs.core.identity,zloc__$2),(2)),new cljs.core.Keyword(null,"force-nl","force-nl",-755040826)),r_str_vec):r_str_vec));
 } else {
@@ -2873,9 +2873,9 @@ return zprint.zprint.concat_no_nil.call(null,l_str_vec,zprint.zprint.fzprint_STA
 } else {
 if(((((cljs.core._EQ_.call(null,fn_style__$6,new cljs.core.Keyword(null,"fn","fn",-1175266204))) && (cljs.core.not.call(null,zprint.zfns.zlist_QMARK_.call(null,zprint.zfns.zsecond.call(null,zloc__$2)))))) || (cljs.core._EQ_.call(null,fn_style__$6,new cljs.core.Keyword(null,"arg2","arg2",1729550917))) || (cljs.core._EQ_.call(null,fn_style__$6,new cljs.core.Keyword(null,"arg2-fn","arg2-fn",1172769072))) || (cljs.core._EQ_.call(null,fn_style__$6,new cljs.core.Keyword(null,"arg2-pair","arg2-pair",-1268132126))) || (cljs.core._EQ_.call(null,fn_style__$6,new cljs.core.Keyword(null,"arg2-extend","arg2-extend",1554629186))))){
 var second_element = zprint.zprint.fzprint_hang_one.call(null,caller,((cljs.core._EQ_.call(null,len__$1,(2)))?options__$5:loptions),arg_1_indent__$1,(indent__$1 + ind),zprint.zfns.zsecond.call(null,zloc__$2));
-var vec__39352 = zprint.zprint.style_lines.call(null,loptions,arg_1_indent__$1,second_element);
-var line_count = cljs.core.nth.call(null,vec__39352,(0),null);
-var max_width = cljs.core.nth.call(null,vec__39352,(1),null);
+var vec__47314 = zprint.zprint.style_lines.call(null,loptions,arg_1_indent__$1,second_element);
+var line_count = cljs.core.nth.call(null,vec__47314,(0),null);
+var max_width = cljs.core.nth.call(null,vec__47314,(1),null);
 var third = zprint.zfns.zthird.call(null,zloc__$2);
 var first_three = (cljs.core.truth_(second_element)?zprint.zprint.concat_no_nil.call(null,zprint.zprint.fzprint_STAR_.call(null,loptions,(indent__$1 + ind),zprint.zfns.zfirst.call(null,zloc__$2)),second_element,(cljs.core.truth_((function (){var or__4047__auto__ = cljs.core._EQ_.call(null,fn_style__$6,new cljs.core.Keyword(null,"arg2","arg2",1729550917));
 if(or__4047__auto__){
@@ -2911,19 +2911,19 @@ return null;
 }
 } else {
 if(((cljs.core._EQ_.call(null,fn_style__$6,new cljs.core.Keyword(null,"arg1-mixin","arg1-mixin",1553512120))) && ((len__$1 > (3))))){
-var arg_vec_index = (function (){var or__4047__auto__ = zprint.zfns.zfind.call(null,((function (max_length,zloc__$1,len,zloc__$2,len__$1,l_str_len,arg_1_coll_QMARK_,arg_1_indent_alt_QMARK_,fn_str,fn_style__$1,fn_style__$2,options__$1,fn_style__$3,indent,indent_arg,indent__$1,one_line_ok_QMARK_,fn_style__$4,fn_style__$5,fn_style__$6,options__$2,indent_adj,default_indent,arg_1_indent,arg_1_indent__$1,options__$3,options__$4,_,new_ind,one_line_ind,options__$5,loptions,roptions,l_str_vec,r_str_vec,___$1,one_line,map__39347,map__39347__$1,options,fn_map,user_fn_map,one_line_QMARK_,fn_style,no_arg1_QMARK_,fn_force_nl){
-return (function (p1__39345_SHARP_){
-var or__4047__auto__ = zprint.zfns.zvector_QMARK_.call(null,p1__39345_SHARP_);
+var arg_vec_index = (function (){var or__4047__auto__ = zprint.zfns.zfind.call(null,((function (max_length,zloc__$1,len,zloc__$2,len__$1,l_str_len,arg_1_coll_QMARK_,arg_1_indent_alt_QMARK_,fn_str,fn_style__$1,fn_style__$2,options__$1,fn_style__$3,indent,indent_arg,indent__$1,one_line_ok_QMARK_,fn_style__$4,fn_style__$5,fn_style__$6,options__$2,indent_adj,default_indent,arg_1_indent,arg_1_indent__$1,options__$3,options__$4,_,new_ind,one_line_ind,options__$5,loptions,roptions,l_str_vec,r_str_vec,___$1,one_line,map__47309,map__47309__$1,options,fn_map,user_fn_map,one_line_QMARK_,fn_style,no_arg1_QMARK_,fn_force_nl){
+return (function (p1__47307_SHARP_){
+var or__4047__auto__ = zprint.zfns.zvector_QMARK_.call(null,p1__47307_SHARP_);
 if(cljs.core.truth_(or__4047__auto__)){
 return or__4047__auto__;
 } else {
-if(cljs.core.truth_(zprint.zfns.zlist_QMARK_.call(null,p1__39345_SHARP_))){
-return zprint.zfns.zvector_QMARK_.call(null,zprint.zfns.zfirst.call(null,p1__39345_SHARP_));
+if(cljs.core.truth_(zprint.zfns.zlist_QMARK_.call(null,p1__47307_SHARP_))){
+return zprint.zfns.zvector_QMARK_.call(null,zprint.zfns.zfirst.call(null,p1__47307_SHARP_));
 } else {
 return null;
 }
 }
-});})(max_length,zloc__$1,len,zloc__$2,len__$1,l_str_len,arg_1_coll_QMARK_,arg_1_indent_alt_QMARK_,fn_str,fn_style__$1,fn_style__$2,options__$1,fn_style__$3,indent,indent_arg,indent__$1,one_line_ok_QMARK_,fn_style__$4,fn_style__$5,fn_style__$6,options__$2,indent_adj,default_indent,arg_1_indent,arg_1_indent__$1,options__$3,options__$4,_,new_ind,one_line_ind,options__$5,loptions,roptions,l_str_vec,r_str_vec,___$1,one_line,map__39347,map__39347__$1,options,fn_map,user_fn_map,one_line_QMARK_,fn_style,no_arg1_QMARK_,fn_force_nl))
+});})(max_length,zloc__$1,len,zloc__$2,len__$1,l_str_len,arg_1_coll_QMARK_,arg_1_indent_alt_QMARK_,fn_str,fn_style__$1,fn_style__$2,options__$1,fn_style__$3,indent,indent_arg,indent__$1,one_line_ok_QMARK_,fn_style__$4,fn_style__$5,fn_style__$6,options__$2,indent_adj,default_indent,arg_1_indent,arg_1_indent__$1,options__$3,options__$4,_,new_ind,one_line_ind,options__$5,loptions,roptions,l_str_vec,r_str_vec,___$1,one_line,map__47309,map__47309__$1,options,fn_map,user_fn_map,one_line_QMARK_,fn_style,no_arg1_QMARK_,fn_force_nl))
 ,zloc__$2);
 if(cljs.core.truth_(or__4047__auto__)){
 return or__4047__auto__;
@@ -2937,9 +2937,9 @@ var mixin_length = (arg_vec_index - mixin_start);
 var mixins_QMARK_ = (mixin_length > (0));
 var doc_string = ((doc_string_QMARK_)?zprint.zprint.fzprint_hang_one.call(null,caller,loptions,(indent__$1 + ind),(indent__$1 + ind),zprint.zfns.zthird.call(null,zloc__$2)):null);
 var mixins = ((mixins_QMARK_)?(function (){var mixin_sentinal = zprint.zprint.fzprint_hang_one.call(null,caller,loptions,(indent__$1 + ind),(indent__$1 + ind),((doc_string_QMARK_)?zprint.zfns.zfourth.call(null,zloc__$2):zprint.zfns.zthird.call(null,zloc__$2)));
-var vec__39355 = zprint.zprint.style_lines.call(null,loptions,(indent__$1 + ind),mixin_sentinal);
-var line_count = cljs.core.nth.call(null,vec__39355,(0),null);
-var max_width = cljs.core.nth.call(null,vec__39355,(1),null);
+var vec__47317 = zprint.zprint.style_lines.call(null,loptions,(indent__$1 + ind),mixin_sentinal);
+var line_count = cljs.core.nth.call(null,vec__47317,(0),null);
+var max_width = cljs.core.nth.call(null,vec__47317,(1),null);
 return zprint.zprint.concat_no_nil.call(null,mixin_sentinal,zprint.zprint.fzprint_hang_remaining.call(null,caller,loptions,(max_width + (1)),(((indent__$1 + indent__$1) + ind) - (1)),zprint.zfns.znthnext.call(null,zloc__$2,((doc_string_QMARK_)?(3):(2))),fn_style__$6,mixin_length));
 })():null);
 return zprint.zprint.concat_no_nil.call(null,l_str_vec,zprint.zprint.fzprint_STAR_.call(null,loptions,(ind + (1)),zprint.zfns.zfirst.call(null,zloc__$2)),zprint.zprint.fzprint_hang_one.call(null,caller,((cljs.core._EQ_.call(null,len__$1,(2)))?options__$5:loptions),arg_1_indent__$1,(indent__$1 + ind),zprint.zfns.zsecond.call(null,zloc__$2)),((((doc_string_QMARK_) && (mixins_QMARK_)))?zprint.zprint.concat_no_nil.call(null,doc_string,mixins):((doc_string_QMARK_)?doc_string:((mixins_QMARK_)?mixins:new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, ["",new cljs.core.Keyword(null,"none","none",1333468478),new cljs.core.Keyword(null,"whitespace","whitespace",-1340035483)], null)], null)
@@ -2997,12 +2997,12 @@ return zprint.zprint.fzprint_list_STAR_.call(null,new cljs.core.Keyword(null,"li
 zprint.zprint.any_zcoll_QMARK_ = (function zprint$zprint$any_zcoll_QMARK_(options,ind,zloc){
 var coll_QMARK__seq = zprint.zfns.zmap.call(null,zprint.zfns.zcoll_QMARK_,zloc);
 return cljs.core.reduce.call(null,((function (coll_QMARK__seq){
-return (function (p1__39358_SHARP_,p2__39359_SHARP_){
-var or__4047__auto__ = p1__39358_SHARP_;
+return (function (p1__47320_SHARP_,p2__47321_SHARP_){
+var or__4047__auto__ = p1__47320_SHARP_;
 if(cljs.core.truth_(or__4047__auto__)){
 return or__4047__auto__;
 } else {
-return p2__39359_SHARP_;
+return p2__47321_SHARP_;
 }
 });})(coll_QMARK__seq))
 ,null,coll_QMARK__seq);
@@ -3012,15 +3012,15 @@ return p2__39359_SHARP_;
  *   the making without spacing, but with extra [] around the elements,
  *   wrap the elements to the right margin.
  */
-zprint.zprint.wrap_zmap = (function zprint$zprint$wrap_zmap(caller,p__39360,ind,coll_print){
-var map__39361 = p__39360;
-var map__39361__$1 = (((((!((map__39361 == null))))?(((((map__39361.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__39361.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__39361):map__39361);
-var options = map__39361__$1;
-var map__39362 = cljs.core.get.call(null,map__39361__$1,caller);
-var map__39362__$1 = (((((!((map__39362 == null))))?(((((map__39362.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__39362.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__39362):map__39362);
-var wrap_after_multi_QMARK_ = cljs.core.get.call(null,map__39362__$1,new cljs.core.Keyword(null,"wrap-after-multi?","wrap-after-multi?",1010808052));
-var width = cljs.core.get.call(null,map__39361__$1,new cljs.core.Keyword(null,"width","width",-384071477));
-var rightcnt = cljs.core.get.call(null,map__39361__$1,new cljs.core.Keyword(null,"rightcnt","rightcnt",-45750070));
+zprint.zprint.wrap_zmap = (function zprint$zprint$wrap_zmap(caller,p__47322,ind,coll_print){
+var map__47323 = p__47322;
+var map__47323__$1 = (((((!((map__47323 == null))))?(((((map__47323.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47323.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47323):map__47323);
+var options = map__47323__$1;
+var map__47324 = cljs.core.get.call(null,map__47323__$1,caller);
+var map__47324__$1 = (((((!((map__47324 == null))))?(((((map__47324.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47324.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47324):map__47324);
+var wrap_after_multi_QMARK_ = cljs.core.get.call(null,map__47324__$1,new cljs.core.Keyword(null,"wrap-after-multi?","wrap-after-multi?",1010808052));
+var width = cljs.core.get.call(null,map__47323__$1,new cljs.core.Keyword(null,"width","width",-384071477));
+var rightcnt = cljs.core.get.call(null,map__47323__$1,new cljs.core.Keyword(null,"rightcnt","rightcnt",-45750070));
 var last_index = (cljs.core.count.call(null,coll_print) - (1));
 var rightcnt__$1 = zprint.zprint.fix_rightcnt.call(null,rightcnt);
 var cur_seq = coll_print;
@@ -3038,10 +3038,10 @@ var multi_QMARK_ = (cljs.core.count.call(null,cljs.core.first.call(null,cur_seq)
 var this_seq = cljs.core.first.call(null,cur_seq);
 var _ = zprint.zprint.log_lines.call(null,options,"wrap-zmap:",ind,this_seq);
 var ___$1 = (cljs.core.truth_(new cljs.core.Keyword(null,"dbg?","dbg?",1845730771).cljs$core$IFn$_invoke$arity$1(options))?cljs.core.println.call(null,new cljs.core.Keyword(null,"dbg-indent","dbg-indent",1534856778).cljs$core$IFn$_invoke$arity$1(options),"wrap-zmap: ind:",ind,"this-seq:",this_seq):null);
-var vec__39365 = zprint.zprint.style_lines.call(null,options,ind,this_seq);
-var linecnt = cljs.core.nth.call(null,vec__39365,(0),null);
-var max_width = cljs.core.nth.call(null,vec__39365,(1),null);
-var lines = cljs.core.nth.call(null,vec__39365,(2),null);
+var vec__47327 = zprint.zprint.style_lines.call(null,options,ind,this_seq);
+var linecnt = cljs.core.nth.call(null,vec__47327,(0),null);
+var max_width = cljs.core.nth.call(null,vec__47327,(1),null);
+var lines = cljs.core.nth.call(null,vec__47327,(2),null);
 var last_width = cljs.core.last.call(null,lines);
 var len = (last_width - ind);
 var len__$1 = (function (){var x__4135__auto__ = (0);
@@ -3069,16 +3069,16 @@ return and__4036__auto__;
 })();
 var new_ind = ((((cljs.core._EQ_.call(null,cljs.core.nth.call(null,cljs.core.first.call(null,this_seq),(2)),new cljs.core.Keyword(null,"comment","comment",532206069))) || (cljs.core._EQ_.call(null,cljs.core.nth.call(null,cljs.core.first.call(null,this_seq),(2)),new cljs.core.Keyword(null,"comment-inline","comment-inline",712944405)))))?(width__$1 + (1)):((((multi_QMARK_) && ((linecnt > (1))) && (cljs.core.not.call(null,wrap_after_multi_QMARK_))))?width__$1:((fit_QMARK_)?((cur_ind + len__$1) + (1)):((newline_QMARK_)?ind:((ind + len__$1) + (1))
 ))));
-var G__39368 = cljs.core.next.call(null,cur_seq);
-var G__39369 = new_ind;
-var G__39370 = (index + (1));
-var G__39371 = newline_QMARK_;
-var G__39372 = cljs.core.concat.call(null,out,((fit_QMARK_)?(((!((index === (0)))))?zprint.zprint.concat_no_nil.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [" ",new cljs.core.Keyword(null,"none","none",1333468478),new cljs.core.Keyword(null,"whitespace","whitespace",-1340035483)], null)], null),this_seq):this_seq):((newline_QMARK_)?new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [["\n",cljs.core.str.cljs$core$IFn$_invoke$arity$1(zprint.zprint.blanks.call(null,(new_ind - (1))))].join(''),new cljs.core.Keyword(null,"none","none",1333468478),new cljs.core.Keyword(null,"indent","indent",-148200125)], null)], null):((previous_newline_QMARK_)?zprint.zprint.concat_no_nil.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [" ",new cljs.core.Keyword(null,"none","none",1333468478),new cljs.core.Keyword(null,"indent","indent",-148200125)], null)], null),this_seq):zprint.zprint.concat_no_nil.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [["\n",cljs.core.str.cljs$core$IFn$_invoke$arity$1(zprint.zprint.blanks.call(null,ind))].join(''),new cljs.core.Keyword(null,"none","none",1333468478),new cljs.core.Keyword(null,"indent","indent",-148200125)], null)], null),this_seq)))));
-cur_seq = G__39368;
-cur_ind = G__39369;
-index = G__39370;
-previous_newline_QMARK_ = G__39371;
-out = G__39372;
+var G__47330 = cljs.core.next.call(null,cur_seq);
+var G__47331 = new_ind;
+var G__47332 = (index + (1));
+var G__47333 = newline_QMARK_;
+var G__47334 = cljs.core.concat.call(null,out,((fit_QMARK_)?(((!((index === (0)))))?zprint.zprint.concat_no_nil.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [" ",new cljs.core.Keyword(null,"none","none",1333468478),new cljs.core.Keyword(null,"whitespace","whitespace",-1340035483)], null)], null),this_seq):this_seq):((newline_QMARK_)?new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [["\n",cljs.core.str.cljs$core$IFn$_invoke$arity$1(zprint.zprint.blanks.call(null,(new_ind - (1))))].join(''),new cljs.core.Keyword(null,"none","none",1333468478),new cljs.core.Keyword(null,"indent","indent",-148200125)], null)], null):((previous_newline_QMARK_)?zprint.zprint.concat_no_nil.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [" ",new cljs.core.Keyword(null,"none","none",1333468478),new cljs.core.Keyword(null,"indent","indent",-148200125)], null)], null),this_seq):zprint.zprint.concat_no_nil.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [["\n",cljs.core.str.cljs$core$IFn$_invoke$arity$1(zprint.zprint.blanks.call(null,ind))].join(''),new cljs.core.Keyword(null,"none","none",1333468478),new cljs.core.Keyword(null,"indent","indent",-148200125)], null)], null),this_seq)))));
+cur_seq = G__47330;
+cur_ind = G__47331;
+index = G__47332;
+previous_newline_QMARK_ = G__47333;
+out = G__47334;
 continue;
 } else {
 return null;
@@ -3091,8 +3091,8 @@ break;
  * Remove any [_ _ :newline] from the seq.
  */
 zprint.zprint.remove_nl = (function zprint$zprint$remove_nl(coll){
-return cljs.core.remove.call(null,(function (p1__39373_SHARP_){
-return cljs.core._EQ_.call(null,cljs.core.nth.call(null,cljs.core.first.call(null,p1__39373_SHARP_),(2)),new cljs.core.Keyword(null,"newline","newline",1790071323));
+return cljs.core.remove.call(null,(function (p1__47335_SHARP_){
+return cljs.core._EQ_.call(null,cljs.core.nth.call(null,cljs.core.first.call(null,p1__47335_SHARP_),(2)),new cljs.core.Keyword(null,"newline","newline",1790071323));
 }),coll);
 });
 /**
@@ -3113,21 +3113,21 @@ return options;
  * Print basic stuff like a vector or a set.  Several options for how to
  *   print them.
  */
-zprint.zprint.fzprint_vec_STAR_ = (function zprint$zprint$fzprint_vec_STAR_(caller,l_str,r_str,p__39374,ind,zloc){
-var map__39375 = p__39374;
-var map__39375__$1 = (((((!((map__39375 == null))))?(((((map__39375.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__39375.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__39375):map__39375);
-var options = map__39375__$1;
-var map__39376 = cljs.core.get.call(null,map__39375__$1,caller);
-var map__39376__$1 = (((((!((map__39376 == null))))?(((((map__39376.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__39376.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__39376):map__39376);
-var wrap_coll_QMARK_ = cljs.core.get.call(null,map__39376__$1,new cljs.core.Keyword(null,"wrap-coll?","wrap-coll?",908181571));
-var wrap_QMARK_ = cljs.core.get.call(null,map__39376__$1,new cljs.core.Keyword(null,"wrap?","wrap?",-1677427054));
-var binding_QMARK_ = cljs.core.get.call(null,map__39376__$1,new cljs.core.Keyword(null,"binding?","binding?",-1071925644));
-var option_fn_first = cljs.core.get.call(null,map__39376__$1,new cljs.core.Keyword(null,"option-fn-first","option-fn-first",-1679196201));
-var respect_nl_QMARK_ = cljs.core.get.call(null,map__39376__$1,new cljs.core.Keyword(null,"respect-nl?","respect-nl?",604814635));
-var sort_QMARK_ = cljs.core.get.call(null,map__39376__$1,new cljs.core.Keyword(null,"sort?","sort?",-567661924));
-var sort_in_code_QMARK_ = cljs.core.get.call(null,map__39376__$1,new cljs.core.Keyword(null,"sort-in-code?","sort-in-code?",111878497));
-var rightcnt = cljs.core.get.call(null,map__39375__$1,new cljs.core.Keyword(null,"rightcnt","rightcnt",-45750070));
-var in_code_QMARK_ = cljs.core.get.call(null,map__39375__$1,new cljs.core.Keyword(null,"in-code?","in-code?",194866464));
+zprint.zprint.fzprint_vec_STAR_ = (function zprint$zprint$fzprint_vec_STAR_(caller,l_str,r_str,p__47336,ind,zloc){
+var map__47337 = p__47336;
+var map__47337__$1 = (((((!((map__47337 == null))))?(((((map__47337.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47337.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47337):map__47337);
+var options = map__47337__$1;
+var map__47338 = cljs.core.get.call(null,map__47337__$1,caller);
+var map__47338__$1 = (((((!((map__47338 == null))))?(((((map__47338.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47338.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47338):map__47338);
+var wrap_coll_QMARK_ = cljs.core.get.call(null,map__47338__$1,new cljs.core.Keyword(null,"wrap-coll?","wrap-coll?",908181571));
+var wrap_QMARK_ = cljs.core.get.call(null,map__47338__$1,new cljs.core.Keyword(null,"wrap?","wrap?",-1677427054));
+var binding_QMARK_ = cljs.core.get.call(null,map__47338__$1,new cljs.core.Keyword(null,"binding?","binding?",-1071925644));
+var option_fn_first = cljs.core.get.call(null,map__47338__$1,new cljs.core.Keyword(null,"option-fn-first","option-fn-first",-1679196201));
+var respect_nl_QMARK_ = cljs.core.get.call(null,map__47338__$1,new cljs.core.Keyword(null,"respect-nl?","respect-nl?",604814635));
+var sort_QMARK_ = cljs.core.get.call(null,map__47338__$1,new cljs.core.Keyword(null,"sort?","sort?",-567661924));
+var sort_in_code_QMARK_ = cljs.core.get.call(null,map__47338__$1,new cljs.core.Keyword(null,"sort-in-code?","sort-in-code?",111878497));
+var rightcnt = cljs.core.get.call(null,map__47337__$1,new cljs.core.Keyword(null,"rightcnt","rightcnt",-45750070));
+var in_code_QMARK_ = cljs.core.get.call(null,map__47337__$1,new cljs.core.Keyword(null,"in-code?","in-code?",194866464));
 if(cljs.core.truth_((function (){var and__4036__auto__ = binding_QMARK_;
 if(cljs.core.truth_(and__4036__auto__)){
 return cljs.core._EQ_.call(null,new cljs.core.Keyword(null,"depth","depth",1768663640).cljs$core$IFn$_invoke$arity$1(options),(1));
@@ -3142,18 +3142,18 @@ var r_str_vec = zprint.zprint.rstr_vec.call(null,options,ind,zloc,r_str);
 var new_options = (cljs.core.truth_(option_fn_first)?(function (){var first_sexpr = zprint.zfns.zsexpr.call(null,zprint.zfns.zfirst_no_comment.call(null,zloc));
 return zprint.zprint.internal_validate.call(null,option_fn_first.call(null,options,first_sexpr),[":vector :option-fn-first called with ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(first_sexpr)].join(''));
 })():null);
-var map__39379 = zprint.config.merge_deep.call(null,options,new_options);
-var map__39379__$1 = (((((!((map__39379 == null))))?(((((map__39379.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__39379.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__39379):map__39379);
-var options__$1 = map__39379__$1;
-var map__39380 = cljs.core.get.call(null,map__39379__$1,caller);
-var map__39380__$1 = (((((!((map__39380 == null))))?(((((map__39380.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__39380.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__39380):map__39380);
-var wrap_coll_QMARK___$1 = cljs.core.get.call(null,map__39380__$1,new cljs.core.Keyword(null,"wrap-coll?","wrap-coll?",908181571));
-var wrap_QMARK___$1 = cljs.core.get.call(null,map__39380__$1,new cljs.core.Keyword(null,"wrap?","wrap?",-1677427054));
-var binding_QMARK___$1 = cljs.core.get.call(null,map__39380__$1,new cljs.core.Keyword(null,"binding?","binding?",-1071925644));
-var option_fn_first__$1 = cljs.core.get.call(null,map__39380__$1,new cljs.core.Keyword(null,"option-fn-first","option-fn-first",-1679196201));
-var respect_nl_QMARK___$1 = cljs.core.get.call(null,map__39380__$1,new cljs.core.Keyword(null,"respect-nl?","respect-nl?",604814635));
-var sort_QMARK___$1 = cljs.core.get.call(null,map__39380__$1,new cljs.core.Keyword(null,"sort?","sort?",-567661924));
-var sort_in_code_QMARK___$1 = cljs.core.get.call(null,map__39380__$1,new cljs.core.Keyword(null,"sort-in-code?","sort-in-code?",111878497));
+var map__47341 = zprint.config.merge_deep.call(null,options,new_options);
+var map__47341__$1 = (((((!((map__47341 == null))))?(((((map__47341.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47341.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47341):map__47341);
+var options__$1 = map__47341__$1;
+var map__47342 = cljs.core.get.call(null,map__47341__$1,caller);
+var map__47342__$1 = (((((!((map__47342 == null))))?(((((map__47342.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47342.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47342):map__47342);
+var wrap_coll_QMARK___$1 = cljs.core.get.call(null,map__47342__$1,new cljs.core.Keyword(null,"wrap-coll?","wrap-coll?",908181571));
+var wrap_QMARK___$1 = cljs.core.get.call(null,map__47342__$1,new cljs.core.Keyword(null,"wrap?","wrap?",-1677427054));
+var binding_QMARK___$1 = cljs.core.get.call(null,map__47342__$1,new cljs.core.Keyword(null,"binding?","binding?",-1071925644));
+var option_fn_first__$1 = cljs.core.get.call(null,map__47342__$1,new cljs.core.Keyword(null,"option-fn-first","option-fn-first",-1679196201));
+var respect_nl_QMARK___$1 = cljs.core.get.call(null,map__47342__$1,new cljs.core.Keyword(null,"respect-nl?","respect-nl?",604814635));
+var sort_QMARK___$1 = cljs.core.get.call(null,map__47342__$1,new cljs.core.Keyword(null,"sort?","sort?",-567661924));
+var sort_in_code_QMARK___$1 = cljs.core.get.call(null,map__47342__$1,new cljs.core.Keyword(null,"sort-in-code?","sort-in-code?",111878497));
 var respect_nl_QMARK___$2 = (function (){var and__4036__auto__ = respect_nl_QMARK___$1;
 if(cljs.core.truth_(and__4036__auto__)){
 return cljs.core.not.call(null,sort_QMARK___$1);
@@ -3239,12 +3239,12 @@ while(true){
 if(cljs.core.empty_QMARK_.call(null,coll__$1)){
 return cljs.core.persistent_BANG_.call(null,out);
 } else {
-var G__39383 = cljs.core.next.call(null,coll__$1);
-var G__39384 = (cljs.core.truth_(interpose_QMARK_)?zprint.zprint.conj_it_BANG_.call(null,out,sep_true,cljs.core.first.call(null,coll__$1)):(((cljs.core.count.call(null,out) === (0)))?cljs.core.conj_BANG_.call(null,out,cljs.core.first.call(null,coll__$1)):zprint.zprint.conj_it_BANG_.call(null,out,sep_nil,cljs.core.first.call(null,coll__$1))));
-var G__39385 = pred_QMARK_.call(null,cljs.core.first.call(null,coll__$1));
-coll__$1 = G__39383;
-out = G__39384;
-interpose_QMARK_ = G__39385;
+var G__47345 = cljs.core.next.call(null,coll__$1);
+var G__47346 = (cljs.core.truth_(interpose_QMARK_)?zprint.zprint.conj_it_BANG_.call(null,out,sep_true,cljs.core.first.call(null,coll__$1)):(((cljs.core.count.call(null,out) === (0)))?cljs.core.conj_BANG_.call(null,out,cljs.core.first.call(null,coll__$1)):zprint.zprint.conj_it_BANG_.call(null,out,sep_nil,cljs.core.first.call(null,coll__$1))));
+var G__47347 = pred_QMARK_.call(null,cljs.core.first.call(null,coll__$1));
+coll__$1 = G__47345;
+out = G__47346;
+interpose_QMARK_ = G__47347;
 continue;
 }
 break;
@@ -3254,12 +3254,12 @@ break;
  * Do the same as interpose, but different seps depending on pred-fn
  *   return and nl-separator?.
  */
-zprint.zprint.interpose_either_nl_hf = (function zprint$zprint$interpose_either_nl_hf(sep_true,sep_true_nl,sep_nil,sep_nil_nl,p__39386,pred_fn,coll){
-var map__39387 = p__39386;
-var map__39387__$1 = (((((!((map__39387 == null))))?(((((map__39387.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__39387.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__39387):map__39387);
-var suboptions = map__39387__$1;
-var nl_separator_QMARK_ = cljs.core.get.call(null,map__39387__$1,new cljs.core.Keyword(null,"nl-separator?","nl-separator?",-758068767));
-var nl_separator_flow_QMARK_ = cljs.core.get.call(null,map__39387__$1,new cljs.core.Keyword(null,"nl-separator-flow?","nl-separator-flow?",495760215));
+zprint.zprint.interpose_either_nl_hf = (function zprint$zprint$interpose_either_nl_hf(sep_true,sep_true_nl,sep_nil,sep_nil_nl,p__47348,pred_fn,coll){
+var map__47349 = p__47348;
+var map__47349__$1 = (((((!((map__47349 == null))))?(((((map__47349.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47349.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47349):map__47349);
+var suboptions = map__47349__$1;
+var nl_separator_QMARK_ = cljs.core.get.call(null,map__47349__$1,new cljs.core.Keyword(null,"nl-separator?","nl-separator?",-758068767));
+var nl_separator_flow_QMARK_ = cljs.core.get.call(null,map__47349__$1,new cljs.core.Keyword(null,"nl-separator-flow?","nl-separator-flow?",495760215));
 var coll__$1 = coll;
 var out = cljs.core.transient$.call(null,cljs.core.PersistentVector.EMPTY);
 var interpose_QMARK_ = null;
@@ -3268,23 +3268,23 @@ while(true){
 if(cljs.core.empty_QMARK_.call(null,coll__$1)){
 return cljs.core.apply.call(null,zprint.zprint.concat_no_nil,cljs.core.persistent_BANG_.call(null,out));
 } else {
-var vec__39389 = cljs.core.first.call(null,coll__$1);
-var hangflow = cljs.core.nth.call(null,vec__39389,(0),null);
-var style_vec = cljs.core.nth.call(null,vec__39389,(1),null);
-var G__39392 = cljs.core.next.call(null,coll__$1);
-var G__39393 = (cljs.core.truth_(interpose_QMARK_)?zprint.zprint.conj_it_BANG_.call(null,out,(cljs.core.truth_(add_nl_QMARK_)?sep_true_nl:sep_true),style_vec):(((cljs.core.count.call(null,out) === (0)))?cljs.core.conj_BANG_.call(null,out,style_vec):zprint.zprint.conj_it_BANG_.call(null,out,(cljs.core.truth_(add_nl_QMARK_)?sep_nil_nl:sep_nil),style_vec)));
-var G__39394 = (cljs.core.truth_(pred_fn)?pred_fn.call(null,style_vec):null);
-var G__39395 = (function (){var and__4036__auto__ = nl_separator_QMARK_;
+var vec__47351 = cljs.core.first.call(null,coll__$1);
+var hangflow = cljs.core.nth.call(null,vec__47351,(0),null);
+var style_vec = cljs.core.nth.call(null,vec__47351,(1),null);
+var G__47354 = cljs.core.next.call(null,coll__$1);
+var G__47355 = (cljs.core.truth_(interpose_QMARK_)?zprint.zprint.conj_it_BANG_.call(null,out,(cljs.core.truth_(add_nl_QMARK_)?sep_true_nl:sep_true),style_vec):(((cljs.core.count.call(null,out) === (0)))?cljs.core.conj_BANG_.call(null,out,style_vec):zprint.zprint.conj_it_BANG_.call(null,out,(cljs.core.truth_(add_nl_QMARK_)?sep_nil_nl:sep_nil),style_vec)));
+var G__47356 = (cljs.core.truth_(pred_fn)?pred_fn.call(null,style_vec):null);
+var G__47357 = (function (){var and__4036__auto__ = nl_separator_QMARK_;
 if(cljs.core.truth_(and__4036__auto__)){
 return cljs.core._EQ_.call(null,hangflow,new cljs.core.Keyword(null,"flow","flow",590489032));
 } else {
 return and__4036__auto__;
 }
 })();
-coll__$1 = G__39392;
-out = G__39393;
-interpose_QMARK_ = G__39394;
-add_nl_QMARK_ = G__39395;
+coll__$1 = G__47354;
+out = G__47355;
+interpose_QMARK_ = G__47356;
+add_nl_QMARK_ = G__47357;
 continue;
 }
 break;
@@ -3298,23 +3298,23 @@ break;
 zprint.zprint.interpose_nl_hf = (function zprint$zprint$interpose_nl_hf(suboptions,ind,coll){
 return zprint.zprint.interpose_either_nl_hf.call(null,null,null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [["\n",cljs.core.str.cljs$core$IFn$_invoke$arity$1(zprint.zprint.blanks.call(null,ind))].join(''),new cljs.core.Keyword(null,"none","none",1333468478),new cljs.core.Keyword(null,"indent","indent",-148200125)], null)], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, ["\n",new cljs.core.Keyword(null,"none","none",1333468478),new cljs.core.Keyword(null,"indent","indent",-148200125)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [["\n",cljs.core.str.cljs$core$IFn$_invoke$arity$1(zprint.zprint.blanks.call(null,ind))].join(''),new cljs.core.Keyword(null,"none","none",1333468478),new cljs.core.Keyword(null,"indent","indent",-148200125)], null)], null),suboptions,null,coll);
 });
-zprint.zprint.fzprint_map_STAR_ = (function zprint$zprint$fzprint_map_STAR_(caller,l_str,r_str,p__39397,ind,zloc){
-var map__39398 = p__39397;
-var map__39398__$1 = (((((!((map__39398 == null))))?(((((map__39398.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__39398.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__39398):map__39398);
-var options = map__39398__$1;
-var map__39399 = cljs.core.get.call(null,map__39398__$1,caller);
-var map__39399__$1 = (((((!((map__39399 == null))))?(((((map__39399.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__39399.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__39399):map__39399);
-var comma_QMARK_ = cljs.core.get.call(null,map__39399__$1,new cljs.core.Keyword(null,"comma?","comma?",1532168963));
-var key_ignore = cljs.core.get.call(null,map__39399__$1,new cljs.core.Keyword(null,"key-ignore","key-ignore",75506668));
-var key_ignore_silent = cljs.core.get.call(null,map__39399__$1,new cljs.core.Keyword(null,"key-ignore-silent","key-ignore-silent",-1720115060));
-var nl_separator_QMARK_ = cljs.core.get.call(null,map__39399__$1,new cljs.core.Keyword(null,"nl-separator?","nl-separator?",-758068767));
-var force_nl_QMARK_ = cljs.core.get.call(null,map__39399__$1,new cljs.core.Keyword(null,"force-nl?","force-nl?",-1299761462));
-var lift_ns_QMARK_ = cljs.core.get.call(null,map__39399__$1,new cljs.core.Keyword(null,"lift-ns?","lift-ns?",2021372853));
-var lift_ns_in_code_QMARK_ = cljs.core.get.call(null,map__39399__$1,new cljs.core.Keyword(null,"lift-ns-in-code?","lift-ns-in-code?",1444279377));
-var one_line_QMARK_ = cljs.core.get.call(null,map__39398__$1,new cljs.core.Keyword(null,"one-line?","one-line?",2055953111));
-var ztype = cljs.core.get.call(null,map__39398__$1,new cljs.core.Keyword(null,"ztype","ztype",-562179020));
-var map_depth = cljs.core.get.call(null,map__39398__$1,new cljs.core.Keyword(null,"map-depth","map-depth",-191378641));
-var in_code_QMARK_ = cljs.core.get.call(null,map__39398__$1,new cljs.core.Keyword(null,"in-code?","in-code?",194866464));
+zprint.zprint.fzprint_map_STAR_ = (function zprint$zprint$fzprint_map_STAR_(caller,l_str,r_str,p__47359,ind,zloc){
+var map__47360 = p__47359;
+var map__47360__$1 = (((((!((map__47360 == null))))?(((((map__47360.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47360.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47360):map__47360);
+var options = map__47360__$1;
+var map__47361 = cljs.core.get.call(null,map__47360__$1,caller);
+var map__47361__$1 = (((((!((map__47361 == null))))?(((((map__47361.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47361.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47361):map__47361);
+var comma_QMARK_ = cljs.core.get.call(null,map__47361__$1,new cljs.core.Keyword(null,"comma?","comma?",1532168963));
+var key_ignore = cljs.core.get.call(null,map__47361__$1,new cljs.core.Keyword(null,"key-ignore","key-ignore",75506668));
+var key_ignore_silent = cljs.core.get.call(null,map__47361__$1,new cljs.core.Keyword(null,"key-ignore-silent","key-ignore-silent",-1720115060));
+var nl_separator_QMARK_ = cljs.core.get.call(null,map__47361__$1,new cljs.core.Keyword(null,"nl-separator?","nl-separator?",-758068767));
+var force_nl_QMARK_ = cljs.core.get.call(null,map__47361__$1,new cljs.core.Keyword(null,"force-nl?","force-nl?",-1299761462));
+var lift_ns_QMARK_ = cljs.core.get.call(null,map__47361__$1,new cljs.core.Keyword(null,"lift-ns?","lift-ns?",2021372853));
+var lift_ns_in_code_QMARK_ = cljs.core.get.call(null,map__47361__$1,new cljs.core.Keyword(null,"lift-ns-in-code?","lift-ns-in-code?",1444279377));
+var one_line_QMARK_ = cljs.core.get.call(null,map__47360__$1,new cljs.core.Keyword(null,"one-line?","one-line?",2055953111));
+var ztype = cljs.core.get.call(null,map__47360__$1,new cljs.core.Keyword(null,"ztype","ztype",-562179020));
+var map_depth = cljs.core.get.call(null,map__47360__$1,new cljs.core.Keyword(null,"map-depth","map-depth",-191378641));
+var in_code_QMARK_ = cljs.core.get.call(null,map__47360__$1,new cljs.core.Keyword(null,"in-code?","in-code?",194866464));
 var options__$1 = cljs.core.assoc.call(null,options,new cljs.core.Keyword(null,"map-depth","map-depth",-191378641),(map_depth + (1)));
 var zloc__$1 = (cljs.core.truth_((function (){var and__4036__auto__ = cljs.core._EQ_.call(null,ztype,new cljs.core.Keyword(null,"sexpr","sexpr",-783344087));
 if(and__4036__auto__){
@@ -3328,10 +3328,10 @@ return key_ignore_silent;
 return and__4036__auto__;
 }
 })())?zprint.zprint.map_ignore.call(null,caller,options__$1,zloc):zloc);
-var vec__39402 = zprint.zprint.partition_all_2_nc.call(null,zprint.zprint.no_max_length.call(null,options__$1),zprint.zfns.zseqnws.call(null,zloc__$1));
-var no_sort_QMARK_ = cljs.core.nth.call(null,vec__39402,(0),null);
-var pair_seq = cljs.core.nth.call(null,vec__39402,(1),null);
-var vec__39405 = (cljs.core.truth_((function (){var and__4036__auto__ = lift_ns_QMARK_;
+var vec__47364 = zprint.zprint.partition_all_2_nc.call(null,zprint.zprint.no_max_length.call(null,options__$1),zprint.zfns.zseqnws.call(null,zloc__$1));
+var no_sort_QMARK_ = cljs.core.nth.call(null,vec__47364,(0),null);
+var pair_seq = cljs.core.nth.call(null,vec__47364,(1),null);
+var vec__47367 = (cljs.core.truth_((function (){var and__4036__auto__ = lift_ns_QMARK_;
 if(cljs.core.truth_(and__4036__auto__)){
 if(cljs.core.truth_(in_code_QMARK_)){
 return lift_ns_in_code_QMARK_;
@@ -3342,8 +3342,8 @@ return true;
 return and__4036__auto__;
 }
 })())?zprint.zfns.zlift_ns.call(null,pair_seq):null);
-var ns = cljs.core.nth.call(null,vec__39405,(0),null);
-var lift_pair_seq = cljs.core.nth.call(null,vec__39405,(1),null);
+var ns = cljs.core.nth.call(null,vec__47367,(0),null);
+var lift_pair_seq = cljs.core.nth.call(null,vec__47367,(1),null);
 var l_str__$1 = (cljs.core.truth_(ns)?["#:",cljs.core.str.cljs$core$IFn$_invoke$arity$1(ns),cljs.core.str.cljs$core$IFn$_invoke$arity$1(l_str)].join(''):l_str);
 var pair_seq__$1 = (function (){var or__4047__auto__ = lift_pair_seq;
 if(cljs.core.truth_(or__4047__auto__)){
@@ -3374,15 +3374,15 @@ return zprint.zprint.concat_no_nil.call(null,l_str_vec,one_line__$1,r_str_vec);
 } else {
 if(cljs.core.not.call(null,one_line_QMARK_)){
 var pair_print = zprint.zprint.fzprint_map_two_up.call(null,caller,options__$1,(indent + ind),comma_QMARK_,pair_seq__$3);
-return zprint.zprint.concat_no_nil.call(null,l_str_vec,zprint.zprint.interpose_either_nl_hf.call(null,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [",",new cljs.core.Keyword(null,"none","none",1333468478),new cljs.core.Keyword(null,"whitespace","whitespace",-1340035483)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [["\n",cljs.core.str.cljs$core$IFn$_invoke$arity$1(zprint.zprint.blanks.call(null,(ind + (1))))].join(''),new cljs.core.Keyword(null,"none","none",1333468478),new cljs.core.Keyword(null,"indent","indent",-148200125)], null)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [",",new cljs.core.Keyword(null,"none","none",1333468478),new cljs.core.Keyword(null,"whitespace","whitespace",-1340035483)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, ["\n",new cljs.core.Keyword(null,"none","none",1333468478),new cljs.core.Keyword(null,"indent","indent",-148200125)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [["\n",cljs.core.str.cljs$core$IFn$_invoke$arity$1(zprint.zprint.blanks.call(null,(ind + (1))))].join(''),new cljs.core.Keyword(null,"none","none",1333468478),new cljs.core.Keyword(null,"indent","indent",-148200125)], null)], null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [["\n",cljs.core.str.cljs$core$IFn$_invoke$arity$1(zprint.zprint.blanks.call(null,(ind + (1))))].join(''),new cljs.core.Keyword(null,"none","none",1333468478),new cljs.core.Keyword(null,"indent","indent",-148200125)], null)], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [["\n",cljs.core.str.cljs$core$IFn$_invoke$arity$1(zprint.zprint.blanks.call(null,(ind + (1))))].join(''),new cljs.core.Keyword(null,"none","none",1333468478),new cljs.core.Keyword(null,"indent","indent",-148200125)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [["\n",cljs.core.str.cljs$core$IFn$_invoke$arity$1(zprint.zprint.blanks.call(null,(ind + (1))))].join(''),new cljs.core.Keyword(null,"none","none",1333468478),new cljs.core.Keyword(null,"indent","indent",-148200125)], null)], null),new cljs.core.Keyword(null,"map","map",1371690461).cljs$core$IFn$_invoke$arity$1(options__$1),((function (pair_print,_,pair_print_one_line,pair_print_one_line__$1,pair_print_one_line__$2,one_line,one_line_lines,one_line__$1,options__$1,zloc__$1,vec__39402,no_sort_QMARK_,pair_seq,vec__39405,ns,lift_pair_seq,l_str__$1,pair_seq__$1,pair_seq__$2,max_length,pair_count,pair_seq__$3,indent,l_str_vec,r_str_vec,map__39398,map__39398__$1,options,map__39399,map__39399__$1,comma_QMARK_,key_ignore,key_ignore_silent,nl_separator_QMARK_,force_nl_QMARK_,lift_ns_QMARK_,lift_ns_in_code_QMARK_,one_line_QMARK_,ztype,map_depth,in_code_QMARK_){
-return (function (p1__39396_SHARP_){
+return zprint.zprint.concat_no_nil.call(null,l_str_vec,zprint.zprint.interpose_either_nl_hf.call(null,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [",",new cljs.core.Keyword(null,"none","none",1333468478),new cljs.core.Keyword(null,"whitespace","whitespace",-1340035483)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [["\n",cljs.core.str.cljs$core$IFn$_invoke$arity$1(zprint.zprint.blanks.call(null,(ind + (1))))].join(''),new cljs.core.Keyword(null,"none","none",1333468478),new cljs.core.Keyword(null,"indent","indent",-148200125)], null)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [",",new cljs.core.Keyword(null,"none","none",1333468478),new cljs.core.Keyword(null,"whitespace","whitespace",-1340035483)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, ["\n",new cljs.core.Keyword(null,"none","none",1333468478),new cljs.core.Keyword(null,"indent","indent",-148200125)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [["\n",cljs.core.str.cljs$core$IFn$_invoke$arity$1(zprint.zprint.blanks.call(null,(ind + (1))))].join(''),new cljs.core.Keyword(null,"none","none",1333468478),new cljs.core.Keyword(null,"indent","indent",-148200125)], null)], null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [["\n",cljs.core.str.cljs$core$IFn$_invoke$arity$1(zprint.zprint.blanks.call(null,(ind + (1))))].join(''),new cljs.core.Keyword(null,"none","none",1333468478),new cljs.core.Keyword(null,"indent","indent",-148200125)], null)], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [["\n",cljs.core.str.cljs$core$IFn$_invoke$arity$1(zprint.zprint.blanks.call(null,(ind + (1))))].join(''),new cljs.core.Keyword(null,"none","none",1333468478),new cljs.core.Keyword(null,"indent","indent",-148200125)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [["\n",cljs.core.str.cljs$core$IFn$_invoke$arity$1(zprint.zprint.blanks.call(null,(ind + (1))))].join(''),new cljs.core.Keyword(null,"none","none",1333468478),new cljs.core.Keyword(null,"indent","indent",-148200125)], null)], null),new cljs.core.Keyword(null,"map","map",1371690461).cljs$core$IFn$_invoke$arity$1(options__$1),((function (pair_print,_,pair_print_one_line,pair_print_one_line__$1,pair_print_one_line__$2,one_line,one_line_lines,one_line__$1,options__$1,zloc__$1,vec__47364,no_sort_QMARK_,pair_seq,vec__47367,ns,lift_pair_seq,l_str__$1,pair_seq__$1,pair_seq__$2,max_length,pair_count,pair_seq__$3,indent,l_str_vec,r_str_vec,map__47360,map__47360__$1,options,map__47361,map__47361__$1,comma_QMARK_,key_ignore,key_ignore_silent,nl_separator_QMARK_,force_nl_QMARK_,lift_ns_QMARK_,lift_ns_in_code_QMARK_,one_line_QMARK_,ztype,map_depth,in_code_QMARK_){
+return (function (p1__47358_SHARP_){
 var and__4036__auto__ = comma_QMARK_;
 if(cljs.core.truth_(and__4036__auto__)){
-return ((cljs.core.not_EQ_.call(null,cljs.core.nth.call(null,cljs.core.first.call(null,p1__39396_SHARP_),(2)),new cljs.core.Keyword(null,"comment","comment",532206069))) && (cljs.core.not_EQ_.call(null,cljs.core.nth.call(null,cljs.core.first.call(null,p1__39396_SHARP_),(2)),new cljs.core.Keyword(null,"comment-inline","comment-inline",712944405))));
+return ((cljs.core.not_EQ_.call(null,cljs.core.nth.call(null,cljs.core.first.call(null,p1__47358_SHARP_),(2)),new cljs.core.Keyword(null,"comment","comment",532206069))) && (cljs.core.not_EQ_.call(null,cljs.core.nth.call(null,cljs.core.first.call(null,p1__47358_SHARP_),(2)),new cljs.core.Keyword(null,"comment-inline","comment-inline",712944405))));
 } else {
 return and__4036__auto__;
 }
-});})(pair_print,_,pair_print_one_line,pair_print_one_line__$1,pair_print_one_line__$2,one_line,one_line_lines,one_line__$1,options__$1,zloc__$1,vec__39402,no_sort_QMARK_,pair_seq,vec__39405,ns,lift_pair_seq,l_str__$1,pair_seq__$1,pair_seq__$2,max_length,pair_count,pair_seq__$3,indent,l_str_vec,r_str_vec,map__39398,map__39398__$1,options,map__39399,map__39399__$1,comma_QMARK_,key_ignore,key_ignore_silent,nl_separator_QMARK_,force_nl_QMARK_,lift_ns_QMARK_,lift_ns_in_code_QMARK_,one_line_QMARK_,ztype,map_depth,in_code_QMARK_))
+});})(pair_print,_,pair_print_one_line,pair_print_one_line__$1,pair_print_one_line__$2,one_line,one_line_lines,one_line__$1,options__$1,zloc__$1,vec__47364,no_sort_QMARK_,pair_seq,vec__47367,ns,lift_pair_seq,l_str__$1,pair_seq__$1,pair_seq__$2,max_length,pair_count,pair_seq__$3,indent,l_str_vec,r_str_vec,map__47360,map__47360__$1,options,map__47361,map__47361__$1,comma_QMARK_,key_ignore,key_ignore_silent,nl_separator_QMARK_,force_nl_QMARK_,lift_ns_QMARK_,lift_ns_in_code_QMARK_,one_line_QMARK_,ztype,map_depth,in_code_QMARK_))
 ,pair_print),r_str_vec);
 } else {
 return null;
@@ -3394,9 +3394,9 @@ return null;
  * Format a real map. ONLY WORKES ON STRUCTURES AT PRESENT
  */
 zprint.zprint.fzprint_map = (function zprint$zprint$fzprint_map(options,ind,zloc){
-var vec__39408 = null;
-var ns = cljs.core.nth.call(null,vec__39408,(0),null);
-var lifted_map = cljs.core.nth.call(null,vec__39408,(1),null);
+var vec__47370 = null;
+var ns = cljs.core.nth.call(null,vec__47370,(0),null);
+var lifted_map = cljs.core.nth.call(null,vec__47370,(1),null);
 if(cljs.core.truth_(ns)){
 return zprint.zprint.fzprint_map_STAR_.call(null,new cljs.core.Keyword(null,"map","map",1371690461),["#:",cljs.core.str.cljs$core$IFn$_invoke$arity$1(ns),"{"].join(''),"}",zprint.zprint.rightmost.call(null,options),ind,lifted_map);
 } else {
@@ -3414,8 +3414,8 @@ return cljs.core.re_find.call(null,/^#object\[/,s);
  *   that will acknowledge the structure inside of the [...]
  */
 zprint.zprint.fzprint_object = (function zprint$zprint$fzprint_object(var_args){
-var G__39412 = arguments.length;
-switch (G__39412) {
+var G__47374 = arguments.length;
+switch (G__47374) {
 case 4:
 return zprint.zprint.fzprint_object.cljs$core$IFn$_invoke$arity$4((arguments[(0)]),(arguments[(1)]),(arguments[(2)]),(arguments[(3)]));
 
@@ -3446,13 +3446,13 @@ zprint.zprint.fzprint_object.cljs$lang$maxFixedArity = 4;
 zprint.zprint.hash_identity_str = (function zprint$zprint$hash_identity_str(obj){
 return cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.hash.call(null,obj));
 });
-zprint.zprint.fzprint_atom = (function zprint$zprint$fzprint_atom(p__39414,ind,zloc){
-var map__39415 = p__39414;
-var map__39415__$1 = (((((!((map__39415 == null))))?(((((map__39415.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__39415.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__39415):map__39415);
-var options = map__39415__$1;
-var map__39416 = cljs.core.get.call(null,map__39415__$1,new cljs.core.Keyword(null,"atom","atom",-397043653));
-var map__39416__$1 = (((((!((map__39416 == null))))?(((((map__39416.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__39416.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__39416):map__39416);
-var object_QMARK_ = cljs.core.get.call(null,map__39416__$1,new cljs.core.Keyword(null,"object?","object?",-1313059217));
+zprint.zprint.fzprint_atom = (function zprint$zprint$fzprint_atom(p__47376,ind,zloc){
+var map__47377 = p__47376;
+var map__47377__$1 = (((((!((map__47377 == null))))?(((((map__47377.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47377.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47377):map__47377);
+var options = map__47377__$1;
+var map__47378 = cljs.core.get.call(null,map__47377__$1,new cljs.core.Keyword(null,"atom","atom",-397043653));
+var map__47378__$1 = (((((!((map__47378 == null))))?(((((map__47378.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47378.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47378):map__47378);
+var object_QMARK_ = cljs.core.get.call(null,map__47378__$1,new cljs.core.Keyword(null,"object?","object?",-1313059217));
 if(cljs.core.truth_((function (){var and__4036__auto__ = object_QMARK_;
 if(cljs.core.truth_(and__4036__auto__)){
 return zprint.zprint.object_str_QMARK_.call(null,zprint.zfns.zstring.call(null,zloc));
@@ -3504,9 +3504,9 @@ var r_str = ">";
 var indent = cljs.core.count.call(null,l_str);
 var l_str_vec = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [l_str,zprint.zprint.zcolor_map.call(null,options,l_str),new cljs.core.Keyword(null,"left","left",-399115937)], null)], null);
 var r_str_vec = zprint.zprint.rstr_vec.call(null,options,(indent + ind),zloc,r_str);
-var type_str = (function (){var G__39419 = zloc_type;
-var G__39419__$1 = (((G__39419 instanceof cljs.core.Keyword))?G__39419.fqn:null);
-switch (G__39419__$1) {
+var type_str = (function (){var G__47381 = zloc_type;
+var G__47381__$1 = (((G__47381 instanceof cljs.core.Keyword))?G__47381.fqn:null);
+switch (G__47381__$1) {
 case "future":
 return "Future@";
 
@@ -3524,16 +3524,16 @@ return "Agent@";
 
 break;
 default:
-throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__39419__$1)].join('')));
+throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__47381__$1)].join('')));
 
 }
 })();
 var arg_1 = [cljs.core.str.cljs$core$IFn$_invoke$arity$1(type_str),cljs.core.str.cljs$core$IFn$_invoke$arity$1(zprint.zprint.hash_identity_str.call(null,zloc))].join('');
 var arg_1_indent = (((ind + indent) + (1)) + cljs.core.count.call(null,arg_1));
 var zloc_realized_QMARK_ = ((cljs.core._EQ_.call(null,zloc_type,new cljs.core.Keyword(null,"agent","agent",-766455027)))?true:cljs.core.realized_QMARK_.call(null,zloc));
-var value = ((zloc_realized_QMARK_)?zprint.zfns.zderef.call(null,zloc):(function (){var G__39420 = zloc_type;
-var G__39420__$1 = (((G__39420 instanceof cljs.core.Keyword))?G__39420.fqn:null);
-switch (G__39420__$1) {
+var value = ((zloc_realized_QMARK_)?zprint.zfns.zderef.call(null,zloc):(function (){var G__47382 = zloc_type;
+var G__47382__$1 = (((G__47382 instanceof cljs.core.Keyword))?G__47382.fqn:null);
+switch (G__47382__$1) {
 case "future":
 return "pending";
 
@@ -3547,7 +3547,7 @@ return "pending";
 
 break;
 default:
-throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__39420__$1)].join('')));
+throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__47382__$1)].join('')));
 
 }
 })());
@@ -3565,13 +3565,13 @@ return zprint.zprint.concat_no_nil.call(null,l_str_vec,new cljs.core.PersistentV
  *   a collection, for instance.  This doesn't do macros, you will notice.
  *   It also can't be invoked when zloc is a zipper.
  */
-zprint.zprint.fzprint_fn_obj = (function zprint$zprint$fzprint_fn_obj(p__39423,ind,zloc){
-var map__39424 = p__39423;
-var map__39424__$1 = (((((!((map__39424 == null))))?(((((map__39424.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__39424.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__39424):map__39424);
-var options = map__39424__$1;
-var map__39425 = cljs.core.get.call(null,map__39424__$1,new cljs.core.Keyword(null,"fn-obj","fn-obj",465065936));
-var map__39425__$1 = (((((!((map__39425 == null))))?(((((map__39425.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__39425.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__39425):map__39425);
-var object_QMARK_ = cljs.core.get.call(null,map__39425__$1,new cljs.core.Keyword(null,"object?","object?",-1313059217));
+zprint.zprint.fzprint_fn_obj = (function zprint$zprint$fzprint_fn_obj(p__47385,ind,zloc){
+var map__47386 = p__47385;
+var map__47386__$1 = (((((!((map__47386 == null))))?(((((map__47386.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47386.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47386):map__47386);
+var options = map__47386__$1;
+var map__47387 = cljs.core.get.call(null,map__47386__$1,new cljs.core.Keyword(null,"fn-obj","fn-obj",465065936));
+var map__47387__$1 = (((((!((map__47387 == null))))?(((((map__47387.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47387.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47387):map__47387);
+var object_QMARK_ = cljs.core.get.call(null,map__47387__$1,new cljs.core.Keyword(null,"object?","object?",-1313059217));
 if(cljs.core.truth_((function (){var and__4036__auto__ = object_QMARK_;
 if(cljs.core.truth_(and__4036__auto__)){
 return zprint.zprint.object_str_QMARK_.call(null,zprint.zfns.zstring.call(null,zloc));
@@ -3639,14 +3639,14 @@ return (1);
 return null;
 }
 });
-zprint.zprint.fzprint_record = (function zprint$zprint$fzprint_record(p__39428,ind,zloc){
-var map__39429 = p__39428;
-var map__39429__$1 = (((((!((map__39429 == null))))?(((((map__39429.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__39429.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__39429):map__39429);
-var options = map__39429__$1;
-var map__39430 = cljs.core.get.call(null,map__39429__$1,new cljs.core.Keyword(null,"record","record",-779106859));
-var map__39430__$1 = (((((!((map__39430 == null))))?(((((map__39430.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__39430.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__39430):map__39430);
-var record_type_QMARK_ = cljs.core.get.call(null,map__39430__$1,new cljs.core.Keyword(null,"record-type?","record-type?",-1195765660));
-var to_string_QMARK_ = cljs.core.get.call(null,map__39430__$1,new cljs.core.Keyword(null,"to-string?","to-string?",1452120886));
+zprint.zprint.fzprint_record = (function zprint$zprint$fzprint_record(p__47390,ind,zloc){
+var map__47391 = p__47390;
+var map__47391__$1 = (((((!((map__47391 == null))))?(((((map__47391.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47391.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47391):map__47391);
+var options = map__47391__$1;
+var map__47392 = cljs.core.get.call(null,map__47391__$1,new cljs.core.Keyword(null,"record","record",-779106859));
+var map__47392__$1 = (((((!((map__47392 == null))))?(((((map__47392.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47392.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47392):map__47392);
+var record_type_QMARK_ = cljs.core.get.call(null,map__47392__$1,new cljs.core.Keyword(null,"record-type?","record-type?",-1195765660));
+var to_string_QMARK_ = cljs.core.get.call(null,map__47392__$1,new cljs.core.Keyword(null,"to-string?","to-string?",1452120886));
 if(cljs.core.truth_(to_string_QMARK_)){
 return zprint.zprint.fzprint_STAR_.call(null,options,ind,zloc.toString());
 } else {
@@ -3748,28 +3748,28 @@ return options;
 /**
  * The pretty print part of fzprint.
  */
-zprint.zprint.fzprint_STAR_ = (function zprint$zprint$fzprint_STAR_(p__39433,indent,zloc){
-var map__39434 = p__39433;
-var map__39434__$1 = (((((!((map__39434 == null))))?(((((map__39434.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__39434.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__39434):map__39434);
-var options = map__39434__$1;
-var max_depth = cljs.core.get.call(null,map__39434__$1,new cljs.core.Keyword(null,"max-depth","max-depth",127060793));
-var fn_map = cljs.core.get.call(null,map__39434__$1,new cljs.core.Keyword(null,"fn-map","fn-map",565481146));
-var shift_seq = cljs.core.get.call(null,map__39434__$1,new cljs.core.Keyword(null,"shift-seq","shift-seq",267527195));
-var max_hang_count = cljs.core.get.call(null,map__39434__$1,new cljs.core.Keyword(null,"max-hang-count","max-hang-count",637294812));
-var in_code_QMARK_ = cljs.core.get.call(null,map__39434__$1,new cljs.core.Keyword(null,"in-code?","in-code?",194866464));
-var max_hang_depth = cljs.core.get.call(null,map__39434__$1,new cljs.core.Keyword(null,"max-hang-depth","max-hang-depth",-915232220));
-var in_hang_QMARK_ = cljs.core.get.call(null,map__39434__$1,new cljs.core.Keyword(null,"in-hang?","in-hang?",-1065695639));
-var rightcnt = cljs.core.get.call(null,map__39434__$1,new cljs.core.Keyword(null,"rightcnt","rightcnt",-45750070));
-var width = cljs.core.get.call(null,map__39434__$1,new cljs.core.Keyword(null,"width","width",-384071477));
-var hex_QMARK_ = cljs.core.get.call(null,map__39434__$1,new cljs.core.Keyword(null,"hex?","hex?",890937870));
-var dbg_print_QMARK_ = cljs.core.get.call(null,map__39434__$1,new cljs.core.Keyword(null,"dbg-print?","dbg-print?",-660113872));
-var dbg_QMARK_ = cljs.core.get.call(null,map__39434__$1,new cljs.core.Keyword(null,"dbg?","dbg?",1845730771));
-var string_color = cljs.core.get.call(null,map__39434__$1,new cljs.core.Keyword(null,"string-color","string-color",-1853875244));
-var trim_comments_QMARK_ = cljs.core.get.call(null,map__39434__$1,new cljs.core.Keyword(null,"trim-comments?","trim-comments?",-1532658667));
-var max_hang_span = cljs.core.get.call(null,map__39434__$1,new cljs.core.Keyword(null,"max-hang-span","max-hang-span",256100693));
-var one_line_QMARK_ = cljs.core.get.call(null,map__39434__$1,new cljs.core.Keyword(null,"one-line?","one-line?",2055953111));
-var depth = cljs.core.get.call(null,map__39434__$1,new cljs.core.Keyword(null,"depth","depth",1768663640));
-var string_str_QMARK_ = cljs.core.get.call(null,map__39434__$1,new cljs.core.Keyword(null,"string-str?","string-str?",2059147352));
+zprint.zprint.fzprint_STAR_ = (function zprint$zprint$fzprint_STAR_(p__47395,indent,zloc){
+var map__47396 = p__47395;
+var map__47396__$1 = (((((!((map__47396 == null))))?(((((map__47396.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47396.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47396):map__47396);
+var options = map__47396__$1;
+var max_depth = cljs.core.get.call(null,map__47396__$1,new cljs.core.Keyword(null,"max-depth","max-depth",127060793));
+var fn_map = cljs.core.get.call(null,map__47396__$1,new cljs.core.Keyword(null,"fn-map","fn-map",565481146));
+var shift_seq = cljs.core.get.call(null,map__47396__$1,new cljs.core.Keyword(null,"shift-seq","shift-seq",267527195));
+var max_hang_count = cljs.core.get.call(null,map__47396__$1,new cljs.core.Keyword(null,"max-hang-count","max-hang-count",637294812));
+var in_code_QMARK_ = cljs.core.get.call(null,map__47396__$1,new cljs.core.Keyword(null,"in-code?","in-code?",194866464));
+var max_hang_depth = cljs.core.get.call(null,map__47396__$1,new cljs.core.Keyword(null,"max-hang-depth","max-hang-depth",-915232220));
+var in_hang_QMARK_ = cljs.core.get.call(null,map__47396__$1,new cljs.core.Keyword(null,"in-hang?","in-hang?",-1065695639));
+var rightcnt = cljs.core.get.call(null,map__47396__$1,new cljs.core.Keyword(null,"rightcnt","rightcnt",-45750070));
+var width = cljs.core.get.call(null,map__47396__$1,new cljs.core.Keyword(null,"width","width",-384071477));
+var hex_QMARK_ = cljs.core.get.call(null,map__47396__$1,new cljs.core.Keyword(null,"hex?","hex?",890937870));
+var dbg_print_QMARK_ = cljs.core.get.call(null,map__47396__$1,new cljs.core.Keyword(null,"dbg-print?","dbg-print?",-660113872));
+var dbg_QMARK_ = cljs.core.get.call(null,map__47396__$1,new cljs.core.Keyword(null,"dbg?","dbg?",1845730771));
+var string_color = cljs.core.get.call(null,map__47396__$1,new cljs.core.Keyword(null,"string-color","string-color",-1853875244));
+var trim_comments_QMARK_ = cljs.core.get.call(null,map__47396__$1,new cljs.core.Keyword(null,"trim-comments?","trim-comments?",-1532658667));
+var max_hang_span = cljs.core.get.call(null,map__47396__$1,new cljs.core.Keyword(null,"max-hang-span","max-hang-span",256100693));
+var one_line_QMARK_ = cljs.core.get.call(null,map__47396__$1,new cljs.core.Keyword(null,"one-line?","one-line?",2055953111));
+var depth = cljs.core.get.call(null,map__47396__$1,new cljs.core.Keyword(null,"depth","depth",1768663640));
+var string_str_QMARK_ = cljs.core.get.call(null,map__47396__$1,new cljs.core.Keyword(null,"string-str?","string-str?",2059147352));
 var avail = (width - indent);
 var options__$1 = cljs.core.assoc.call(null,options,new cljs.core.Keyword(null,"depth","depth",1768663640),(depth + (1)));
 var options__$2 = (cljs.core.truth_((function (){var or__4047__auto__ = dbg_QMARK_;
@@ -3995,8 +3995,8 @@ return ((x__4138__auto__ < y__4139__auto__) ? x__4138__auto__ : y__4139__auto__)
 })();
 var rev_seq = cljs.core.reverse.call(null,cljs.core.take.call(null,(from_index__$1 + (1)),s));
 var seq_after_space = cljs.core.take_while.call(null,((function (from_index__$1,rev_seq){
-return (function (p1__39436_SHARP_){
-return cljs.core.not_EQ_.call(null,p1__39436_SHARP_," ");
+return (function (p1__47398_SHARP_){
+return cljs.core.not_EQ_.call(null,p1__47398_SHARP_," ");
 });})(from_index__$1,rev_seq))
 ,rev_seq);
 var space_index = (from_index__$1 - cljs.core.count.call(null,seq_after_space));
@@ -4015,8 +4015,8 @@ zprint.zprint.next_space = (function zprint$zprint$next_space(s,from_index){
 var from_index__$1 = (from_index + (1));
 if((from_index__$1 < cljs.core.count.call(null,s))){
 var seq_after_space = cljs.core.take_while.call(null,((function (from_index__$1){
-return (function (p1__39437_SHARP_){
-return cljs.core.not_EQ_.call(null,p1__39437_SHARP_," ");
+return (function (p1__47399_SHARP_){
+return cljs.core.not_EQ_.call(null,p1__47399_SHARP_," ");
 });})(from_index__$1))
 ,cljs.core.drop.call(null,from_index__$1,cljs.core.seq.call(null,s)));
 var space_index = (from_index__$1 + cljs.core.count.call(null,seq_after_space));
@@ -4034,12 +4034,12 @@ return null;
  *   Note that top level comments may well end with a newline, so remove it
  *   and reapply it at the end if that is the case.
  */
-zprint.zprint.wrap_comment = (function zprint$zprint$wrap_comment(width,p__39438,start){
-var vec__39439 = p__39438;
-var s = cljs.core.nth.call(null,vec__39439,(0),null);
-var color = cljs.core.nth.call(null,vec__39439,(1),null);
-var stype = cljs.core.nth.call(null,vec__39439,(2),null);
-var element = vec__39439;
+zprint.zprint.wrap_comment = (function zprint$zprint$wrap_comment(width,p__47400,start){
+var vec__47401 = p__47400;
+var s = cljs.core.nth.call(null,vec__47401,(0),null);
+var color = cljs.core.nth.call(null,vec__47401,(1),null);
+var stype = cljs.core.nth.call(null,vec__47401,(2),null);
+var element = vec__47401;
 if((!(cljs.core._EQ_.call(null,stype,new cljs.core.Keyword(null,"comment","comment",532206069))))){
 return element;
 } else {
@@ -4083,10 +4083,10 @@ return (cljs.core.count.call(null,comment_str) - (1));
 }
 })()));
 var next_comment = clojure.string.trimr.call(null,cljs.core.subs.call(null,comment_str,(0),(last_space_index + (1))));
-var G__39442 = cljs.core.subs.call(null,comment_str,(last_space_index + (1)));
-var G__39443 = (((cljs.core.count.call(null,out) === (0)))?cljs.core.conj_BANG_.call(null,out,new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [[cljs.core.str.cljs$core$IFn$_invoke$arity$1(semi_str),cljs.core.str.cljs$core$IFn$_invoke$arity$1(space_str),cljs.core.str.cljs$core$IFn$_invoke$arity$1(next_comment)].join(''),color,stype], null)):cljs.core.conj_BANG_.call(null,cljs.core.conj_BANG_.call(null,out,new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [["\n",cljs.core.str.cljs$core$IFn$_invoke$arity$1(zprint.zprint.blanks.call(null,start))].join(''),new cljs.core.Keyword(null,"none","none",1333468478),new cljs.core.Keyword(null,"indent","indent",-148200125)], null)),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [[cljs.core.str.cljs$core$IFn$_invoke$arity$1(semi_str),cljs.core.str.cljs$core$IFn$_invoke$arity$1(space_str),cljs.core.str.cljs$core$IFn$_invoke$arity$1(next_comment)].join(''),color,new cljs.core.Keyword(null,"comment-wrap","comment-wrap",720664128)], null)));
-comment_str = G__39442;
-out = G__39443;
+var G__47404 = cljs.core.subs.call(null,comment_str,(last_space_index + (1)));
+var G__47405 = (((cljs.core.count.call(null,out) === (0)))?cljs.core.conj_BANG_.call(null,out,new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [[cljs.core.str.cljs$core$IFn$_invoke$arity$1(semi_str),cljs.core.str.cljs$core$IFn$_invoke$arity$1(space_str),cljs.core.str.cljs$core$IFn$_invoke$arity$1(next_comment)].join(''),color,stype], null)):cljs.core.conj_BANG_.call(null,cljs.core.conj_BANG_.call(null,out,new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [["\n",cljs.core.str.cljs$core$IFn$_invoke$arity$1(zprint.zprint.blanks.call(null,start))].join(''),new cljs.core.Keyword(null,"none","none",1333468478),new cljs.core.Keyword(null,"indent","indent",-148200125)], null)),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [[cljs.core.str.cljs$core$IFn$_invoke$arity$1(semi_str),cljs.core.str.cljs$core$IFn$_invoke$arity$1(space_str),cljs.core.str.cljs$core$IFn$_invoke$arity$1(next_comment)].join(''),color,new cljs.core.Keyword(null,"comment-wrap","comment-wrap",720664128)], null)));
+comment_str = G__47404;
+out = G__47405;
 continue;
 }
 break;
@@ -4096,9 +4096,9 @@ break;
 /**
  * Takes the start of this vector and the vector itself.
  */
-zprint.zprint.loc_vec = (function zprint$zprint$loc_vec(start,p__39444){
-var vec__39445 = p__39444;
-var s = cljs.core.nth.call(null,vec__39445,(0),null);
+zprint.zprint.loc_vec = (function zprint$zprint$loc_vec(start,p__47406){
+var vec__47407 = p__47406;
+var s = cljs.core.nth.call(null,vec__47407,(0),null);
 var split = zprint.zprint.split_lf.call(null,s);
 if(cljs.core._EQ_.call(null,cljs.core.count.call(null,split),(1))){
 return (start + cljs.core.count.call(null,s));
@@ -4127,10 +4127,10 @@ while(true){
 if(cljs.core.not.call(null,element_vec)){
 return out;
 } else {
-var G__39448 = cljs.core.next.call(null,element_vec);
-var G__39449 = cljs.core.conj.call(null,out,cljs.core.first.call(null,element_vec));
-element_vec = G__39448;
-out = G__39449;
+var G__47410 = cljs.core.next.call(null,element_vec);
+var G__47411 = cljs.core.conj.call(null,out,cljs.core.first.call(null,element_vec));
+element_vec = G__47410;
+out = G__47411;
 continue;
 }
 break;
@@ -4148,11 +4148,11 @@ return cljs.core.reduce.call(null,zprint.zprint.lift_vec,cljs.core.PersistentVec
  * Take the final output style-vec, and wrap any comments which run over
  *   the width. Looking for 
  */
-zprint.zprint.fzprint_wrap_comments = (function zprint$zprint$fzprint_wrap_comments(p__39450,style_vec){
-var map__39451 = p__39450;
-var map__39451__$1 = (((((!((map__39451 == null))))?(((((map__39451.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__39451.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__39451):map__39451);
-var options = map__39451__$1;
-var width = cljs.core.get.call(null,map__39451__$1,new cljs.core.Keyword(null,"width","width",-384071477));
+zprint.zprint.fzprint_wrap_comments = (function zprint$zprint$fzprint_wrap_comments(p__47412,style_vec){
+var map__47413 = p__47412;
+var map__47413__$1 = (((((!((map__47413 == null))))?(((((map__47413.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47413.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47413):map__47413);
+var options = map__47413__$1;
+var width = cljs.core.get.call(null,map__47413__$1,new cljs.core.Keyword(null,"width","width",-384071477));
 var start_col = zprint.zprint.style_loc_vec.call(null,style_vec);
 var _ = (cljs.core.truth_(new cljs.core.Keyword(null,"dbg?","dbg?",1845730771).cljs$core$IFn$_invoke$arity$1(options))?cljs.core.println.call(null,new cljs.core.Keyword(null,"dbg-indent","dbg-indent",1534856778).cljs$core$IFn$_invoke$arity$1(options),"fzprint-wrap-comments: style-vec:",cljs.core.pr_str.call(null,style_vec)):null);
 var ___$1 = (cljs.core.truth_(new cljs.core.Keyword(null,"dbg?","dbg?",1845730771).cljs$core$IFn$_invoke$arity$1(options))?cljs.core.println.call(null,new cljs.core.Keyword(null,"dbg-indent","dbg-indent",1534856778).cljs$core$IFn$_invoke$arity$1(options),"fzprint-wrap-comments: start-col:",start_col):null);
@@ -4164,34 +4164,34 @@ return out_style_vec;
 /**
  * Try to bring inline comments back onto the line on which they belong.
  */
-zprint.zprint.fzprint_inline_comments = (function zprint$zprint$fzprint_inline_comments(p__39453,style_vec){
-var map__39454 = p__39453;
-var map__39454__$1 = (((((!((map__39454 == null))))?(((((map__39454.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__39454.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__39454):map__39454);
-var options = map__39454__$1;
-var width = cljs.core.get.call(null,map__39454__$1,new cljs.core.Keyword(null,"width","width",-384071477));
+zprint.zprint.fzprint_inline_comments = (function zprint$zprint$fzprint_inline_comments(p__47415,style_vec){
+var map__47416 = p__47415;
+var map__47416__$1 = (((((!((map__47416 == null))))?(((((map__47416.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__47416.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__47416):map__47416);
+var options = map__47416__$1;
+var width = cljs.core.get.call(null,map__47416__$1,new cljs.core.Keyword(null,"width","width",-384071477));
 var cvec = style_vec;
 var out = cljs.core.PersistentVector.EMPTY;
 while(true){
 if(cljs.core.not.call(null,cvec)){
 return out;
 } else {
-var vec__39456 = cljs.core.first.call(null,cvec);
-var s = cljs.core.nth.call(null,vec__39456,(0),null);
-var c = cljs.core.nth.call(null,vec__39456,(1),null);
-var e = cljs.core.nth.call(null,vec__39456,(2),null);
-var element = vec__39456;
-var vec__39459 = cljs.core.second.call(null,cvec);
-var _ = cljs.core.nth.call(null,vec__39459,(0),null);
-var ___$1 = cljs.core.nth.call(null,vec__39459,(1),null);
-var ne = cljs.core.nth.call(null,vec__39459,(2),null);
-var nn = cljs.core.nth.call(null,vec__39459,(3),null);
-var next_element = vec__39459;
+var vec__47418 = cljs.core.first.call(null,cvec);
+var s = cljs.core.nth.call(null,vec__47418,(0),null);
+var c = cljs.core.nth.call(null,vec__47418,(1),null);
+var e = cljs.core.nth.call(null,vec__47418,(2),null);
+var element = vec__47418;
+var vec__47421 = cljs.core.second.call(null,cvec);
+var _ = cljs.core.nth.call(null,vec__47421,(0),null);
+var ___$1 = cljs.core.nth.call(null,vec__47421,(1),null);
+var ne = cljs.core.nth.call(null,vec__47421,(2),null);
+var nn = cljs.core.nth.call(null,vec__47421,(3),null);
+var next_element = vec__47421;
 var new_element = ((((cljs.core._EQ_.call(null,e,new cljs.core.Keyword(null,"indent","indent",-148200125))) && (cljs.core._EQ_.call(null,ne,new cljs.core.Keyword(null,"comment-inline","comment-inline",712944405)))))?new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [zprint.zprint.blanks.call(null,nn),c,new cljs.core.Keyword(null,"whitespace","whitespace",-1340035483)], null):((cljs.core._EQ_.call(null,e,new cljs.core.Keyword(null,"comment-inline","comment-inline",712944405)))?new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [s,c,new cljs.core.Keyword(null,"comment","comment",532206069)], null):element
 ));
-var G__39462 = cljs.core.next.call(null,cvec);
-var G__39463 = cljs.core.conj.call(null,out,new_element);
-cvec = G__39462;
-out = G__39463;
+var G__47424 = cljs.core.next.call(null,cvec);
+var G__47425 = cljs.core.conj.call(null,out,new_element);
+cvec = G__47424;
+out = G__47425;
 continue;
 }
 break;
@@ -4234,8 +4234,8 @@ return cljs.core.reduce.call(null,cljs.core.max,zprint.zprint.line_widths.call(n
  *   on a tab-size argument.
  */
 zprint.zprint.expand_tabs = (function zprint$zprint$expand_tabs(var_args){
-var G__39465 = arguments.length;
-switch (G__39465) {
+var G__47427 = arguments.length;
+switch (G__47427) {
 case 2:
 return zprint.zprint.expand_tabs.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(arguments[(1)]));
 
@@ -4260,18 +4260,18 @@ return cljs.core.persistent_BANG_.call(null,out);
 } else {
 var this_char = cljs.core.first.call(null,char_seq);
 var tab_expansion = ((cljs.core._EQ_.call(null,this_char,"\t"))?(tab_size - cljs.core.mod.call(null,cur_len,tab_size)):null);
-var G__39467 = cljs.core.rest.call(null,char_seq);
-var G__39468 = ((cljs.core._EQ_.call(null,this_char,"\n"))?(0):(cur_len + cljs.core.long$.call(null,(function (){var or__4047__auto__ = tab_expansion;
+var G__47429 = cljs.core.rest.call(null,char_seq);
+var G__47430 = ((cljs.core._EQ_.call(null,this_char,"\n"))?(0):(cur_len + cljs.core.long$.call(null,(function (){var or__4047__auto__ = tab_expansion;
 if(cljs.core.truth_(or__4047__auto__)){
 return or__4047__auto__;
 } else {
 return (1);
 }
 })())));
-var G__39469 = (cljs.core.truth_(tab_expansion)?cljs.core.apply.call(null,zprint.zprint.conj_it_BANG_,out,cljs.core.seq.call(null,zprint.zprint.blanks.call(null,tab_expansion))):cljs.core.conj_BANG_.call(null,out,this_char));
-char_seq = G__39467;
-cur_len = G__39468;
-out = G__39469;
+var G__47431 = (cljs.core.truth_(tab_expansion)?cljs.core.apply.call(null,zprint.zprint.conj_it_BANG_,out,cljs.core.seq.call(null,zprint.zprint.blanks.call(null,tab_expansion))):cljs.core.conj_BANG_.call(null,out,this_char));
+char_seq = G__47429;
+cur_len = G__47430;
+out = G__47431;
 continue;
 }
 break;
@@ -4319,12 +4319,12 @@ var this__4301__auto____$1 = this;
 return this__4301__auto____$1.cljs$core$ILookup$_lookup$arity$3(null,k__4302__auto__,null);
 });
 
-zprint.zprint.r.prototype.cljs$core$ILookup$_lookup$arity$3 = (function (this__4303__auto__,k39471,else__4304__auto__){
+zprint.zprint.r.prototype.cljs$core$ILookup$_lookup$arity$3 = (function (this__4303__auto__,k47433,else__4304__auto__){
 var self__ = this;
 var this__4303__auto____$1 = this;
-var G__39475 = k39471;
-var G__39475__$1 = (((G__39475 instanceof cljs.core.Keyword))?G__39475.fqn:null);
-switch (G__39475__$1) {
+var G__47437 = k47433;
+var G__47437__$1 = (((G__47437 instanceof cljs.core.Keyword))?G__47437.fqn:null);
+switch (G__47437__$1) {
 case "left":
 return self__.left;
 
@@ -4334,7 +4334,7 @@ return self__.right;
 
 break;
 default:
-return cljs.core.get.call(null,self__.__extmap,k39471,else__4304__auto__);
+return cljs.core.get.call(null,self__.__extmap,k47433,else__4304__auto__);
 
 }
 });
@@ -4343,10 +4343,10 @@ zprint.zprint.r.prototype.cljs$core$IKVReduce$_kv_reduce$arity$3 = (function (th
 var self__ = this;
 var this__4320__auto____$1 = this;
 return cljs.core.reduce.call(null,((function (this__4320__auto____$1){
-return (function (ret__4323__auto__,p__39476){
-var vec__39477 = p__39476;
-var k__4324__auto__ = cljs.core.nth.call(null,vec__39477,(0),null);
-var v__4325__auto__ = cljs.core.nth.call(null,vec__39477,(1),null);
+return (function (ret__4323__auto__,p__47438){
+var vec__47439 = p__47438;
+var k__4324__auto__ = cljs.core.nth.call(null,vec__47439,(0),null);
+var v__4325__auto__ = cljs.core.nth.call(null,vec__47439,(1),null);
 return f__4321__auto__.call(null,ret__4323__auto__,k__4324__auto__,v__4325__auto__);
 });})(this__4320__auto____$1))
 ,init__4322__auto__,this__4320__auto____$1);
@@ -4363,10 +4363,10 @@ return cljs.core.pr_sequential_writer.call(null,writer__4316__auto__,cljs.core.p
 return cljs.core.pr_sequential_writer.call(null,writer__4316__auto__,pr_pair__4318__auto__,"#zprint.zprint.r{",", ","}",opts__4317__auto__,cljs.core.concat.call(null,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"left","left",-399115937),self__.left],null)),(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"right","right",-452581833),self__.right],null))], null),self__.__extmap));
 });
 
-zprint.zprint.r.prototype.cljs$core$IIterable$_iterator$arity$1 = (function (G__39470){
+zprint.zprint.r.prototype.cljs$core$IIterable$_iterator$arity$1 = (function (G__47432){
 var self__ = this;
-var G__39470__$1 = this;
-return (new cljs.core.RecordIter((0),G__39470__$1,2,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"left","left",-399115937),new cljs.core.Keyword(null,"right","right",-452581833)], null),(cljs.core.truth_(self__.__extmap)?cljs.core._iterator.call(null,self__.__extmap):cljs.core.nil_iter.call(null))));
+var G__47432__$1 = this;
+return (new cljs.core.RecordIter((0),G__47432__$1,2,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"left","left",-399115937),new cljs.core.Keyword(null,"right","right",-452581833)], null),(cljs.core.truth_(self__.__extmap)?cljs.core._iterator.call(null,self__.__extmap):cljs.core.nil_iter.call(null))));
 });
 
 zprint.zprint.r.prototype.cljs$core$IMeta$_meta$arity$1 = (function (this__4299__auto__){
@@ -4405,10 +4405,10 @@ return h__4159__auto____$1;
 }
 });
 
-zprint.zprint.r.prototype.cljs$core$IEquiv$_equiv$arity$2 = (function (this39472,other39473){
+zprint.zprint.r.prototype.cljs$core$IEquiv$_equiv$arity$2 = (function (this47434,other47435){
 var self__ = this;
-var this39472__$1 = this;
-return (((!((other39473 == null)))) && ((this39472__$1.constructor === other39473.constructor)) && (cljs.core._EQ_.call(null,this39472__$1.left,other39473.left)) && (cljs.core._EQ_.call(null,this39472__$1.right,other39473.right)) && (cljs.core._EQ_.call(null,this39472__$1.__extmap,other39473.__extmap)));
+var this47434__$1 = this;
+return (((!((other47435 == null)))) && ((this47434__$1.constructor === other47435.constructor)) && (cljs.core._EQ_.call(null,this47434__$1.left,other47435.left)) && (cljs.core._EQ_.call(null,this47434__$1.right,other47435.right)) && (cljs.core._EQ_.call(null,this47434__$1.__extmap,other47435.__extmap)));
 });
 
 zprint.zprint.r.prototype.cljs$core$IMap$_dissoc$arity$2 = (function (this__4310__auto__,k__4311__auto__){
@@ -4421,18 +4421,18 @@ return (new zprint.zprint.r(self__.left,self__.right,self__.__meta,cljs.core.not
 }
 });
 
-zprint.zprint.r.prototype.cljs$core$IAssociative$_assoc$arity$3 = (function (this__4308__auto__,k__4309__auto__,G__39470){
+zprint.zprint.r.prototype.cljs$core$IAssociative$_assoc$arity$3 = (function (this__4308__auto__,k__4309__auto__,G__47432){
 var self__ = this;
 var this__4308__auto____$1 = this;
-var pred__39480 = cljs.core.keyword_identical_QMARK_;
-var expr__39481 = k__4309__auto__;
-if(cljs.core.truth_(pred__39480.call(null,new cljs.core.Keyword(null,"left","left",-399115937),expr__39481))){
-return (new zprint.zprint.r(G__39470,self__.right,self__.__meta,self__.__extmap,null));
+var pred__47442 = cljs.core.keyword_identical_QMARK_;
+var expr__47443 = k__4309__auto__;
+if(cljs.core.truth_(pred__47442.call(null,new cljs.core.Keyword(null,"left","left",-399115937),expr__47443))){
+return (new zprint.zprint.r(G__47432,self__.right,self__.__meta,self__.__extmap,null));
 } else {
-if(cljs.core.truth_(pred__39480.call(null,new cljs.core.Keyword(null,"right","right",-452581833),expr__39481))){
-return (new zprint.zprint.r(self__.left,G__39470,self__.__meta,self__.__extmap,null));
+if(cljs.core.truth_(pred__47442.call(null,new cljs.core.Keyword(null,"right","right",-452581833),expr__47443))){
+return (new zprint.zprint.r(self__.left,G__47432,self__.__meta,self__.__extmap,null));
 } else {
-return (new zprint.zprint.r(self__.left,self__.right,self__.__meta,cljs.core.assoc.call(null,self__.__extmap,k__4309__auto__,G__39470),null));
+return (new zprint.zprint.r(self__.left,self__.right,self__.__meta,cljs.core.assoc.call(null,self__.__extmap,k__4309__auto__,G__47432),null));
 }
 }
 });
@@ -4443,10 +4443,10 @@ var this__4313__auto____$1 = this;
 return cljs.core.seq.call(null,cljs.core.concat.call(null,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [(new cljs.core.MapEntry(new cljs.core.Keyword(null,"left","left",-399115937),self__.left,null)),(new cljs.core.MapEntry(new cljs.core.Keyword(null,"right","right",-452581833),self__.right,null))], null),self__.__extmap));
 });
 
-zprint.zprint.r.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (this__4300__auto__,G__39470){
+zprint.zprint.r.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (this__4300__auto__,G__47432){
 var self__ = this;
 var this__4300__auto____$1 = this;
-return (new zprint.zprint.r(self__.left,self__.right,G__39470,self__.__extmap,self__.__hash));
+return (new zprint.zprint.r(self__.left,self__.right,G__47432,self__.__extmap,self__.__hash));
 });
 
 zprint.zprint.r.prototype.cljs$core$ICollection$_conj$arity$2 = (function (this__4306__auto__,entry__4307__auto__){
@@ -4483,19 +4483,19 @@ return (new zprint.zprint.r(left,right,null,null,null));
 /**
  * Factory function for zprint.zprint/r, taking a map of keywords to field values.
  */
-zprint.zprint.map__GT_r = (function zprint$zprint$map__GT_r(G__39474){
-var extmap__4340__auto__ = (function (){var G__39483 = cljs.core.dissoc.call(null,G__39474,new cljs.core.Keyword(null,"left","left",-399115937),new cljs.core.Keyword(null,"right","right",-452581833));
-if(cljs.core.record_QMARK_.call(null,G__39474)){
-return cljs.core.into.call(null,cljs.core.PersistentArrayMap.EMPTY,G__39483);
+zprint.zprint.map__GT_r = (function zprint$zprint$map__GT_r(G__47436){
+var extmap__4340__auto__ = (function (){var G__47445 = cljs.core.dissoc.call(null,G__47436,new cljs.core.Keyword(null,"left","left",-399115937),new cljs.core.Keyword(null,"right","right",-452581833));
+if(cljs.core.record_QMARK_.call(null,G__47436)){
+return cljs.core.into.call(null,cljs.core.PersistentArrayMap.EMPTY,G__47445);
 } else {
-return G__39483;
+return G__47445;
 }
 })();
-return (new zprint.zprint.r(new cljs.core.Keyword(null,"left","left",-399115937).cljs$core$IFn$_invoke$arity$1(G__39474),new cljs.core.Keyword(null,"right","right",-452581833).cljs$core$IFn$_invoke$arity$1(G__39474),null,cljs.core.not_empty.call(null,extmap__4340__auto__),null));
+return (new zprint.zprint.r(new cljs.core.Keyword(null,"left","left",-399115937).cljs$core$IFn$_invoke$arity$1(G__47436),new cljs.core.Keyword(null,"right","right",-452581833).cljs$core$IFn$_invoke$arity$1(G__47436),null,cljs.core.not_empty.call(null,extmap__4340__auto__),null));
 });
 
 zprint.zprint.make_record = (function zprint$zprint$make_record(l,r){
 return (new r(l,r));
 });
 
-//# sourceMappingURL=zprint.js.map?rel=1575052413964
+//# sourceMappingURL=zprint.js.map?rel=1575465430849

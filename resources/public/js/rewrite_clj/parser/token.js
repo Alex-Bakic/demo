@@ -14,8 +14,8 @@ rewrite_clj.parser.token.allowed_suffix_QMARK_ = (function rewrite_clj$parser$to
 return (((c === "'")) || ((c === ":")));
 });
 rewrite_clj.parser.token.read_to_boundary = (function rewrite_clj$parser$token$read_to_boundary(reader,allowed_QMARK_){
-return rewrite_clj.reader.read_until.call(null,reader,(function (p1__37982_SHARP_){
-return ((cljs.core.not.call(null,allowed_QMARK_.call(null,p1__37982_SHARP_))) && (rewrite_clj.reader.whitespace_or_boundary_QMARK_.call(null,p1__37982_SHARP_)));
+return rewrite_clj.reader.read_until.call(null,reader,(function (p1__43237_SHARP_){
+return ((cljs.core.not.call(null,allowed_QMARK_.call(null,p1__43237_SHARP_))) && (rewrite_clj.reader.whitespace_or_boundary_QMARK_.call(null,p1__43237_SHARP_)));
 }));
 });
 rewrite_clj.parser.token.read_to_char_boundary = (function rewrite_clj$parser$token$read_to_char_boundary(reader){
@@ -49,4 +49,4 @@ return rewrite_clj.node.token_node.call(null,v,s);
 }
 });
 
-//# sourceMappingURL=token.js.map?rel=1575052411158
+//# sourceMappingURL=token.js.map?rel=1575465424024

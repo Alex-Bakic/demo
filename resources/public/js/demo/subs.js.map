@@ -1,0 +1,1 @@
+{"version":3,"file":"\/home\/alex\/demo\/resources\/public\/js\/demo\/subs.js","sources":["subs.cljs?rel=1575481678659"],"lineCount":7,"mappings":";AAAA;;;AAGA,AAAKA,oBAAK,AAACC,yBAAKC,gBAAMC","names":["demo.subs\/<sub","cljs.core\/comp","cljs.core\/deref","re-frame.core\/subscribe"]}

@@ -16,8 +16,8 @@ day8.re_frame_10x.utils.animated.rc_v_box_style = new cljs.core.PersistentArrayM
  * for supported props other then :style
  */
 day8.re_frame_10x.utils.animated.v_box_options = (function day8$re_frame_10x$utils$animated$v_box_options(options){
-return cljs.core.assoc.call(null,cljs.core.update.call(null,options,new cljs.core.Keyword(null,"style","style",-496642736),(function (p1__36803_SHARP_){
-return cljs.core.merge.call(null,day8.re_frame_10x.utils.animated.rc_v_box_style,p1__36803_SHARP_);
+return cljs.core.assoc.call(null,cljs.core.update.call(null,options,new cljs.core.Keyword(null,"style","style",-496642736),(function (p1__51450_SHARP_){
+return cljs.core.merge.call(null,day8.re_frame_10x.utils.animated.rc_v_box_style,p1__51450_SHARP_);
 })),new cljs.core.Keyword(null,"class","class",-2030961996),"rc-v-box display-flex");
 });
 /**
@@ -32,9 +32,9 @@ day8.re_frame_10x.utils.animated.rc_h_box_style = new cljs.core.PersistentArrayM
  * for supported props other then :style
  */
 day8.re_frame_10x.utils.animated.h_box_options = (function day8$re_frame_10x$utils$animated$h_box_options(options){
-return cljs.core.assoc.call(null,cljs.core.update.call(null,options,new cljs.core.Keyword(null,"style","style",-496642736),(function (p1__36804_SHARP_){
-return cljs.core.merge.call(null,day8.re_frame_10x.utils.animated.rc_h_box_style,p1__36804_SHARP_);
+return cljs.core.assoc.call(null,cljs.core.update.call(null,options,new cljs.core.Keyword(null,"style","style",-496642736),(function (p1__51451_SHARP_){
+return cljs.core.merge.call(null,day8.re_frame_10x.utils.animated.rc_h_box_style,p1__51451_SHARP_);
 })),new cljs.core.Keyword(null,"class","class",-2030961996),"rc-h-box display-flex");
 });
 
-//# sourceMappingURL=animated.js.map?rel=1575052461141
+//# sourceMappingURL=animated.js.map?rel=1575465436154

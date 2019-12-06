@@ -26,8 +26,8 @@ return or__4047__auto__;
 return top;
 }
 } else {
-var G__38520 = rewrite_clj.node.forms_node.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [node], null));
-node = G__38520;
+var G__45574 = rewrite_clj.node.forms_node.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [node], null));
+node = G__45574;
 continue;
 }
 break;
@@ -37,48 +37,48 @@ break;
  * Get tag of node at the current zipper location.
  */
 rewrite_clj.zip.base.tag = (function rewrite_clj$zip$base$tag(zloc){
-var G__38521 = zloc;
-var G__38521__$1 = (((G__38521 == null))?null:clojure.zip.node.call(null,G__38521));
-if((G__38521__$1 == null)){
+var G__45575 = zloc;
+var G__45575__$1 = (((G__45575 == null))?null:clojure.zip.node.call(null,G__45575));
+if((G__45575__$1 == null)){
 return null;
 } else {
-return rewrite_clj.node.tag.call(null,G__38521__$1);
+return rewrite_clj.node.tag.call(null,G__45575__$1);
 }
 });
 /**
  * Get sexpr represented by the given node.
  */
 rewrite_clj.zip.base.sexpr = (function rewrite_clj$zip$base$sexpr(zloc){
-var G__38522 = zloc;
-var G__38522__$1 = (((G__38522 == null))?null:clojure.zip.node.call(null,G__38522));
-if((G__38522__$1 == null)){
+var G__45576 = zloc;
+var G__45576__$1 = (((G__45576 == null))?null:clojure.zip.node.call(null,G__45576));
+if((G__45576__$1 == null)){
 return null;
 } else {
-return rewrite_clj.node.sexpr.call(null,G__38522__$1);
+return rewrite_clj.node.sexpr.call(null,G__45576__$1);
 }
 });
 /**
  * Get children as s-expressions.
  */
 rewrite_clj.zip.base.child_sexprs = (function rewrite_clj$zip$base$child_sexprs(zloc){
-var G__38523 = zloc;
-var G__38523__$1 = (((G__38523 == null))?null:clojure.zip.node.call(null,G__38523));
-if((G__38523__$1 == null)){
+var G__45577 = zloc;
+var G__45577__$1 = (((G__45577 == null))?null:clojure.zip.node.call(null,G__45577));
+if((G__45577__$1 == null)){
 return null;
 } else {
-return rewrite_clj.node.child_sexprs.call(null,G__38523__$1);
+return rewrite_clj.node.child_sexprs.call(null,G__45577__$1);
 }
 });
 /**
  * Get length of printable string for the given zipper location.
  */
 rewrite_clj.zip.base.length = (function rewrite_clj$zip$base$length(zloc){
-var or__4047__auto__ = (function (){var G__38525 = zloc;
-var G__38525__$1 = (((G__38525 == null))?null:clojure.zip.node.call(null,G__38525));
-if((G__38525__$1 == null)){
+var or__4047__auto__ = (function (){var G__45579 = zloc;
+var G__45579__$1 = (((G__45579 == null))?null:clojure.zip.node.call(null,G__45579));
+if((G__45579__$1 == null)){
 return null;
 } else {
-return rewrite_clj.node.length.call(null,G__38525__$1);
+return rewrite_clj.node.length.call(null,G__45579__$1);
 }
 })();
 if(cljs.core.truth_(or__4047__auto__)){
@@ -91,37 +91,37 @@ return (0);
  * Create zipper from String.
  */
 rewrite_clj.zip.base.of_string = (function rewrite_clj$zip$base$of_string(s){
-var G__38526 = s;
-var G__38526__$1 = (((G__38526 == null))?null:rewrite_clj.parser.parse_string_all.call(null,G__38526));
-if((G__38526__$1 == null)){
+var G__45580 = s;
+var G__45580__$1 = (((G__45580 == null))?null:rewrite_clj.parser.parse_string_all.call(null,G__45580));
+if((G__45580__$1 == null)){
 return null;
 } else {
-return rewrite_clj.zip.base.edn.call(null,G__38526__$1);
+return rewrite_clj.zip.base.edn.call(null,G__45580__$1);
 }
 });
 /**
  * Create string representing the current zipper location.
  */
 rewrite_clj.zip.base.string = (function rewrite_clj$zip$base$string(zloc){
-var G__38527 = zloc;
-var G__38527__$1 = (((G__38527 == null))?null:clojure.zip.node.call(null,G__38527));
-if((G__38527__$1 == null)){
+var G__45581 = zloc;
+var G__45581__$1 = (((G__45581 == null))?null:clojure.zip.node.call(null,G__45581));
+if((G__45581__$1 == null)){
 return null;
 } else {
-return rewrite_clj.node.string.call(null,G__38527__$1);
+return rewrite_clj.node.string.call(null,G__45581__$1);
 }
 });
 /**
  * Create string representing the zipped-up zipper.
  */
 rewrite_clj.zip.base.root_string = (function rewrite_clj$zip$base$root_string(zloc){
-var G__38528 = zloc;
-var G__38528__$1 = (((G__38528 == null))?null:clojure.zip.root.call(null,G__38528));
-if((G__38528__$1 == null)){
+var G__45582 = zloc;
+var G__45582__$1 = (((G__45582 == null))?null:clojure.zip.root.call(null,G__45582));
+if((G__45582__$1 == null)){
 return null;
 } else {
-return rewrite_clj.node.string.call(null,G__38528__$1);
+return rewrite_clj.node.string.call(null,G__45582__$1);
 }
 });
 
-//# sourceMappingURL=base.js.map?rel=1575052412417
+//# sourceMappingURL=base.js.map?rel=1575465427921
