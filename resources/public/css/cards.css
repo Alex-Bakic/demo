@@ -50,28 +50,27 @@
     .card--job .basic-info .buttons {
       display: flex;
       justify-content: flex-start; }
-
-.button {
-  background: #ff7c6e;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  transition: background 400ms ease-in-out;
-  padding: 6px;
-  border: none;
-  border-radius: 2px;
-  height: 30px;
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  line-height: normal;
-  color: white;
-  position: relative; }
-  .button .button:hover {
-    background: #ff9f95 !important;
-    color: white !important;
-    cursor: pointer; }
-  .button .button:focus {
-    outline: none; }
+      .card--job .basic-info .buttons .button {
+        background: red;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        transition: background 400ms ease-in-out;
+        padding: 6px;
+        border: none;
+        border-radius: 2px;
+        height: 30px;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        line-height: normal;
+        color: white;
+        position: relative; }
+        .card--job .basic-info .buttons .button .button:hover {
+          background: #ff9f95 !important;
+          color: white !important;
+          cursor: pointer; }
+        .card--job .basic-info .buttons .button .button:focus {
+          outline: none; }

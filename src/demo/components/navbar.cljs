@@ -6,7 +6,7 @@
   [id]
   (.-value (.getElementById js/document id)))
 
-(defn navbar--logo
+(defn nav
   []
   [:div.navbar-brand
    [:div {:class "navbar-item"
@@ -16,28 +16,25 @@
     [:a {:class "navbar--logo--container"
          :href "https://www.works-hub.com"}
      [:div.navbar--logo--title
-      [:span.title--bold "WORKS"] "HUB"]]]])
-
-(defn navbar--search
-  []
-  [:div.navbar-center
+      [:span.title--bold "WORKS"] "HUB"]]]
    [:div.navbar-item
-    [:input {:type "text"
-             :placeholder "Search for jobs..."
-             :class "search"
-             :id "search--bar"
-             :auto-complete "off"
-             :name "search"}]
-    [:button {:class "search--button"
-              :on-click #(make-request! (get-value "search--bar"))}
-     "Go"]]])
+    [:div.navbar-search
+     [:input {:type "text"
+              :placeholder "Search for jobs..."
+              :class "search"
+              :id "search--bar"
+              :auto-complete "off"
+              :name "search"}]
+     [:button {:class "search--button"
+               :on-click #(make-request! (get-value "search--bar"))}
+      [:img {:src "images/search.svg" :width 35 :height 35 :alt "search"}]]]]])
 
 (defn navbar
   []
   [:nav {:class "navbar" :role "navigation" :aria-label "main navigation"}
    ;; nav is for setup and initial positioning, wrapper is for alignment of the surrounding items
-   [navbar--logo]
-   [:div
-    [navbar--search]]])
+   [nav]])
+
+
 
 

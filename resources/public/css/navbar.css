@@ -18,3 +18,25 @@
     flex-grow: 1;
     flex-direction: column;
     justify-content: center; }
+  .navbar .navbar-search {
+    height: 44px;
+    display: flex; }
+    .navbar .navbar-search .search {
+      flex: 1;
+      border: none;
+      outline: none;
+      background: none;
+      text-align: left;
+      color: black;
+      background-color: #f4f5f8;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+      height: 100%;
+      padding: 12px; }
+    .navbar .navbar-search .search--button {
+      border: none;
+      outline: none;
+      color: #adadad;
+      width: 35px;
+      height: 100%;
+      background-color: #f4f5f8; }

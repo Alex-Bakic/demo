@@ -62,5 +62,6 @@
   [:div {:class (str "card card--job " "card-border-color-" (rand-int 5) " i-cur-" (rand-int 5))}
    [job-card--header job]
    [job-card--tags tags]
+
    [job-card--tagline tagline]
    [job-card--buttons]])
